@@ -11,11 +11,17 @@
       border-width: 1px;
       border-style: solid;
       border-color: #000;
-      border-spacing: 0; /* 쓰지 않아도 되나, 관행상 쓴다고 함 */
+      border-spacing: 0; 
+      /* 
+      1. 쓰지 않아도 되나, 관행상 쓴다고 함 
+      2. 0에 대한 단위는 없다.
+      */
+      
       border-collapse: collapse; 
       /* 
       1. 전체 표와 셀 사이 간격이 뜨는 문제를 해결
       2. 겹치는 픽셀은 1개 값으로만 계산하도록 조치 
+      3. table에서만 사용
       */
 
     }
