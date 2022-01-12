@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<!-- a_10_display.html -->
+<html lang="ko-KR">
+<head>
+  <meta charset="UTF-8">
+  <title>웹기초</title>
+  <style>
+
+    /* 
+    block 요소
+    1. 사이즈를 가질 수 있다.
+    2. 예시 : div, p, ul, li, hr 등
+    */
+
+    .box_01 {
+      width: 250px;
+      height: 50px;
+      background-color: wheat;
+    }
+
+    .box_02 {
+      width: 250px;
+      height: 50px;
+      background-color: wheat;
+    }
+
+    ul {
+      width: 200px; height: auto;
+      background-color: aquamarine;
+    }
+
+    li { 
+      width: 200px; height: 30px; 
+      list-style: none;
+    }
+    .list_01 { background-color:  aqua ; } 
+    .list_02 { background-color:  skyblue; } 
+
+     
+    hr {
+      width:100%; height: 1px;
+      background-color: aquamarine;
+    } 
+    
+
+    /* 버튼은 사이즈 조절이 되나 옆으로 쌓여서, 인라인 블럭이라고도 함 */
+    button {
+      width: 300px; height: 30px;
+      background-color: lightsteelblue;
+    }
+
+
+
+    /* 
+    inline 요소 
+    1. 사이즈를 가질 수 없다.
+    2. 인라인 요소 안에는 블럭 요소를 넣을 수 없다. 
+    (블럭 요소 안에 인라인 요소를 넣는 것이 원칙)
+    2. 예시 : span, a  등
+    */
+
+    .mini_group_01 { 
+      width: 300px; height: 70px;
+      background-color: springgreen;
+    }
+
+    a {
+      width: 300px; height: 70px;
+      background-color: lightgreen;
+    }
+
+    .convert_box {
+      width: 900px; height: 80px;
+      background-color: mediumaquamarine;
+    }
+
+    /* display를 통해 인라인 요소를 블럭 요소로, 혹은 반대로도 변환 가능
+    (인라인 블럭 요소로도 변환 가능) */
+
+    .convert_box > a {
+      display: inline-block; /* block 으로도 가능 */
+      width: 200px; height: 30px;
+      background-color: rgb(151, 235, 169);
+      text-align: center;
+    }
+
+    .convert_box_02 {
+      display: inline;
+      width: 600px; height: 80px;
+      background-color: lemonchiffon;
+    }
+
+
+
+  </style>
+</head>
+<body>
+  <div id="wrap">
+    <h1><a href="../index.html">웹기초</a></h1>
+    <h2>inline과 block의 개념</h2>
+
+    <div class="box_01">
+      div는 크기를 가질 수 있는가?
+    </div>
+
+    <p class="box_02">
+      p는 크기를 가질 수 있는가?
+    </p>
+
+    <ul>
+      <li class="list_01">list_01</li>
+      <li class="list_02">list_02</li>
+    </ul>
+
+    <hr />
+    <span class="mini_group_01">내용 입력</span>
+    <a href="#">link 기능을 가진 요소</a>
+
+    <hr />
+    <button type="button">버튼 요소</button> 
+    <button type="button">버튼 요소</button>
+    <button type="button">버튼 요소</button>
+
+    <hr />
+    <div>
+      <span>
+        인라인형식
+      </span>
+    </div>
+
+    <!-- a의 경우는 인라인 형식이지만, 예외적으로 내부에 블럭 요소를 포함할 수 있다. --> 
+    <a href="#">
+      <div>
+        <p>설명</p>
+        <ul>
+          <li>list_01</li>
+          <li>list_02</li>
+        </ul>
+      </div>
+    </a>
+
+    <div>
+      <p>설명</p>
+    </div>
+
+    <!-- 
+      div는 p보다 상위 개념이므로, 이하와 같은 작성은 규칙 위반이다. 
+      (개발자 도구에서 확인 시, 의도한 대로 구현되지 않은 것을 확인 가능.)
+    -->
+    <p>
+      <div>상자를 삽입</div>
+    </p>
+
+    <div class="convert_box">
+      <a href="#">block으로 변환</a>
+      <a href="#">block으로 변환</a>
+      <a href="#">block으로 변환</a>
+    </div>  
+
+      <div class="convert_box_02">
+        Lorem ipsum dolor sit amet.
+      </div>
+  </div> 
+</body>
+</html>
