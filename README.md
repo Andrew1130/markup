@@ -10,9 +10,9 @@
 - [실습 문서](a_asset/actualtest.md) 작성
 
 ## 웹 기초
+[학습과정](b_basic/index.html)
 <br />
 
-[학습과정](b_basic/index.html)
 ### HTML 기본 코드
 - 웹페이지 기본 코드
 - 제목과 내용
