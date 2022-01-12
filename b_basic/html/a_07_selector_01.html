@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<!-- a_07_selector_01.html -->
+<html lang="ko-KR">
+<head>
+  <meta charset="UTF-8">
+  <title>웹기초</title>
+
+  <style>
+
+    body { background-color: burlywood; } 
+    h1 {
+      color: brown; 
+      background-color: darkkhaki; 
+    }
+    
+    #baseSelector {
+      border-width: 2px;
+      border-style: solid;
+      border-color: chocolate;
+    }
+
+    #moreSelector { border: 3px dotted darkgoldenrod; }
+    #makeBox { width: 400px; height: 100px; }
+
+
+    .one_box { background-color: darkgrey; }
+    h2.select_title {
+      background-color: coral;
+      color: brown;
+    }
+
+    /*
+    조직 규정에 따라 다르나, 
+    선택자 작성 시 아래의 예시와 유사하게 일정한 규칙에 따르는 것이 좋다.
+
+    <예시>
+    id : 카멜케이스 [view + box >> viewBox]
+    class : 언더바 [view + box >> view_box]
+
+    */
+
+  </style>
+
+</head>
+<body>
+  <h1>웹문서</h1>
+  <div id = "baseSelector">
+    <h2 class="select_title">css 선택자</h2>
+    <p class="select_title">내용 작성</p>
+    <div id="makeBox" class="one_box">하나의 박스를 생성</div>
+  </div>
+
+  <br />
+
+  <div id = "moreSelector">
+    <h2 class="select_title">선택자 추가</h2>
+    <p>내용 작성</p>
+  </div>
+
+</body>
+</html>

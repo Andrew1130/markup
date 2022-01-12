@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<!-- a_08_selector_02.html -->
+<html lang="ko-KR">
+<head>
+  <meta charset="UTF-8">
+  <title>웹기초</title>
+  <style>
+
+    #wrap { 
+      width: 800px; 
+      height: auto; 
+      background-color: rgb(216, 216, 216); 
+      margin: auto; /* 가운데 배치 */
+    }
+
+/*    
+    ul li { 
+      background-color: darkkhaki; 
+      margin: 5px; 
+      border: 1px solid gray ;
+      color: brown;
+    }
+
+      ul > li > div > a { color: crimson; } 
+
+      ul ol > li > a { color: white; }
+      ul ol > li { color: white; }
+    
+    ol > li {
+      background-color: goldenrod;
+      margin-bottom: 10px;
+    }
+*/
+
+    .list { background-color: turquoise; }
+    ul li { background-color: white; margin-bottom: 10px; }
+    ul > .list { background-color: white; margin-bottom: 10px; }
+    li { background-color: yellowgreen; }
+
+  </style>
+</head>
+<body>
+  <div id="wrap">
+    <h1><a href="../index.html" target="_blank">웹 표준</a></h1>
+    <h2>자손, 자식 선택자</h2>
+
+    <ul>
+      <li class="list">list 01</li>
+      <li>
+        <div>
+          <a href="#">list 02</a>
+        </div>
+        <ol>
+          <li><a href="#">sub list 01</a></li>
+          <li><a href="#">sub list 02</a></li>
+          <li><a href="#">sub list 03</a></li>
+          <li><a href="#">sub list 04</a></li>
+        </ol>
+      </li>
+      <li>list 03</li>
+      <li>list 04</li>
+    </ul>
+  </div>
+</body>
+</html>
