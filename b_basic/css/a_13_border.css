@@ -1,0 +1,64 @@
+@charset "UTF-8";
+/* a_13_border.css */
+
+#wrap {
+  width: 900px; height: auto;
+  background-color: linen;
+  margin: auto;
+  padding: 20px;
+}
+
+.part {
+  width: 95%; height: 700px;
+  background-color: lightyellow;
+  margin: auto;
+}
+
+.part > div {
+  float: left;
+  width: 150px; height: 150px;
+  background-image: linear-gradient(45deg, aqua, skyblue);
+}
+
+.border_01 {
+  border-width: 10px; 
+  border-style: double;
+  border-color: black;
+}
+
+.border_02 {
+  border: 5px dotted lightsalmon;
+  box-sizing: border-box;
+}
+
+.border_03 {
+  border: 8px solid lightcoral;
+  box-sizing: border-box;
+}
+
+.border_04 {
+  padding: 15px;
+  border: 10px solid crimson;
+  box-sizing: border-box;
+}
+
+/* 각 변마다 스타일, 색상, 두께 다르게 설정 가능 */
+.border_05 {
+  margin-top: 200px;
+  border: 10px solid lightseagreen;
+  border-left-color: lightsteelblue;
+  border-right-style: dotted;
+  border-top-width: 5px;
+}
+
+.border_06 {
+  border: 10px solid limegreen;
+  border-color: maroon;
+  border-bottom-color: mediumorchid;
+}
+
+/* 선이 겹치는 부분은 대각선으로 표현된다. */
+.border_07 {
+  border-top: 10px solid black;
+  border-left: 10px solid silver
+}

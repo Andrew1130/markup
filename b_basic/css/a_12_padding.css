@@ -1,0 +1,83 @@
+@charset "UTF-8";
+/* a_12_padding.css */
+
+#wrap {
+  width: 900px; height: 2000px;
+  margin: 0 auto;
+  background-color: cornsilk;
+}
+
+.part {
+  width: 95%; height: 500px;
+  margin: auto;
+  background-color: lightsteelblue;
+}
+
+.part > div {
+  float: left;
+  width: 100px; height: 100px;
+  /* 
+  구형 브라우저에서는 background-image가 없을 수 있으므로, background-color를 남겨주는 게 좋다. */
+  background-color: lightskyblue;
+  background-image: linear-gradient(45deg, aqua, skyblue);
+}
+
+.part .padding_01 {
+  width: 200px; height: 200px;
+}
+
+.part .padding_02 { padding:50px }
+
+.part .padding_03 {
+  width: 200px; height: 200px;
+}
+
+.padding_inner {
+  width:100px; height: 100px;
+  margin: auto;
+  margin-top: 50px;
+  background-color: linen;
+}
+
+/* 
+박스 크기(100x100)는 유지하면서
+내부에 패딩만 넣고 싶은 경우
+(아래 2개 결과는 동일)
+*/
+.part .padding_04 {
+  width: 60px; height: 60px;
+  padding: 20px;
+}
+
+.padding_05 {
+  padding: 20px;
+  box-sizing: border-box;
+  /* 
+  box-sizing : border-box || content-box 
+  >> box-sizing 값을 따로 설정하지 않으면 기본값은 content-box이다.
+  */
+}
+
+/* ---------------------------------------- */
+
+.more_p_01 { padding: 20px; }
+.more_p_02 { padding: 20px 40px;}
+.more_p_03 { padding: 10px 20px 40px; }
+.more_p_04 { padding: 20px 30px 40px 10px; }
+.more_p_05 { padding: 30px; padding-left: 50px; }
+.more_p_06 { padding-top: 10px; padding-right: 20px; padding-bottom: 30px; padding-left: 50px;}
+
+/* 
+동일한 방향에 패딩값이 2개일 경우, 나중에 입력된 패딩값이 적용된다.
+*/
+.more_p_07 { padding-left: 50px; padding-left: 80px;}
+
+/* padding:auto 는 정의되어 있지 않다. */
+.more_p_08 { margin: auto; /* padding: auto; */ }
+
+/* margin과 달리 padding은 음수값 정의가 없다. */
+.more_p_09 { 
+  margin-top: -50px; 
+  margin-left: -150px;
+}
+.more_p_10 { /* padding-top: -10px; */ }
