@@ -1,0 +1,191 @@
+@charset "UTF-8";
+/* a_18_layout_01.css */
+
+body, h1, h2, h3, h4, h5, h6, hr{ 
+  margin:0 ; border:0;
+}
+
+h2 {
+  margin-top : 8px;
+  margin-bottom : 8px;
+}
+
+hr {
+  border-top: 1px solid black
+}
+
+/* ------------------------------------- */
+
+#wrap {
+  width: 900px; height: auto;
+  margin: auto; 
+  background-color: linen;
+  padding-bottom: 50px;
+}
+
+.part {
+  width: 800px; height: 800px;
+  margin: auto;
+  margin-top: 50px;
+  background-color: blanchedalmond;
+}
+
+h3 {
+  width: 100%; height: 25px;
+  background-color: aquamarine;
+  text-align: center;
+  font-size: 1.1rem;
+}
+
+.exam {
+  width: 600px; height: auto;
+  margin: auto;
+  border: 1px solid black;
+  background-color: white;
+}
+
+.none { display : none; }
+
+/* ---------------------------------------- */
+
+
+/* 위아래로 배치되는 형태 */
+.box_01 {
+  width: 600px; height: auto;
+  margin: auto;
+  margin-top: 20px;
+}
+
+.box_01 > div {
+  width: 100%; height: 200px;
+}
+
+.inner_01 { background-color: lightskyblue;}
+.inner_02 { background-color: lightblue;}
+.inner_03 { background-color: lightsteelblue;}
+
+
+/* 좌우로 나열되는 형태 */
+
+/* 
+1. box 내부 요소 (여기서는 div)의 값을 %로 해두면
+box의 크기가 변했을 때 내부 요소의 값도 그에 맞추어 변할 수 있다.
+
+2. 3등분의 경우는 소수점 6자리까지 계산하여 33.333333% 으로 표현하면 된다.
+*/
+
+.box_02 {
+  width: 600px; height: auto;
+  margin: auto;
+  margin-top: 20px;
+}
+
+.box_02:after,
+.box_02::after {
+  content:"";
+  display: block;
+  clear: both;
+
+  /* 
+  %로 높이나 너비를 나타낼 경우, 부모나 자녀 쪽 한 곳에는 고정 높이나 너비가 있어야 한다.
+  */
+  width: 100%; height: 0;
+}
+
+.box_02 > div {
+  float: left;
+  width: 33.333333%; height: 600px;
+}
+
+
+/* 가운데 영역을 기준으로 배치되는 형태 */
+
+.box_03 { 
+  width:600px; height: auto;
+  margin: auto;
+  background-color: lightyellow;
+}
+
+.box_03 > div {
+  width: 200px; height: 300px;
+  margin: auto;
+}
+
+
+/* 응용 1 */
+
+.box_04 {
+  width: 600px; height: auto;
+  margin-top: 20px;
+}
+
+.box_04 > div {
+  width: 100%; height: 200px;
+}
+
+.insert_01 { 
+  background-color: palegreen;
+  height: 200px;
+  margin-left: 240px;
+  width: 60%;
+}
+.insert_02 { 
+  background-color: palegoldenrod;
+  height: 200px;
+  margin: auto;
+  width: 45%;
+}
+.insert_03 { 
+  background-color: lightpink;
+  height: 200px;
+  width: 60%;
+}
+
+
+/* 응용 2 */
+
+.box_05 {
+  width: 600px; height: auto;
+  margin-top: 20px;
+}
+
+.box_05:after,
+.box_05::after {
+  content: "";
+  display: block;
+  width: 100%; height: 0;
+  clear: both;
+}
+
+.box_05 > div {
+  float: left;
+  width: 200px; height: 600px;
+}
+
+
+/* 
+insert라는 클래스를 동일명으로 넣어주면 공통된 속성은 insert로 관리하고,
+다른 속성은 자식선택자를 활용 선택하는 방법으로 관리할 수 있어 
+유지보수에 편리할 수 있으니 참조
+*/
+
+.box_05 .insert {
+  width: 200px; height: 33.333333%;
+
+}
+.box_05 > .inner_01 > .insert {
+  background-color: palegreen;
+}
+.box_05 > .inner_02 > .insert {
+  background-color: paleturquoise;
+
+  /* 
+  margin:auto; 는 좌우 중앙정렬이고, 상하 중앙정렬은 아니다.
+  이 경우는 값을 직접 주는 것도 방법이다.
+  */
+  margin-top: 200px; 
+}
+.box_05 > .inner_03 > .insert {
+  background-color: lightpink;
+  margin-top: 400px;
+}
