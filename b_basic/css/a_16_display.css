@@ -1,0 +1,144 @@
+@charset "UTF-8";
+/* a_16_display.css */
+
+#wrap {
+  width: 900; height: auto;
+  margin: auto;
+  background-color: lemonchiffon;
+  padding: 20px;
+}
+
+.part {
+  width: 95%; height: auto;
+  background-color: wheat;
+  margin: auto;
+  box-sizing: border-box;
+  margin-bottom: 30px;
+}
+
+.exam {
+  width: 100%; height: auto;
+}
+
+.exam:after,
+.exam::after {
+  /* 
+  before, after에는 반드시 content 속성이 같이 나와야 한다. 
+  */
+  content: ""; 
+  width: 0; height: 0;
+  display: block;
+  clear: both;
+}
+
+ul { margin:0; padding:0;}
+
+li {
+  float: left;
+  width: 100px; height: 100px;
+  background-image: linear-gradient(45deg, aqua, aquamarine, skyblue);
+
+  background-color: skyblue;
+  list-style: none;
+  font-size: 1.2em;
+  font-weight: bold; 
+
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+li > a {
+  display:block;
+  width: 100%; height: 100%;
+}
+
+.block { display: block; }
+
+
+/* 
+none :
+- 화면상에 나타나지 않으며 빈 공간도 남지 않는다.
+- 시스템에서는 없는 부분으로 처리한다.
+*/
+
+.none { display : none; }
+
+.visible { visibility: visible; }
+
+/* 
+hidden :
+- 화면상에 나타나지 않지만 빈 공간은 남는다.
+- 시스템에서는 없는 부분으로 처리한다.
+*/
+.hidden { visibility: hidden ;}
+
+
+/*
+opacity :
+- 투명도 처리
+- opacity : 0은 보이는 것은 none/hidden과 같지만, 시스템에서는 있는 부분으로 처리함에 유의
+- 이 기능으로는 배경이나 글자만 따로 투명하게 처리할 수는 없다.
+*/
+.opacity_1 { opacity: 1; }
+.opacity_5 { opacity: 0.5; }
+.opacity_0 { opacity: 0; }
+
+
+/* 
+transparent :
+- 이 값이 설정된 속성을 화면에 보이지 않게 만든다.
+*/
+
+.transparent {
+  background-image: none;
+  background-color: transparent;
+  color: transparent;
+}
+
+/*
+ inherit : 부모 속성에서 사용한 값을 그대로 계승 
+ */
+.transparent > a {
+  color: inherit;
+}
+
+/*
+배경만 투명하게 하는 방법
+1. #000 형태의 색 사용시 
+- 뒤에 1자리 숫자를 붙인다.
+- 숫자를 0~9까지 임의로 조절
+
+2. #000000 형태 : 뒤에 2자리 숫자를 붙여 조절
+
++ 단, 2는 일부 브라우저에서 지원하지 않는다.
+*/
+.alpha_01 { 
+  background-image: none;
+  background-color: #a5f4d1ff;
+}
+
+/*
+배경만 투명하게 하는 방법 2 : rgba 사용
+- rgba : red / green / blue / 투명도
+- 투명도 : 0(최고 투명) ~ 1(최고 선명)
+*/
+
+.alpha_02 {
+  background-image: none;
+  background-color: rgba(200, 10, 30, 0.1);
+}
+
+/*
+배경만 투명하게 하는 방법 3 : hsla 사용
+- 색조, 채도, 명도, 투명도로 색깔을 표현
+- 색조(0~360) / 채도(0~100%) / 명도 (0~100%)  / 투명도
+- 색조 : 색상환 참조
+*/
+.alpha_03 {
+  background-image: none;
+  background-color: hsla(40,70%,50%,0.5);
+}
+
+.alpha_01 > a { background-color: rgba(255, 0, 50, 0.3);}
+.alpha_02 > a { background-color: rgba(255, 0, 50, 0.3);}
+.alpha_03 > a { background-color: rgba(255, 0, 50, 0.3);}

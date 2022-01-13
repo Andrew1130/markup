@@ -1,0 +1,46 @@
+@charset "UTF-8";
+/* a_17_overflow.css */
+
+
+#wrap {
+  width: 900px; height: auto;
+  margin: auto;
+  background-color: seashell;
+  padding: 15px;
+}
+
+.part {
+  margin: 10px auto;
+  width: 90%; height: auto;
+  background-color: lightblue;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.ex {
+  width: 70%; height: 200px;
+  margin-left: 15px;
+  background-color: lightseagreen;
+  padding: 15px;
+  box-sizing: border-box;
+  border: 2px solid black;
+  margin-bottom: 30px;
+}
+
+/* 넘치는 글자를 삭제 */
+.hidden { overflow:hidden; }
+
+/* 넘치는 글자를 스크롤을 만들어 처리 */
+.scroll { overflow:scroll; }
+
+/* x축 스크롤은 없애고 y축 스크롤만 남겨두기 */
+.scrollOnly_y {
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
+/* 
+넘치는 글자를 스크롤을 만들어 처리 
+(단, scroll과 달리 글자가 넘치게 되지 않으면 scroll을 자동으로 없애준다)
+*/
+.auto { overflow:auto; }

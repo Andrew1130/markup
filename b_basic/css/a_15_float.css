@@ -119,7 +119,7 @@ li의 경우 같은 방법으로 하면 화면 리더기에서 해당 항목을 
 
 
 .clear {
-  clear:left;
+  clear:left; /*left, both 둘 다 쓸 수 있다. */
   width: 200px; height: 0px;
   background-color: lightcoral;
 }
