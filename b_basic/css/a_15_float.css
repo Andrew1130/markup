@@ -1,0 +1,161 @@
+@charset "UTF-8";
+/* a_15_float.css */
+
+#wrap {
+  width: 900px; height: auto;
+  margin: auto;
+  background-color: antiquewhite;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+/*
+너비, 높이 지정 때 auto와 min/max를 병용하는 경우
+auto를 먼저 써야 제대로 작동한다.
+*/
+
+.part {
+  width: 95%;
+  height: auto;
+  min-height: 400px;
+  margin: auto;
+  background-color: beige;
+  padding: 20px;
+  box-sizing: border-box;
+  margin-bottom: 50px;
+}
+
+.part1, 
+.part2,
+.part3 { display: none; }
+
+.exam {
+  width: 100%; 
+  height: auto;
+  min-height: 400px;
+  border: 1px solid black;
+  box-sizing: border-box;
+  padding: 20px;
+}
+
+.float {
+  float: left;
+  width: 100px; height: 100px;
+  border: 1px solid black;
+  box-sizing: border-box;
+  background-color: coral;
+}
+
+/*
+a와 같은 inline 개체에 float속성이 부여되면
+크기 조절이 가능하다.
+(display:block도 동일, 다만 둘의 차이점은 정렬방식) 
+*/
+
+.exam > a {
+  float: left;
+  width: 100px; height: 100px;
+  background-color: darkgray;
+ }
+
+
+ /* ------------------------------------------ */
+
+
+ .img_wrap {
+   float: left;
+   width: 150px; height: 150px;
+   background-color: lightgrey;
+   margin : 20px;
+
+   /* 전체 마진으로 조절되지 않는 부분은 부분마진 값을 주어 해결할 수도 있다. */
+  
+   margin-bottom: 0;
+ }
+
+ .content_par {
+   width: 100%; height: auto;
+
+   /* 
+   p 태그는 고유 마진(20)이 있기 때문에
+   이것을 없애려면 margin:0; 을 따로 지정해주어야 한다.
+   */
+
+   margin: 0;
+   font-size: 20px;
+   background-color: lightgoldenrodyellow;
+ }
+
+
+ /* ------------------------------------------ */
+
+
+ .exam2 {
+  width: 100%; 
+  height: auto;
+  border: 1px solid black;
+  box-sizing: border-box;
+}
+
+.float2 {
+  float: left;
+  width: 100px; height: 100px;
+  border: 1px solid black;
+  background-color: lightskyblue;
+}
+
+
+/* 
+clear
+1. div 등 block에 float으로 요소들을 넣은 후
+div의 height를 auto로 설정한 경우
+height가 사실상 0이 되어 버리는 문제를 해결하기 위해 사용된다.
+2. div 등 block에 요소가 넣어진 상태에서, 그 안의 마지막 요소에 clear 속성을 설정하는 방법으로 사용하며,
+사용 시 해당 block 요소의 마지막 요소에 맞추어 높이를 변경해준다.
+
++ div에 대해서는 clear 후 height 0 설정하는 방법으로 진행해도 문제 없으나, 
+li의 경우 같은 방법으로 하면 화면 리더기에서 해당 항목을 의도대로 인식하지 못하고 리스트라고 인식하게 되어 위와 같은 방법은 권장하지 않는다고 한다.
+*/
+
+
+.clear {
+  clear:left;
+  width: 200px; height: 0px;
+  background-color: lightcoral;
+}
+
+.block {
+  width: 100%; height: 50px;
+  background-color: lavender;
+}
+
+ul {margin : 0; padding: 0;}
+li {list-style: none;}
+
+
+
+ /* ------------------------------------------ */
+
+
+/* ul, li에 clear 적용하기 */
+
+
+.exam2 > ul {
+  width: 100%; height: auto;
+  background-color: lightyellow;
+}
+
+.exam2 li {
+  float: left;
+  width: 100px; height: 100px;
+  background-image: linear-gradient(45deg, aqua, aquamarine, skyblue);
+}
+
+.exam2 > ul:after,
+.exam2 > ul::after {
+  content: "";
+  display: block;
+  clear:both;
+  width: 0px; height: 0px;
+  background-color: lime;
+}
