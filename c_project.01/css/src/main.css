@@ -64,6 +64,44 @@ ul, ol, li { list-style: none; }
   background-color: #777;
 }
 
+  .unb {
+    float: right;
+    width: 270px;
+    height: 26px;
+    background-color: #eee;
+  }
+
+    .unb li {
+      display: block;
+      float: left;
+      width: 50px; height: 20px;
+      font-size: 0.6rem;
+      background-color: aquamarine;
+      margin-top: 3px;
+      margin-right: 20px;
+    }
+      .unb li.unb_li_start { margin-left: 4px }
+      .unb li.unb_li_end { margin-right: 0 }
+
+  .gnb {
+    margin-top: 14px;
+    width: 510px;
+    height: 35px;
+    background-color: #eee;
+  }
+
+    .gnb li {
+      display: block;
+      float: left;
+      width: 70px; height: 25px;
+      font-size: 0.6rem;
+      background-color: aquamarine;
+      margin-top: 6px;
+      margin-right: 16px;
+    }
+      .gnb li.gnb_li_start { margin-left: 5px; }
+      .gnb li.gnb_li_end { margin-right: 0 }
+
 /* slideBox ----------------------- */
 #slideBox {
   width: 100%; height: 600px;
@@ -74,10 +112,33 @@ ul, ol, li { list-style: none; }
 #adCon_01 {
   width: 780px; height: 400px;
   background-color: #ddd;
-  margin: auto;
-
+  display: block;
   box-sizing: border-box;
+  margin:auto;
 }
+
+/* 
+정중앙에 넣으려 하는데
+adCon_01에 있는 margin auto에 의한
+좌우 마진 때문에 버튼이 안 올라가는 듯
+*/
+
+#slideBox div {
+  height: 440px;
+}
+
+  .slideBox_preview {
+    display: inline-block;
+    float: left;
+    width: 60px; height: 40px;
+    background-color: aquamarine;
+  }
+  .slideBox_next {
+    display: inline-block;
+    float: right;
+    width: 60px; height: 40px;
+    background-color: aquamarine;
+  }
 
 /* newBox ----------------------- */
 #newBox {
@@ -92,6 +153,7 @@ ul, ol, li { list-style: none; }
   margin: auto;
   background-color: #ccc;
 }
+
 .area_content {
   width: 940px; height: 370px;
   /*
@@ -102,6 +164,19 @@ ul, ol, li { list-style: none; }
   margin : 48px auto 50px;
   background-color: #ccc;
 }
+
+  #newBox li {
+    display: block;
+    float: left;
+    width: 300px; height: 370px;
+    margin-right: 18px;
+    background-color: aquamarine;
+  }
+
+    #newBox li.area_content_li_end {
+      margin-right: 0;
+    }
+
 .area_indicator {
   width: 140px; height: 30px;
   margin: auto;
@@ -110,10 +185,13 @@ ul, ol, li { list-style: none; }
 
 /* subBox ----------------------- */
 #subBox {
-  width: 100%; height: 350px;
+  width: 100%; 
+  height: auto;
+  min-height: 350px;
   padding-top: 50px;
   box-sizing: border-box;
   background-color: #aaa;
+  border: 0 solid black;
 }
 
 #subBox > .area {
@@ -121,9 +199,27 @@ ul, ol, li { list-style: none; }
   background-color: #ddd;
 }
 
+  #subBox li {
+    display: block;
+    background-color: aquamarine;
+  }
+
+    #subBox li.subBox_left {
+      float: left;
+      width: 460px; height: 300px;
+    }
+
+    #subBox li.subBox_right {
+      float: right;
+      width: 400px; height: 200px;
+      margin-right: 70px;
+      margin-top: 52px;
+    }
+
 /* bestBox ----------------------- */
 #bestBox {
-  width: 100%; height: 700px;
+  width: 100%; 
+  height: 700px;
   background-color: #eee;
   padding-top: 175px;
   box-sizing: border-box;
@@ -131,8 +227,33 @@ ul, ol, li { list-style: none; }
 
 #bestBox > .area {
   height: 380px;
+  min-width: 1200px;
   background-color: #ccc;
 }
+
+  #bestBox li {
+    display: block;
+    float: left;
+    height: 380px;
+  }
+
+    #bestBox li.bestBox_01 {
+      width: 230px;
+      background-color: goldenrod;
+      margin-right: 70px;
+    }
+
+    #bestBox li.bestBox_02, 
+    #bestBox li.bestBox_03 {
+      width: 240px;
+      background-color: aquamarine;
+      margin-right: 40px;
+    }
+
+    #bestBox li.bestBox_04 {
+      width: 240px;
+      background-color: aquamarine;
+    }
 
 /* galleryBox ----------------------- */
 #galleryBox {
@@ -142,9 +263,27 @@ ul, ol, li { list-style: none; }
 }
 
 #galleryBox .area_title { background-color: #fff;}
+
 #galleryBox .area_content { 
   height: 420px;
   background-color: #777;}
+
+  #galleryBox li {
+    display: block;
+  }
+
+    #galleryBox li.imageArea {
+      float: left;
+      width: 540px; height: 420px;
+      background-color: aquamarine;
+    }
+
+    #galleryBox li.listArea {
+      float: right;
+      width: 320px; height: 270px;
+      margin-top: 150px;
+      background-color: aquamarine;
+    }
 
 
 /* sponserBox ----------------------- */
@@ -160,6 +299,20 @@ ul, ol, li { list-style: none; }
   background-color: #fff;
 }
 
+  #sponserBox li {
+    display: block;
+    float: left;
+    width: 140px; height: 80px;
+    margin-right: 20px;
+    background-color: aquamarine;
+  }
+
+  #sponserBox li.sponserBox_li_end {
+    margin-right: 0;
+  }
+
+
+
 /* footBox ----------------------- */
 #footBox {
   width: 100%; height: 450px;
@@ -174,10 +327,26 @@ ul, ol, li { list-style: none; }
   margin-bottom: 45px;
   background-color: #aaa;
 }
+
 .info_company {
-  width: 100%; height: 135px;
+  width: 100%; height: 200px;
   background-color: #aaa;
 }
+
+  #footBox li.leftBox {
+    display: block;
+    float: left;
+    width: 500px; height: 200px;
+    background-color: aquamarine;
+  }
+
+  #footBox li.rightBox {
+    display: block;
+    float: right;
+    width: 200px; height: 160px;
+    margin-top: 40px;
+    background-color: aquamarine;
+  }
 
 
 /* ---------------------------------------- */
