@@ -1,0 +1,105 @@
+@charset "UTF-8";
+/* a_06_assignment_table.css */
+
+
+/* 표 사이즈 조절 */
+table {
+  width: 800px;
+  height: auto;
+  border-collapse: collapse;
+}
+
+.col1 {width: 50px;}
+.col2 {width: 130px;}
+.col3 {width: 100px;}
+.col4 {width: 100px;}
+.col5 {width: 360px;}
+.col6 {width: 60px;}
+
+
+/* thead 내부 셀 스타일 */
+th {
+  height: 20px;
+  padding: 5px;
+  font-weight: 100;
+  font-size: 0.9rem;
+}
+
+
+/* tbody 내부 셀 스타일 및 테두리 */
+td {
+  border-width: 1px;
+  height: 15px;
+  border-color: gray;
+  border-style: solid;
+  border-width: 1px;
+  padding: 5px;
+  font-size: 0.7rem;
+}
+
+
+/* 좌, 우 선 제거 */
+.left {
+  border-left-width: 0;
+}
+
+.right {
+  border-right-width: 0;
+}
+
+
+/* 글자 중앙 정렬 */
+thead, .num1, .num2, .num3, .num4, .pic1, .pic2, .pic3, .pic4 {text-align: center;}
+
+.apply1, .apply2, .apply3, .apply4 {text-align: center;}
+
+
+
+/* thead 스타일 */
+thead {
+  background-color: blue;
+  color: white;
+  height: 30px;
+  border-top-color: black;
+  border-top-width: 2px;
+  border-top-style: solid;
+  border-bottom-color: black;
+  border-bottom-width: 2px;
+  border-bottom-style: solid;
+}
+
+
+/* tbody 배경색 */
+.tr4, .tr5, .tr6 {
+  background-color: rgb(159, 192, 230);
+}
+
+.tr10, .tr11, .tr12{
+  background-color: rgb(159, 192, 230);
+}
+
+
+/* tbody 아래쪽 진한 선 */
+.tr3 {
+  border-bottom-color: black;
+  border-bottom-width: 2px;
+  border-bottom-style: solid;
+}
+
+.tr6 {
+  border-bottom-color: black;
+  border-bottom-width: 2px;
+  border-bottom-style: solid;
+}
+
+.tr9 {
+  border-bottom-color: black;
+  border-bottom-width: 2px;
+  border-bottom-style: solid;
+}
+
+.tr12 {
+  border-bottom-color: black;
+  border-bottom-width: 2px;
+  border-bottom-style: solid;
+}

@@ -4,91 +4,8 @@
 <head>
   <meta charset="UTF-8">
   <title>7강 과제</title>
-  <style>
-
-    table {
-      width: 800px;
-      height: auto;
-      border-width: 1px;
-      border-collapse: collapse;
-    }
-
-    td {
-      border-width: 1px;
-      height: 25px;
-      border-color: gray;
-      border-style: solid;
-      border-width: 1px;
-      padding: 7px;
-    }
-
-    th {
-      padding: 7px;
-    }
-
-    .col1 {
-      width: 50px;
-      border-left-color: white;
-    }
-
-    .col2 {width: 130px;}
-    .col3 {width: 100px;}
-    .col4 {width: 100px;}
-    .col5 {width: 360px;}
-    .col6 {width: 60px;}
-
-
-    thead, .num1, .num2, .num3, .num4, .pic1, .pic2, .pic3, .pic4 {text-align: center;}
-
-    .apply1, .apply2, .apply3, .apply4 {text-align: center;}
-
-    thead {
-      background-color: blue;
-      color: white;
-      height: 30px;
-      border-top-color: black;
-      border-top-width: 2px;
-      border-top-style: solid;
-      border-bottom-color: black;
-      border-bottom-width: 2px;
-      border-bottom-style: solid;
-    }
-
-    .tr3 {
-      border-bottom-color: black;
-      border-bottom-width: 2px;
-      border-bottom-style: solid;
-    }
-
-    .tr4, .tr5, .tr6 {
-      background-color: rgb(159, 192, 230);
-    }
-
-    .tr6 {
-      border-bottom-color: black;
-      border-bottom-width: 3px;
-      border-bottom-style: solid;
-    }
-
-    .tr9 {
-      border-bottom-color: black;
-      border-bottom-width: 3px;
-      border-bottom-style: solid;
-    }
-
-    .tr10, .tr11, .tr12{
-      background-color: rgb(159, 192, 230);
-    }
-
-    .tr12 {
-      border-bottom-color: black;
-      border-bottom-width: 2px;
-      border-bottom-style: solid;
-    }
-
-    /* 표 양 옆에 선은 어떻게 없애야 하는지? */
-
-  </style>
+  <link rel="stylesheet" href="../css/a_06_assignment_table.css">
+  
 </head>
 
 <body>
@@ -109,25 +26,25 @@
 
     <thead>
       <tr>
-        <th>No.</th>
+        <th class="left">No.</th>
         <th>회사</th>
         <th>회사명</th>
         <th>마감일</th>
         <th>지원분야</th>
-        <th>링크</th>
+        <th class="right">링크</th>
       </tr>
     </thead>
     <tbody>
 
       <tr class="tr1">
-        <td rowspan="3" class="num1">1</td>
+        <td rowspan="3" class="num1 left">1</td>
         <td rowspan="3" class="pic1">
           <img src="../007_table_source/img/rockit.png" alt="로켓"> 
         </td>
-        <td>rockit</td>
-        <td>8.14</td>
-        <td>웹서비스</td>
-        <td rowspan="2">
+        <td><strong>rockit</strong></td>
+        <td><strong>8.14</strong></td>
+        <td><strong>웹서비스</strong></td>
+        <td rowspan="2" class="right">
           <div class="apply1">
             <a href="#">지원</a>
           </div>
@@ -137,18 +54,21 @@
         <td colspan="3">프론트엔드 개발자 최소 4,000만원 / 신입, 경력</td>
       </tr>
       <tr class="tr3">
-        <td colspan="4">클라우드 기술을 기반으로 IT기술 교육 서비스를 제공합니다.</td>
-      </tr>
+        <td colspan="4" class="right">
+          클라우드 기술을 기반으로 IT기술 교육 서비스를 제공합니다.
+        </td>
+      </tr> <!--// rockit -->
+
 
       <tr class="tr4">
-        <td rowspan="3" class="num2">2</td>
+        <td rowspan="3" class="num2 left">2</td>
         <td rowspan="3" class="pic2">
           <img src="../007_table_source/img/rich.png" alt="돈주머니"> 
         </td>
-        <td>rich</td>
-        <td>9.01</td>
-        <td>소프트웨어 개발</td>
-        <td rowspan="2">
+        <td><strong>rich</strong></td>
+        <td><strong>9.01</strong></td>
+        <td><strong>소프트웨어 개발</strong></td>
+        <td rowspan="2" class="right">
           <div class="apply2">
             <a href="#">지원</a>
            </div>
@@ -158,19 +78,20 @@
         <td colspan="3">웹 개발자 최소 2,500만원 / 신입</td>
       </tr>
       <tr class="tr6">
-        <td colspan="4">클라우드 기술을 기반으로 IT기술 교육 서비스를 제공합니다.</td>
-      </tr>
-
+        <td colspan="4" class="right"> 
+          클라우드 기술을 기반으로 IT기술 교육 서비스를 제공합니다.
+        </td>
+      </tr> <!--// rich -->
 
 
       <tr class="tr7">
-        <td rowspan="3" class="num3">3</td>
+        <td rowspan="3" class="num3 left">3</td>
         <td rowspan="3" class="pic3">
           <img src="../007_table_source/img/rose.png" alt="장미"> 
-        <td>rose</td>
-        <td>7.01</td>
-        <td>웹서비스, 소프트웨어 개발</td>
-        <td rowspan="2">
+        <td><strong>rose</strong></td>
+        <td><strong>7.01</strong></td>
+        <td><strong>웹서비스, 소프트웨어 개발</strong></td>
+        <td rowspan="2" class="right">
           <div class="apply3">  
             <a href="#" >지원</a>
           </div>
@@ -180,18 +101,20 @@
         <td colspan="3">프론트엔드 개발자 최소 4,000만원 / 신입, 경력</td>
       </tr>
       <tr class="tr9">
-        <td colspan="4">화훼 농작물 관리시스템 구축 서비스를 제공합니다.</td>
-      </tr>
+        <td colspan="4" class="right">
+          화훼 농작물 관리시스템 구축 서비스를 제공합니다.
+        </td>
+      </tr> <!--// rose -->
 
 
       <tr class="tr10">
-        <td rowspan="3" class="num4">4</td>
+        <td rowspan="3" class="num4 left">4</td>
         <td rowspan="3" class="pic4">
           <img src="../007_table_source/img/gell_gom.png" alt="젤리곰"> 
-        <td>젤곰</td>
-        <td>7.24</td>
-        <td>개발</td>
-        <td rowspan="2">
+        <td><strong>젤곰</strong></td>
+        <td><strong>7.24</strong></td>
+        <td><strong>개발</strong></td>
+        <td rowspan="2" class="right">
           <div class="apply4">
             <a href="#">지원</a>
           </div>
@@ -201,8 +124,12 @@
         <td colspan="3">프론트엔드 개발자 최소 3,000만원 / 신입, 경력</td>
       </tr>
       <tr class="tr12">
-        <td colspan="4">캐릭터 사업분야로 게임 및 웹개발 산업 분야</td>
-      </tr>
+        <td colspan="4" class="right">
+          캐릭터 사업분야로 게임 및 웹개발 산업 분야
+        </td>
+      </tr> <!--// 젤곰 -->
+
+
     </tbody>
   </table>
 </body>
