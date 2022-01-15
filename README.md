@@ -10,7 +10,7 @@
 - [실습 문서](a_asset/actualtest.md) 작성
 
 ## 웹 기초
-[학습과정](b_basic/index.html)
+[학습과정](b_step_01/index.html)
 <br />
 
 ### HTML 기본 코드
