@@ -88,12 +88,17 @@ absolute :
 
 /*
 relative
-- 자신을 기준으로 위치를 처리하는 속성
+- 자신을 기준으로 위치를 처리하는 속성 (결과적으로 상하좌우 반전이 된다.)
 - top, left, z-index 등 position에서 쓸 수 있는 속성들이 적용되나, 
 자기 자신만 그 값의 적용을 받으며 다른 요소들에는 그 적용으로 인한 영향을 주지 않는다.
-
 */
 .relative {
+  /* 
+  상하좌우 반전이 아닌가 싶기도 하겠지만,
+  relative라는 도형과 빈 공간을 보았을 때,
+  빈 공간 시점에서 relative를 기준으로 보면,
+  빈 공간은 그 기준으로부터 bottom 50px, right 50px 이동해 있다.
+  */
   position: relative;
   bottom: 50px; right : 50px
 }
