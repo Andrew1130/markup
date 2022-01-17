@@ -1,3 +1,42 @@
 /* common.css (공통적으로 자주 사용하는 기능들) */
 .clearfix:after,
 .clearfix::after { content: ""; display: block; width: 100%; height: 0; clear: both; }
+
+.none { display: none; }
+
+
+/* 코드 예제 세팅 */
+.code_exam {
+  width: 1200px; height: auto; min-height: 1000px;
+  margin: auto;
+  background-color: #eee;
+}
+
+.code_exam h1 {
+  width: 100%; height: auto;
+  font-size: 20px; 
+  font-weight: 900;
+  text-align: center;
+  padding: 10px;
+}
+
+.code_exam .part {
+  width: 90%; height: auto;
+  margin: auto; margin-top: 20px;
+  padding: 20px; box-sizing: border-box;
+  border: 1px solid black;
+  background-color: lightgoldenrodyellow;
+}
+
+.code_exam h2 {
+  width: 100%; height: auto;
+  margin-bottom: 10px;
+  border-bottom: 1px solid black;
+  font-weight: 700;
+}
+
+.code_exam .ex_wrap {
+  width: 100%; height: auto; box-sizing: border-box;
+  padding: 20px; border-radius: 10px;
+  background-color: linen;
+}

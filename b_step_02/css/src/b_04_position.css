@@ -1,0 +1,103 @@
+/* b_04_position.css */
+
+
+.ex_wrap > ul {
+  width: 100%; height: auto;
+  border: 1px solid black;
+  box-sizing: border-box;
+}
+
+.ex_wrap li {
+  float: left;
+  width: 100px; height: 100px;
+  font-weight: 700; font-size: 20px;
+  text-align: center;
+  padding-top:40px;
+  box-sizing: border-box;
+  /*
+  background-color: white;
+  background-image: linear-gradient(45deg, #acf, #fda);
+  */
+}
+
+.static { background-color:   #C3FD46; }
+.fixed { background-color:    #D852EF; }
+.absolute { background-color: #546DAA; }
+.relative { background-color: #FA6A96; }
+.default {background-color:   #0C895C; }
+
+
+/* ----------------------------- */
+#wrap { height: 5000px; }
+
+
+/* 
+static :
+- position의 기본값
+- top, left, z-index 등 position에서 쓸 수 있는 속성들이 적용되지 않는다.
+*/
+
+.static {
+  position: static;
+  top:1000px; left:500px; z-index: 100;
+}
+
+
+/* 
+fixed :
+- position의 배치방법 중 하나. 이 방법으로 배치할 경우 브라우저에 완전 고정되어,
+스크롤바나 화면 확장 등의 영향과 무관히 배치된 영역에 그대로 고정된다.
+- fixed만 쓰고 다른 것을 전혀 쓰지 않으면 부모 요소 기준 제일 왼쪽 상단에 배치
+- right:0 과 left:0 동시에 쓰면 left:0 이 우선한다.
+- top:0과 bottom:0 동시사용 시 top:0이 우선
+- right:0; left:0; top:0; bottom: 0; 을 모두 쓰고 margin:auto를 주면 해당 요소는 정중앙에 고정 배치된다.
+또한 위 4 값 중 하나를 키우면, |(키운 값 - 대응하는 방향의 값)| / 2 만큼 해당 요소가 정중앙에서 밀려 고정된다.
+*/
+
+.fixed {
+  position: fixed;
+  top:0px; left:0; 
+  /* right:0; bottom: 0;
+  margin: auto; */
+}
+
+
+/*
+absolute :
+- position의 배치방법 중 하나. 이 방법으로 배치할 경우,
+화면 확장과는 무관히 배치된 영역에 그대로 고정되나, 스크롤바에 의해서는 움직이게 된다.
+- right:0; left:0; top:0; bottom: 0; 을 모두 쓰고 margin:auto 주면 fix와 같이 정중앙 배치된다.
+다만 화면 확장에 대해서만 무관하게 정중앙 고정되며, 스크롤바에 의해서는 고정이 풀린다(움직인다).
+- absolute 기준 부모나 조상 중 어느 속성에 position이 있으면(static 제외), 
+그 속성을 기준으로 absolute가 적용되며, 그렇지 않으면 브라우저 기준으로 적용된다. 
+*/
+.absolute {
+  position: absolute;
+  bottom: -100px; left: 0;
+
+  /* 
+  z-index
+  - 기본값은 0
+  - 값이 작을수록 뒤로 밀려 가려 보이고, 클수록 앞으로 나와 먼저 보인다. (원칙)
+  - 같은 속성 혹은 범주가 아니면 위 원칙에서 예외가 될 수도 있다.
+  - 다만 z-index를 마이너스로 둘 때 전체 배경이 기본값이면, 마이너스 요소가 선택이 안 되므로 주의.
+  */
+  z-index: 1;
+}
+
+
+/*
+relative
+- 자신을 기준으로 위치를 처리하는 속성
+- top, left, z-index 등 position에서 쓸 수 있는 속성들이 적용되나, 
+자기 자신만 그 값의 적용을 받으며 다른 요소들에는 그 적용으로 인한 영향을 주지 않는다.
+
+*/
+.relative {
+  position: relative;
+  bottom: 50px; right : 50px
+}
+
+.ex_wrap > ul {
+  position: relative;
+}
