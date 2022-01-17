@@ -46,3 +46,13 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+
+/* 시멘틱 태그 */
+
+/* 
+구형 브라우저는 시멘틱 태그를 인지하지 못하므로, 
+이에 대비하여 아래 태그는 크기 조절이 가능하도록 설정 
+*/
+header, article, section, footer, nav, aside, figure, figcaption, main {
+  display: block;
+}

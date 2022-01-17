@@ -1,0 +1,69 @@
+/* b_02_nthOfType.css */
+
+.code_exam {
+  width: 900px; height: auto; min-height: 1000px;
+  margin: auto;
+  background-color: #eee;
+}
+
+.code_exam h1 {
+  width: 100%; height: auto;
+  font-size: 20px; 
+
+  /* 가져온 폰트에 900이 없어도, 가장 가까운 값[700]이 사용된다. */
+  font-weight: 900;
+  text-align: center;
+  padding: 10px;
+}
+
+.code_exam .part {
+  width: 90%; height: auto;
+  margin: auto; margin-top: 20px;
+  padding: 20px; box-sizing: border-box;
+  border: 1px solid black;
+  background-color: lightgoldenrodyellow;
+}
+
+.code_exam h2 {
+  width: 100%; height: auto;
+  margin-bottom: 40px;
+  padding: 10px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid black;
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.code_exam .n_child,
+.code_exam .n_child_02 {
+  padding: 20px; border-radius: 10px;
+  background-color: linen;
+}
+
+.code_exam .list {
+  list-style: decimal;
+  margin-left: 30px;
+  margin-bottom: 20px;
+}
+
+.none { display: none; }
+
+
+/* ------------------------------------------- */
+
+/* 속성명:nth-of-type() 사용시 같은 속성에만 순서가 부여된다. 다른 것은 세지 않는다. */
+.n_of_01 dt:nth-of-type(1) { color: rgb(226, 39, 39); font-weight: 700; font-size: 20px; }
+.n_of_01 dt:nth-of-type(2) { color: rgb(226, 39, 39); font-weight: 700; font-size: 20px; }
+.n_of_01 dt:nth-of-type(3) { color: rgb(226, 39, 39); font-weight: 700; background-color: yellow; font-size: 20px; }
+
+.n_of_01 dd:nth-of-type(2) { border: 2px solid black; }
+.n_of_01 dd:nth-of-type(3) { margin-bottom: 50px; } 
+.n_of_01 dd:nth-of-type(8) { margin-bottom: 50px; } 
+
+.n_of_01 dd:first-of-type { font-size: 20px; }
+.n_of_01 dd:last-of-type { font-size: 20px; font-weight: 700; }
+
+.n_of_01 dd:nth-last-of-type(3) { border: 2px dotted black }
+
+.n_of_01 dd:empty {height: 30px; background-color: lightgray;}
+.n_of_01 dd:not(.list) { background-color: lightsalmon; }

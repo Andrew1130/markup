@@ -1,0 +1,98 @@
+/* b_01_nthChild.css */
+
+
+.code_exam {
+  width: 900px; height: auto; min-height: 1000px;
+  margin: auto;
+  background-color: #eee;
+}
+
+.code_exam h1 {
+  width: 100%; height: auto;
+  font-size: 20px; 
+
+  /* 가져온 폰트에 900이 없어도, 가장 가까운 값[700]이 사용된다. */
+  font-weight: 900;
+  text-align: center;
+  padding: 10px;
+}
+
+.code_exam .part {
+  width: 90%; height: auto;
+  margin: auto; margin-top: 20px;
+  padding: 20px; box-sizing: border-box;
+  border: 1px solid black;
+  background-color: lightgoldenrodyellow;
+}
+
+.code_exam h2 {
+  width: 100%; height: auto;
+  margin-bottom: 10px;
+  border-bottom: 1px solid black;
+  font-weight: 700;
+}
+
+.code_exam .n_child,
+.code_exam .n_child_02 {
+  padding: 20px; border-radius: 10px;
+  background-color: linen;
+}
+
+.code_exam .list {
+  list-style: decimal;
+  margin-left: 30px;
+  margin-bottom: 20px;
+}
+
+.none { display: none; }
+
+/* ----------------------------------- */
+
+/* 순서에 따른 선택자 지정 */
+
+.n_child li { font-weight: 700; }
+.n_child li:first-child { color: crimson }
+.n_child li:nth-child(1) { text-decoration: underline; }
+.n_child li:nth-child(3) { color: mediumslateblue; }
+.n_child li:nth-child(10) { color: palevioletred; }
+
+/* last-child : 마지막의 순번이 변해도 마지막을 계속 지정할 수 있음 */
+.n_child li:last-child { 
+  color: purple; 
+  margin-bottom: 0;
+}
+
+/* css nth-child에서 첫번째를 가리키는 숫자는 0이 아니라 1이다. */
+.n_child li:nth-child(1) { font-size: 24px; }
+
+/* nth-last-child : 순번을 거꾸로 지정한다. */
+.n_child li:nth-last-child(1) { font-size: 24px; }
+.n_child li:nth-last-child(3) { background-color: yellow; }
+
+/*
+.n_child li:nth-child(3) { list-style: disc; }
+.n_child li:nth-child(6) { list-style: disc; }
+.n_child li:nth-child(9) { list-style: disc; }
+.n_child li:nth-child(12) { list-style: disc; } ...
+
+3n으로 위 코드를 한번에 표현 가능 (-, + 사용해 시작점 조절도 가능하다)
+*/
+
+.n_child li:nth-child(5n) { list-style: disc; }
+.n_child li:nth-child(5n-3) { background-color: steelblue;}
+
+
+/* ---------------------------------------- */
+
+.n_child_02 dt:nth-child(1) { font-weight: 700; color: crimson;}
+.n_child_02 dt:nth-child(2) { font-weight: 700; color: crimson;} /* 적용안됨 */
+.n_child_02 dt:nth-child(6) { font-weight: 700; color: crimson;} /* 적용됨 */
+
+.n_child_02 dd:nth-child(6) { font-weight: 700; background-color: yellow;} /* 적용안됨 */
+.n_child_02 .list:nth-child(6) { font-weight: 700; background-color: yellow;} /* 적용됨 */
+
+/* 
+위와 같은 issue 때문에, nth-child 지정할 때 가장 편한 방법은,
+같은 레벨의 요소끼리만 쓰거나 (li면 li끼리만, dt면 dt끼리만), 아니면,
+지정할 영역에 모두 class를 부여해서 쓰는 것이다. 
+*/
