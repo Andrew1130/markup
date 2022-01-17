@@ -5,10 +5,12 @@
 - 웹 역사
 - 통신개념
 <br />
+<br />
 
 ## 마크다운
 - [마크다운 파일](a_asset/markdown.md)을 이용하여, 사용법 이해
 - [실습 문서](a_asset/actualtest.md) 작성
+<br />
 <br />
 
 ## 웹 기초
@@ -19,6 +21,7 @@
 - [리스트](b_step_01/html/a_04_list.html)
 - [이미지 및 링크](b_step_01/html/a_05_img_anker.html)
 - [테이블 기초 구조](b_step_01/html/a_06_table_01.html)
+<br />
 
 ### CSS 기본 코드
 #### step 01
@@ -33,13 +36,14 @@
 - [float의 이해](b_step_01/html/a_15_float.html)
 - [display 및 유사기능](b_step_01/html/a_16_display.html)
 - [overflow - 넘치는 영역](b_step_01/html/a_17_overflow.html)
-<br />
 
 #### step 02
 - [nth-child](b_step_02/html/b_01_nthChild.html)
 - [nth-of-type](b_step_02/html/b_02_nthOfType.html)
 - [의미를 가지는 영역 - semantic 구조](b_step_02/html/b_03_semantic.html)
 - [포지션 기본개념](b_step_02/html/b_04_position.html)
+<br />
+<br />
 
 ### 웹 레이아웃 제작 및 기타
 - [레이아웃 연습 001](b_step_01/html/a_18_layout_01.html)
