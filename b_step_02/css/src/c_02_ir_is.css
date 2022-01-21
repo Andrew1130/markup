@@ -1,0 +1,143 @@
+/* c_02_ir_is.css */
+
+
+
+/*! IR 기법 */
+
+.ir { margin-top: 10px; }
+.ir > li {
+  float: left; width: 80px; height: 80px;
+  border: 1px solid #222;
+  margin: 20px;
+  background-color: #fff;
+  background-image: url("../../img/icon_color/001-twitter.png");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: 50% auto;
+  }
+
+
+
+/*? 이미지 위의 글씨를 보이지 않도록 하는 방법들 */
+
+/** font-size */
+  .ir > li:nth-child(1) { font-size: 0; }
+
+
+/** text-indent + overflow:hidden */  
+  .ir > li:nth-child(2) { 
+    /* 지정된 영역(box)을 벗어나도록 값 조정 */
+    text-indent: -9999px; 
+
+    /* 영역을 벗어난 부분은 가려지도록 처리 */
+    overflow: hidden; 
+  }
+
+
+/** position */
+.ir > li:nth-child(3) > span {
+  position: absolute; z-index: -1;
+}
+
+
+/** overflow */
+.ir > li:nth-child(4) > span {
+  display: block;
+  width: 0; height: 0;
+  overflow: hidden;
+}
+
+
+/*? 일부 텍스트 숨기기 */
+
+.ir > li:nth-child(5) > span {
+  display: block;
+  position: absolute;
+  z-index: -1;
+  width: 0; height: 0;
+  overflow: hidden;
+}
+
+
+
+/*? 이미지 전체에 링크 기능 설정하고, 링크 글자는 지우기 */
+
+.ir > li:nth-child(6) {
+  background-image: url("../../img/icon_color/003-github.png");
+}
+
+.ir > li:nth-child(6) > a {
+  display: block;
+  width: 100%; height: 100%;
+}
+
+.ir > li:nth-child(6) > a > span {
+  display: block;
+  width: 0; height: 0; overflow: hidden;
+  position: absolute;
+}
+
+
+
+/*? 종합 처리 */
+
+.ir > li:nth-child(7) {
+  background-image: none;
+}
+
+.ir > li:nth-child(7) > a {
+  display: block;
+  width: 100%; height: 100%;
+  background-image: url("../../img/icon_color/007-reddit.png");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: 50% auto;
+}
+
+.ir > li:nth-child(7) > a:focus,
+.ir > li:nth-child(7) > a:hover {
+  display: block;
+  width: 100%; height: 100%;
+  background-image: url("../../img/icon_color/006-dropbox.png");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: 50% auto;
+}
+
+
+
+
+/*! IS 기법 */
+
+/*? 초기 설정 */
+.code_exam .is { margin-top: 10px; background-color: #adf; }
+.is li {
+  float: left; width: 100px; height: 100px;
+  margin: 10px; border: 1px solid #222;
+  background-color: #fff;
+}
+
+.is li a {
+  display: block; width: 64px; height: 64px;
+  background-color: #fda;
+  background-image: url(../../img/icon_color/icon_sprite.png);
+  background-repeat: no-repeat; background-position: 0 0;
+  background-size: auto 64px;
+}
+
+.is li a:hover { background-color: lightgreen; }
+.is li a:focus { border: 2px solid #333; }
+
+.is a > span {
+  display: block; position: absolute; z-index: -1;
+  width: 0; height: 0; overflow: hidden;
+}
+
+
+/*? 기법 사용 : 박스 타일을 왼쪽(-)으로 밀면서 원하는 것만 나타내기 */
+
+/* 아이콘 너비 64px + 간격 너비 10px = 74px */
+.is li:nth-child(2) > a { background-position: -74px 0; }
+.is li:nth-child(3) > a { background-position: -148px 0; }
+.is li:nth-child(4) > a { background-position: -222px 0; }
+.is li:nth-child(5) > a { background-position: -296px 0; }
