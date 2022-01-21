@@ -1,0 +1,185 @@
+/* c_01_img_vs_background.css */
+
+.img_area {
+  float:left;
+  width: 200px; height: 200px;
+  margin-right: 150px;
+  border: 1px solid #777;
+  border-radius: 5px;
+}
+
+.img_01 { overflow: hidden; }
+.img_01 img {
+  width: auto; height: auto;
+  min-width: 100%; min-height: 100%;
+  margin-top: -30px;
+}
+
+
+.img_02 {
+  background-image: url("../../img/card_image/mini_card_bg-3.png");
+
+/* 
+css로 불러올 때 위와 같이만 작성하면
+box와 이미지 사이즈가 맞지 않으면 이미지가 반복된다.
+아래와 같이 추가 설정 가능하다.
+*/
+
+  background-repeat: no-repeat; /* 반복하지 않도록 */
+  background-position: center; /* 위치 - 중앙 */
+  background-size: cover; /* 이미지가 박스에 꽉 차도록 */
+  font-size: 0;
+}
+
+.img_02 > span {
+  display: block;
+  width: 0; height: 0; overflow: hidden;
+}
+
+.img_03 {
+  background:center no-repeat url(../../img/card_image/mini_card_bg-5.png);
+  background-size: cover;
+  font-size: 0;
+}
+
+
+/* ------------------------------------------------------- */
+
+
+.bg_02 > li {
+  width: 500px; height: 200px;
+  border: 1px solid #555;
+  margin-bottom: 100px;
+}
+
+.bg_02 > li:first-child {
+  background-image: url(../../img/icon/001-placeholder.png),
+  url("../../img/icon/001-placeholder.png");
+  background-repeat: repeat-y, repeat-x;
+  /*
+  background-repeat :
+  repeat || no-repeat || repeat-x || repeat-y;
+  */
+}
+
+.bg_02 > li:nth-child(2) {
+  background-image: url(../../img/icon/003-smartphone.png);
+  background-repeat: no-repeat;
+  background-position: center center; /* 앞이 x, 뒤가 y */
+  /*
+  1. 아래와 같이 x, y를 나눠 쓸 수도 있다.
+  background-position-x: center;
+  background-position-y: top;
+
+  2. x, y 중 어느 하나를 생략하면 center로 처리된다.
+  */
+}
+
+.bg_02 > li:nth-child(3) {
+  background-image: url(../../img/icon/003-smartphone.png);
+  background-repeat: no-repeat;
+  background-position: 100% 0;
+}
+
+.bg_02 > li:nth-child(4) {
+  height: 300px;
+  background-image: url("../../img/card_image/mini_card_bg-4.png");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+
+  /*
+  background-size 값
+  1. cover : 박스에 이미지를 꽉 채운다. 단 이미지가 잘릴 수 있다.
+  2. contain : 박스 가로 혹은 세로에 이미지를 맞춰, 이미지 전체를 보여준다(이미지가 잘리지 않는다. 대신 박스가 빌 수 있다.)
+
+  +
+  - 100% auto : 가로로 꽉 차게 이미지 크기 조정
+  - auto 100% : 세로로 꽉 차게 조정
+  - auto 200px : 높이는 200px로, 너비는 높이에 맞게 조정
+  */
+  background-size: contain;
+}
+
+.bg_02 > li:nth-child(5) {
+  height: 300px;
+  background-image: url("../../img/card_image/mini_card_bg-5.png");
+  background-repeat: no-repeat;
+  background-position: center;
+
+  background-size : auto 200px
+}
+
+.bg_02 > li:nth-child(6) {
+  background-image: url("../../img/background/lucas-clara-hvPB-UCAmmU-unsplash.jpg");
+  background-repeat: no-repeat;
+  background-position: 50% 0;
+  background-size: cover;
+
+    /*
+    background-attachment
+    1. scroll : 기본값, 스크롤 움직여도 박스상 이미지는 영향 無
+    2. fixed : 스크롤을 움직이면 박스의 이미지가 스크롤에 따라 이동
+    */
+
+  background-attachment: fixed;
+}
+
+.bg_02 > li:nth-child(7) {
+  width: 100%;
+  background-image: 
+
+  /* 
+  여기서 쌓은 순서대로 배치된다.
+  즉 card-7이 제일 먼저 노출되고, 그 뒤에 9가 노출되며, 
+  마지막이 카메라.
+  세 이미지가 겹치지 않으면 문제가 없지만
+  겹칠 경우 위에 쌓인 것부터 보이는 것에 유의
+  */
+
+  url("../../img/card_image/mini_card_bg-7.png"), 
+  url("../../img/card_image/mini_card_bg-9.png"),
+  url("../../img/icon/006-photo-camera.png");
+
+  background-repeat: repeat-y, repeat-y, repeat ;
+  background-position: 0 0, 100% 0, 0 0;
+  background-size: auto 50%, auto 50%, auto 30%;
+}
+
+.bg_02 > li:nth-child(8) {
+  background-image: url("../../img/background/konstantin-kleine-V1NVvXmO_dk-unsplash.jpg");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: 150% auto;
+
+  padding: 50px; 
+  border: 30px dotted #fa0;
+  font-size: 80px; font-weight: 900;
+
+  /* line-height : 글자 위치 조정 */
+  line-height: 1.3;
+  text-align: center;
+
+  /* 
+  background-clip
+  1. border-box; : 이미지를 테두리 끝까지 채운다.
+  2. padding-box : 패딩 범위까지만 채운다.
+  3. content-box : 내용 범위까지만 채운다.
+  4. text [표준 기술 아님] : 텍스트만 채운다.
+  >> 표준 기술이 아니므로, -webkit- 등의 접두사를 붙여 써야 한다.
+  */
+
+  background-clip: text;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -o-background-clip: text;
+  color: transparent;
+}
+
+
+/*
+.bg_02 > li:nth-child(8) span {
+  display: block;
+  width: 100; height: 100%;
+  background-color: rgba(30, 30, 30, 0.3);
+}
+*/

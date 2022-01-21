@@ -4,6 +4,9 @@
 
 .none { display: none; }
 
+.first_margin li:first-child { margin-left: 0; }
+.last_margin li:last-child { margin-right: 0; }
+
 
 /* 코드 예제 세팅 */
 .code_exam {
