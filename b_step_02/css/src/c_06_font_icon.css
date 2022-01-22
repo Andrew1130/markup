@@ -1,0 +1,22 @@
+/* c_06_font_icon. */
+
+
+.ex_wrap li { margin: 20px;}
+
+  .ex_wrap li:nth-child(1) {
+    font-size: 2rem;
+    color : blue
+  }
+
+  .ex_wrap li:nth-child(2) {
+    font-size: 1.5rem;
+  }
+  
+    .ex_wrap li:nth-child(2):hover {
+      color : lightsalmon
+    }
+
+    .ex_wrap li:nth-child(3) {
+      font-size: 1.5rem;
+    }
+    
