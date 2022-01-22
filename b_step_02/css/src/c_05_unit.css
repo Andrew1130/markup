@@ -1,0 +1,146 @@
+/* c_05_unit.css */
+
+
+/* 
+:root {} 
+- css의 초기값을 의미
+- {} 안에 아무것도 쓰지 않으면 브라우저 기본값을 의미함
+- font-size의 경우 브라우저 기본값은 16px. 단 이게 맞지 않으면 root로 16px을 주기도 한다.
+*/
+
+.code_exam { width: 900px; }
+
+
+/* 공통 색상 ------------------- */
+
+.unit_set { color: #fff; background-color: #fa7;}
+.unit_set p { 
+  margin: auto;
+  position: relative; top:15px;
+  margin-top:5px; color: #171717; background-color: #fa1; 
+}
+.unit_set button { 
+  position: absolute; left: 0; top: 15%;
+  margin-left:15px; text-align: left; 
+  background-color: #fff; color: #222; 
+  padding-bottom: 110px;
+  box-sizing: border-box;
+}
+.unit_set span { 
+  position: absolute; left: 0;
+  margin-left:15px;
+  display: block;
+  background-color: rgba(50, 50, 50, 0.5); color: #222;
+  margin-top: 20px;
+}
+.unit_set strong {
+  position: absolute; top:15%;
+  margin-left:15px;
+  background-color: rgba(10,10,10,0.5);  color:#fff;
+  display: block;
+}
+
+
+/*? pixel값 단위 --------------------- */
+
+.pixel_unit { width: 640px; height: 640px; } 
+.pixel_unit p { width: 320px; height: 320px; }
+.pixel_unit button { width: 160px; height: 160px; }
+.pixel_unit span { width: 320px; height: 320px; }
+.pixel_unit strong { width: 160px; height: 160px; }
+
+
+
+/*? point값 단위(pt) --------------------- */
+
+/*
+px를 pt로 변환하기 : 16px == 12pt 임을 이용.
+1. 640px >> 640 : x = 16 : 12, x =  480
+즉 640px는 480pt.
+
+
+*/
+.point_unit { width: 480pt; height: 480pt;}
+.point_unit p { width: 240pt; height: 240pt;}
+.point_unit button { width: 120pt; height: 120pt;}
+.point_unit span { width: 240pt; height: 240pt;}
+.point_unit strong { width: 120pt; height: 120pt;}
+
+
+
+/*? pixel값 단위 --------------------- */
+
+/* %의 기준은 부모, 조상 요소다. */
+.percent_unit { width: 640px; height: 640px; } 
+.percent_unit p { width: 50%; height: 50%; } /* 640의 절반 320 */
+.percent_unit button { width: 50%; height: 50%; } /* 320의 절반 160 */
+.percent_unit span { width: 200%; height: 200%; } /* 160의 2배 320 */
+.percent_unit strong { width: 50%; height: 50%; } /* 320의 절반 160 */
+
+
+
+/*? em값 단위 --------------------- */
+
+/* 
+font-size와 em은 연결되어 있다. 
+:root{} [브라우저 default값] 의 font-size가 16px이고
+em이 적용되는 요소나 그 부모 요소에 별도의 font-size가 없으므로
+여기서는 1em === 16px으로 적용된다.
+*/
+
+/* 
+16px(root font-size 16인 경우) === 12pt === 100% === 1em 
+*/
+
+.em_unit { width: 40em; height: 40em; } 
+.em_unit p { width: 20em; height: 20em; }
+.em_unit button { width: 10em; height: 10em; }
+.em_unit span { width: 20em; height: 20em; }
+.em_unit strong { width: 10em; height: 10em; }
+
+
+
+/*? rem값 단위 --------------------- */
+
+/* 16px(root font-size 16인 경우) === 12pt === 100% === 1em === 1rem */
+.rem_unit { width: 40rem; height: 40rem; } 
+.rem_unit p { width: 20rem; height: 20rem; }
+.rem_unit button { width: 10rem; height: 10rem; }
+.rem_unit span { width: 20rem; height: 20rem; }
+.rem_unit strong { width: 10rem; height: 10rem; }
+
+
+
+/*? em값 단위 + font-size --------------------- */
+
+
+/* 
+기본은 16px(root의 default font-size가 16이니까) === 1em 이지만, 
+font size 20px가 되면 1em === 20px가 된다.
+
+font-size의 em도 상대적 기준이므로, %처럼 부모, 조상 요소를 기준으로 한다.
+*/
+
+.em_unit_2 { width: 40em; height: 40em; font-size: 16px;} 
+.em_unit_2 p { width: 20em; height: 20em; font-size: 1em;} /* 1em === 16px */
+.em_unit_2 button { width: 20em; height: 20em; font-size: 0.5em;} /* 0.5em == 8px */ 
+.em_unit_2 span { width: 20em; height: 20em; font-size: 2em;} /* 2em = 32px */
+.em_unit_2 strong { width: 10em; height: 10em; font-size: 1.5em; }
+
+
+
+/*? rem값 단위 + font-size --------------------- */
+
+.part:not(.part:last-child) { display: none; }
+
+/* 
+기본은 16px(root의 default font-size가 16이니까) === 1rem 이다.
+단 root의 font-size가 변하면 그 size가 1rem이 된다.
+
+*/
+
+.rem_unit_2 { width: 40rem; height: 40rem; font-size: 1.5rem; } 
+.rem_unit_2 p { width: 20rem; height: 20rem; font-size: 1rem; }
+.rem_unit_2 button { width: 10rem; height: 10rem; font-size: 1.2rem; } 
+.rem_unit_2 span { width: 20rem; height: 20rem; font-size: 2rem; } 
+.rem_unit_2 strong { width: 10rem; height: 10rem; font-size: 1rem; }
