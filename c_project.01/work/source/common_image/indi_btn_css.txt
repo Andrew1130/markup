@@ -1,0 +1,23 @@
+.icon {
+    background: url('indi_btn.png') no-repeat top left;
+}
+.icon.new_indi_base {
+    background-position: 0 0;
+    width: 34px;
+    height: 34px;
+}
+.icon.new_indi_selector {
+    background-position: -44px 0;
+    width: 34px;
+    height: 34px;
+}
+.icon.slideBox_next {
+    background-position: -88px 0;
+    width: 64px;
+    height: 44px;
+}
+.icon.slideBox_prev {
+    background-position: -162px 0;
+    width: 64px;
+    height: 44px;
+}
