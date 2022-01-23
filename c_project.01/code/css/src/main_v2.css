@@ -47,7 +47,8 @@ min-width을 1200px로 설정
   background-color: #fff;
   padding: 20px 100px 10px;
   box-sizing: border-box;
-  position: fixed; top: 0;
+  position: fixed; top:0;
+  z-index: 100;
 }
 
 .area_head {
@@ -162,37 +163,89 @@ min-width을 1200px로 설정
 
 /* slideBox ----------------------- */
 #slideBox {
-  width: 100%; height: 600px;
   margin-top: 100px;
+  width: 100%; height: 600px;
   box-sizing: border-box;
-  background-color: #aaa;
+  /* background-color: #aaa; */
 }
 
-#adCon_01 {
+.slide_area { 
+  width: 100%; height: 100%; padding-top: 150px;
+  background-image: url("../../img/main_page/02_slideBox/slide_bg_1.png");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: cover;
+}
+
+.slide_content {
+  position: relative;
   width: 780px; height: 400px;
-  background-color: #ddd;
+  /* background-color: #ddd; */
   display: block;
   box-sizing: border-box;
   margin:auto;
 }
 
-.slide_area { 
-  width: 100%; height: 100%; padding-top: 100px;
-  background-image: url("../../img/main_page/02_slideBox/")
-}
+  .slide_content_part { 
+    position: absolute; top: 0; bottom: 0;
+    margin: auto;
+    width: 300px; height: 264px;
+    /* background-color: #fff; */
+  } 
 
-.btns { 
-  margin-top: -420px;
-  width: 100%; background-color: #ccc;
-}
-.btns button { 
-  width: 60px; height: 
-  40px; cursor: pointer;
-}
+    .slide_content_part h3 {
+      width: 100%; height: 60px;
+      font-size: 2.5rem; font-weight: 700;
+      line-height: 60px;
+      margin-bottom: 10px;
+      color: #171717; text-transform: capitalize;
+    }
+
+    .slide_content_part p {
+      width: 100%; height: 140px;
+      font-size: 1.125rem; color:#505050;
+      line-height: 150%;
+    }
+
+    .slide_content_part .link {
+      width: 220px; height: 50px;
+    }
+
+      .link a {
+        display: block;
+        border-radius: 10px;
+        width: 100%; height: 100%;
+        line-height: 50px;
+        color: #fff; background-color: #1a5d54;
+        font-size: 22px;
+        font-size: 1.375rem; 
+        font-weight: 700;
+
+        padding: 0 18px; box-sizing: border-box;
+      }
+
+        .link a i { float: right; margin-top: 15px;}
+        .link a:hover { text-decoration: underline;}    
+        .link a:focus { outline: 2px solid #ffbd55;}
+
+  .slide_img_part { 
+    float: right; 
+    width: 388px; height: 408px;
+   } 
+
+    .slide_img_part > div {
+      width: 100%; height: 100%;
+      background-repeat: no-repeat; background-position: 0, 0;
+      background-size: contain;
+    }
+
+    .slide_01 {
+      background-image: url("../../img/main_page/02_slideBox/slide_main_1.png");
+    }
+
 
 .next_btn { 
-  float: right; 
-  border: 0 solid black; 
+  position: absolute; top: 55%; right: 0;
   background-image: url("../../img/common_image/indi_btn.png");
   background-repeat: no-repeat;
   background-position: -88px 0;
@@ -203,8 +256,7 @@ min-width을 1200px로 설정
   .next_btn:hover { background-color: #777; }
 
 .prev_btn { 
-  float: left;
-  border: 0 solid black;
+  position: absolute; top: 55%; left: 0;
   background-image: url("../../img/common_image/indi_btn.png");
   background-repeat: no-repeat;
   background-position: -162px 0;
@@ -214,18 +266,23 @@ min-width을 1200px로 설정
   .prev_btn:focus,
   .prev_btn:hover { background-color: #777; } 
 
+
 /* newBox ----------------------- */
 #newBox {
-  width: 100%; height: 700px;
-  padding-top: 62px;
+  margin-top: 100px;
+  width: 100%; height: 750px;
+  padding-top: 112px;
   box-sizing: border-box;
-  background-color: #eee;
+  /* background-color: #eee; */
 }
 
 .area_title {
   width:940px; height: 70px;
-  margin: auto;
-  background-color: #ccc;
+  margin: auto; padding-top: 10px; box-sizing: border-box;
+  /* background-color: #ccc; */
+  font-size: 40px;
+  font-size: 2.5rem; 
+  font-weight: 700;
 }
 
 .area_content {
@@ -236,16 +293,22 @@ min-width을 1200px로 설정
   margin-bottom: 50px;
   */
   margin : 48px auto 50px;
-  background-color: #ccc;
+  /* background-color: #ccc; */
 }
 
-  #newBox li {
+  #newBox > .area_content li {
     display: block;
     float: left;
     width: 300px; height: 370px;
     margin-right: 19px;
-    background-color: aquamarine;
+    /* background-color: aquamarine; */
   }
+
+    .area_content li a:focus {}
+    .area_content li a:hover {}
+    .area_content li:nth-child(1) a {background-image: url(../../img/main_page/03_newBox/new_product_01.png);}
+    .area_content li:nth-child(2) a {background-image: url(../../img/main_page/03_newBox/new_product_02.png);}
+    .area_content li:nth-child(3) a {background-image: url(../../img/main_page/03_newBox/new_product_03.png);}
 
     #newBox li.area_content_li_end {
       float: right;
@@ -254,9 +317,19 @@ min-width을 1200px로 설정
 
 .area_indicator {
   width: 140px; height: 30px;
-  margin: auto;
+  margin: auto; 
   background-color: #ccc;
 }
+
+  .area_indicator li {
+    display: block; float: left;
+    width: 30px; height: 30px; margin-right: 25px;
+    background-color: #777;
+  }
+
+    .area_indicator li:last-child { margin-right: 0; }
+
+
 
 
 

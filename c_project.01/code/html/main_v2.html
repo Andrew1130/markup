@@ -6,14 +6,16 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../fonts/fontawesome/css/all.min.css">
+
     <link rel="stylesheet" href="../css/common/common.css">
     <link rel="stylesheet" href="../css/common/reset.css">
     <link rel="stylesheet" href="../css/src/main_v2.css">
     <title>main_v2</title>
   </head>
   <body>
-    <div id = "wrap">
 
+    <div id = "wrap">
 
       <header id="headBox">
         <div class="area_head">
@@ -45,38 +47,58 @@
           </nav>  
         </div>  
       </header> <!-- / #headBox -->
-
-
+  
+      
       <section id="slideBox">
         <div class="slide_area">
-          <article id="adCon_01">
-            <!-- adCon_01 -->
+          <article id="adCon_01" class="slide_content">
+            
+            <div class="slide_content_part">
+              <h3>Banner Title</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil omnis assumenda ex animi impedit ducimus aliquid. </p>
+              <div class="link">
+                <a href="#">
+                  바로가기
+                  <i class="fas fa-arrow-right"></i>
+                </a>
+              </div>
+            </div> <!-- / content -->
+
+            <figure class="slide_img_part">
+              <figcaption class="blind">이미지 부연 설명_제목</figcaption>
+              <div class="slide_01">
+                <span class="blind">이미지 부연 설명_내용</span>
+              </div>
+            </figure> <!-- / image -->
+
           </article>  
         </div>  
-        <div class="btns">
           <button type="button" class="next_btn">
             <span class="blind">다음</span>
           </button>
           <button type="button" class="prev_btn">
             <span class="blind">이전</span>
-          </button>
-        </div>
       </section>  <!-- / #slideBox -->
 
 
       <section id="newBox">
-        <h2 class="area_title">area_title</h2>
-        <article class="area_content">
+        <h2 class="area_title">최신상품</h2> 
+        <article class="area_content blind_area">
           <!-- area_content -->
           <ul>
-            <li tabindex="0">area_content_01</li>
-            <li tabindex="0">area_content_02</li>
+            <li tabindex="0"><a href="#"><span>area_content_01</span></a></li>
+            <li tabindex="0"><a href="#"><span>area_content_02</span></a></li>
             <li tabindex="0" class="area_content_li_end">
-              area_content_03</li>
+              <a href="#"><span>area_content_03</span></a></li>
           </ul>
         </article>
         <div class="area_indicator">
-          area_indicator
+          <!-- area_indicator -->
+          <ul class="blind_area">
+            <li><a href=""><span>최신 첫번째 내용</span></a></li>
+            <li><a href=""><span>최신 두번째 내용</span></a></li>
+            <li><a href=""><span>최신 세번째 내용</span></a></li>
+          </ul>  
         </div>
       </section> <!-- / #newBox -->
 

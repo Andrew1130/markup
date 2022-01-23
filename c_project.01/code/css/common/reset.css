@@ -9,8 +9,8 @@ body {
 
 h1, h2, h3, h4, h5, h6, p, pre, q, blockquote, ul, ol, li, dl, dt, dd, img { 
   margin: 0; padding: 0; border: 0;
-  font-size: 100%;
-  font: inherit; 
+  font-size: 100%; font-family: inherit; 
+  line-height: 120%;
   vertical-align: baseline;
 }
 
@@ -56,5 +56,5 @@ abbr { text-decoration: none; }
 이에 대비하여 아래 태그는 크기 조절이 가능하도록 설정 
 */
 header, article, section, footer, nav, aside, figure, figcaption, main {
-  display: block;
+  display: block; margin: 0; padding: 0; border: 0;
 }
