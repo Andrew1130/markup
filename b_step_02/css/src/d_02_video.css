@@ -1,0 +1,12 @@
+/* d_02_video.css */
+
+
+.video_01 { width: 100%; height: 300px; }
+
+/* 비디오가 원활히 동작하지 않을 경우, 대신 보여줄 이미지 나타내기 */
+.ex_wrap {
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: cover;
+  background-image: url("../../img/background/konstantin-kleine-V1NVvXmO_dk-unsplash.jpg");
+}

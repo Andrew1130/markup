@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<!-- d_03_iframe.html -->
+<html lang="ko-KR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;400;700&display=swap" >
+    <link rel="stylesheet" href="../fonts/fontawesome5/css/all.min.css">
+
+    <link rel="stylesheet" href="../css/common/reset.css">
+    <link rel="stylesheet" href="../css/common/common.css">
+    <link rel="stylesheet" href="../css/src/d_03_iframe.css">
+
+    <link rel="apple-touch-icon" href="./favicon.png">
+    <link rel="shortcut icon" href="./favicon.png" type="image/png">
+
+    <title>d_03_iframe</title>
+</head>
+<body>
+  
+  <!-- layout -->
+  <div class="code_exam">
+    <h1><a href="./a_content.html">웹표준</a></h1>
+    <hr />
+    <div class="part">
+      <h2>외부파일 불러오기</h2>
+      <div class="ex_wrap">
+
+        <!-- 
+          - iframe으로 모든 것을 가져올 수 있는 것은 아니다. 
+          (기술적으로 막아놓은 경우 가져올 수 없음)
+          - youtube의 경우 '공유 -> 링크' 로 영상을 가져올 수는 있다.
+        -->
+        
+        <iframe src="./c_03_gradient.html"></iframe>
+      </div>  
+      <div class="ex_wrap">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/OvF1eKT-X8w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>  
+    </div>
+  </div>  
+
+  <!-- javascript -->
+
+</body>
+</html>
