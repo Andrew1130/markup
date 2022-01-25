@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<!-- e_02_form_type_attr.html -->
+<html lang="ko-KR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;400;700&display=swap" >
+    <link rel="stylesheet" href="../fonts/fontawesome5/css/all.min.css">
+
+    <link rel="stylesheet" href="../css/common/reset.css">
+    <link rel="stylesheet" href="../css/common/common.css">
+    <link rel="stylesheet" href="../css/src/e_02_form_type_attr.css">
+
+    <link rel="apple-touch-icon" href="./favicon.png">
+    <link rel="shortcut icon" href="./favicon.png" type="image/png">
+
+    <title>e_02_form_type_attr</title>
+</head>
+<body>
+  
+  <!-- layout -->
+    <div class="code_exam">
+      <h1><a href="./a_content.html">웹표준</a></h1>
+      <hr />
+      <div class="part">
+        <h2>사용할 기능</h2>
+        <div class="ex_wrap">
+
+          <!-- 
+            get은 전송되는 데이터가 노출되고, post는 노출되지 않는다.
+          그렇기에 form method에 뭘 쓸지 잘 모르겠다면
+          일단 post를 쓰고, 나중에 이 데이터가 노출되어도 되는지 생각해서
+          get으로 수정하는 것도 방법이다. 
+          -->
+
+          <form action="#" method="post">
+
+            <fieldset>
+              <legend>내용 입력</legend>
+
+              <!-- 
+                placeholder -> 미리보기 텍스트를 나타내 준다. 
+                required -> 해당 항목을 필수 입력 사항으로 만든다.
+              -->
+              <div>
+                <label for="userId" class="user_id">사용자 ID</label> :
+                <input type="text" id="userId" name="userId" value=""
+                        placeholder="사용할 id를 입력하세요." class="input_text" required/>
+              </div>
+
+              <div>
+                <label for="userPw">비밀번호</label> :
+                <input type="password" id="userPw" name="userPw" value="" 
+                        placeholder="비밀번호를 입력하세요."
+                        maxlength="12" class="input_text" required/>
+              </div>
+
+              <div>
+                <label for="userTel">전화번호</label> :
+
+                <!-- 
+                  아래 기능들은 html5 신규추가 기능으로, 
+                  구형 브라우저에서는 작동하지 않을 수도 있다. 
+                  1. tel -> 모바일 환경에서 접속 시 숫자 키패드가 나타나도록 한다. 
+                  2. email -> 이메일 형식에 맞게 썼는지 간단한 검사를 한다.
+                  3. url -> 간단한 url 검사
+                -->
+                <input type="tel" id="userTel" name="userTel" value="" 
+                        placeholder="전화번호를 입력하세요."
+                        maxlength="11" class="input_text" required/>
+              </div>
+
+              <div>
+                <label for="userMail">이메일</label> :
+                <input type="email" id="userMail" name="userMail" value="" 
+                        placeholder="exam@exam.com" class="input_text" 
+                        required/>
+              </div>
+
+              <div>
+                <label for="userUrl">url 입력</label> :
+                <input type="url" id="userUrl" name="userUrl" value="" 
+                        placeholder="http://somepage.com" class="input_text" />
+              </div>
+
+            </fieldset> <!-- 내용 입력 -->
+
+
+            <fieldset>
+              <legend>체크 항목 1 : 라디오 (단건선택)</legend>
+              <p class="description_area">여행지 선택 (1곳)</p>
+              
+                <!-- name이 같으면 같은 범위의 항목들로 인식된다. -->
+                <!-- label -> 홈페이지에 보이는 값 / value -> 서버에 전달되는 값 -->
+                <!-- checked -> input의 속성값으로 이미 체크되어 있도록 한다. -->
+                <div>
+                  <input type="radio" id="select_01" name="tour" value="제주도" checked />
+                  <label for="select_01">제주도</label>
+                </div>
+                <div>
+                  <input type="radio" id="select_02" name="tour" value="러시아" />
+                  <label for="select_02">러시아</label>
+                </div>
+                <div>
+                  <input type="radio" id="select_03" name="tour" value="일본" />
+                  <label for="select_02">일본</label>
+                </div>
+                <div>
+                  <input type="radio" id="select_04" name="tour" value="영국" />
+                  <label for="select_02">영국</label>
+                </div>
+              
+            </fieldset> <!-- 체크 항목 1 -->
+
+
+            <fieldset>
+              <legend>체크 항목 2 : 체크박스 (복수선택)</legend>
+              <p class="description_area">메뉴 선택</p>
+              <div>
+                <input type="checkbox" name="food" id="check_01" value="족발" checked />
+                <label for="check_01">족발</label>
+              </div>
+              <div>
+                <input type="checkbox" name="food" id="check_02" value="치킨" 
+                checked />
+                <label for="check_02">치킨</label>
+              </div>
+              <div>
+                <input type="checkbox" name="food" id="check_03" value="보쌈" />
+                <label for="check_03">보쌈</label>
+              </div>
+            </fieldset> <!-- 체크 항목 2 -->
+            
+
+            <fieldset>
+              <legend>종합</legend>
+
+                <div>
+                  <label for="multiText" class="blind">내용 입력</label>
+
+                  <!-- 
+                    textarea
+                    1. 별도의 value값 설정은 하지 않아도 된다.
+                    2. cols -> 기본 세로값(기본 글자수 기준) / rows -> 기본 열 값 >> css등으로 조정 시 조정한 내용이 우선한다. 
+                    3. textarea 내부에 글자를 입력하지 않는다(원칙)
+                    4. 웹 상에서 임의로 상자의 크기를 조절할 수 있다. 단, 조절되지 않도록 하려면 css에서 'resize:none' 을 설정해주면 된다.
+                  -->
+                  <textarea name="multiText" id="multiText" cols="30" rows="3"></textarea>
+
+                </div>
+
+                <!-- 
+                  select
+                  1. option을 사용해 드롭다운 목록을 만든다.
+                  2. 디자인에 제약이 많다. 
+                  3. 내부 속성 multiple을 사용하면 ctrl+click 시 여러개 선택 가능하다.
+                -->
+                <div>
+                  <label for="drink">음료수를 고르세요.</label>
+                  <select name="drink" id="drink"> 
+                    <option>선택하세요.</option>
+                    <optgroup label="커피류">
+                      <option value="espresso">에스프레소</option>
+                      <option value="americano">아메리카노</option>
+                      <option value="cafelatte">카페라떼</option>
+                      <option value="cafemoca">카페모카</option>
+                    </optgroup>
+                    <optgroup label="주스류">
+                      <option value="icetea">아이스티</option>
+                      <option value="lemontea">레몬티</option>
+                    </optgroup>
+                  </select>
+                </div>
+
+                <div>
+
+                  <!-- 
+                    button 
+                    1. button에 클래스 지정하지 않고 그냥 만들면 'type=submit'
+                    2. 
+                  -->
+                  <button type="submit">확인</button>
+                  <button type="reset">취소</button>
+                  <button type="button">찾기</button>
+                </div>
+
+            </fieldset> <!-- 종합 -->
+
+
+            <fieldset>
+              <legend>기타</legend>
+
+              <div>
+                <!-- 웹에 노출되지 않으나 자료는 보낼 수 있도록 처리한 사례 -->
+                <input type="hidden" name="hdn" id="hdn" value="Andrew" />
+              </div>
+
+
+
+              <!-- 아래 기능들은 최신 브라우저에서만 지원한다. -->
+
+              <div>
+
+                <!-- 
+                  input color
+                  1. 웹 브라우저마다 나타나는 형태가 다름에 유의
+                  2. 일부 구형 브라우저에서는 기능 자체가 지원되지 않는다.  
+                -->
+                <label for="color">사용할 색상 선택</label>
+                <input type="color" name="color" id="color" value="" />
+              </div>
+
+              <div>
+
+                <!-- 
+                  input number 
+                  1. 수량 조절 버튼이 나오는 box
+                  2. 하위 속성들
+                    (1) min : 최소 (2) max : 최대 
+                    (3) step : 조절 버튼 1회 클릭시 올라갈 수량의 수
+                    (4) value : box의 초기값   
+                -->
+                <label for="numberBox">수량 선택</label> :
+                <input type="number" name="numberBox" id="numberBox"
+                        min="0" max="10" step="2" value="0">
+              </div>
+
+              <div>
+                <!-- input number의 세로 막대형 ver -->
+                <label for="numberBox_2">수량 선택 2</label> :
+                <input type="range" name="numberBox_2" id="numberBox_2"
+                        min="0" max="10" step="2" value="0">
+              </div>
+                
+            </fieldset> <!-- 기타 -->
+
+
+            <fieldset>
+              <legend>확인용</legend>
+
+              <!-- 별도의 id, name은 불필요하며 서버에 아래 value만을 전달한다. -->
+              <input type="submit" value="확인">
+              <input type="reset" value="취소">
+
+              <!-- 
+                1. 아래 input image는 거의 쓰이지 않는다 (background image로 거의 처리)
+                2. html에서는 단위를 쓰지 않고 숫자만 써도 픽셀로 인식한다.
+                3. value는 쓰지 않아도 된다.
+              -->
+              <input type="image" src="../img/card_image/mini_card_bg-1.png"        alt="예시이미지" class="img_btn" />
+
+              <input type="button" value="번호 전송" />
+
+              <!-- accept : 허용할 확장자를 정한다. -->
+              <!-- input file에서도 value는 쓰지 않아도 된다. -->
+              <input type="file" accept=".jpg, .png"/>
+
+            </fieldset> <!-- 확인용(버튼) -->
+            
+
+          </form>
+        </div>
+      </div>
+    </div>
+  <!-- javascript -->
+
+</body>
+</html>

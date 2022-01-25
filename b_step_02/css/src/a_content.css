@@ -46,11 +46,15 @@ li::before {
   width: 15px; font-weight: 900; margin-right: 5px;
 }
 li { margin-bottom: 20px; counter-increment: num;}
-li a {
-  padding-bottom: 5px; border-bottom: 1px solid #777;
-  font-weight: 700;
-}
-li a:hover, li a:focus {
-  padding-bottom: 5px; border-bottom: 2px solid #f00;
-}
+
+  li a {
+    padding-bottom: 5px; border-bottom: 1px solid #777;
+    font-weight: 700;
+  }
+
+  li a:hover, li a:focus {
+    padding-bottom: 5px; border-bottom: 2px solid #f00;
+  }
+
+li:first-child { margin-top: 20px; }  
 li:last-child { margin-bottom: 10px; }

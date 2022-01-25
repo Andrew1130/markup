@@ -1,0 +1,88 @@
+/* e_02_form_type_attr.css */
+
+
+form {
+  width: 100%; height: auto;
+  padding: 1rem; box-sizing: border-box;
+  background-color: #fff;
+}
+
+fieldset {
+  margin-bottom: 2rem;
+}
+
+  fieldset div {
+    width: 100%; height: auto;
+    margin-bottom: 1rem; padding: 10px; 
+    box-sizing: border-box;
+    border-bottom: 1px solid #888;
+  }
+
+legend {
+  line-height: 130%; padding: 1rem;
+}
+
+.input_text {
+  width: 400px; height: 30px; 
+}
+
+.description_area { 
+  width: 100%; height: auto;
+  padding: 15px; box-sizing: border-box;
+  background-color: #eee;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+/* placehorder의 경우 아래와 같이 pseudo 코드로 디자인 가능하다. */
+#userId::placeholder, 
+#userPw::placeholder { color: #a32; font-weight: 700; }
+
+.user_id { font-weight: bold; }
+
+
+.img_btn { height: 40px; }
+
+
+textarea { 
+  font-size: 1rem; 
+  width: 500px; height: 50px;
+
+  /* resize -> both | horizontal | vertical | none | */
+  resize: horizontal; 
+}
+
+select {
+  width: 300px; height: 50px;
+  font-size: 1.5rem; color: #07a;
+  text-indent: 0.5rem;
+  margin-left: 10px;
+}
+
+
+/* 색상, 폰트사이즈는 가능하나 마진/패딩 조작은 안 된다. */
+
+
+  /* 
+  option:nth-child(1) {
+    background-color: #add;
+    margin-bottom: 10px;
+  }
+  option:nth-child(2) {
+    background-color: #f77;
+  }
+  option:nth-child(3) {
+    color : #bbb;
+    font-size: 1.2rem;
+  } 
+  */
+
+
+button {
+  border: 1px solid #3aa;
+  padding: 0.2rem 1rem;
+  border-radius: 0.2rem;
+  background-color: #ddd;
+  cursor: pointer;
+}
+
