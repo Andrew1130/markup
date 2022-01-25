@@ -1,0 +1,26 @@
+/* e_01_form_basic.css */
+
+
+form {
+  width: 100%; height: auto; min-height: 200px;
+  background-color: #fff;
+}
+
+button {
+  padding: 0.3rem 2rem;
+  background-color: #adf;
+  border: 1px solid #aaa;
+}
+
+.select_list ol,
+.select_list ul {
+  float: left;
+}
+
+  /* form > div {
+    border: 1px solid #777;
+  }
+
+fieldset {
+  border: none;
+} */

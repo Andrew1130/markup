@@ -28,7 +28,89 @@
     <hr />
     <div class="part">
       <h2>form 기본형식 이해</h2>
-      <div class="ex_wrap"></div>
+      <div class="ex_wrap">
+        <form action="#" method="POST">
+
+            <!-- 
+              action : 어디에 자료를 보낼 것인가? 
+              method : 
+              - 자료를 공개용[get]으로 보낼 것인가? 보안용[post]으로 보낼 것인가?
+              - 기타(삭제할 것인가, 수정할 것인가?)     
+            -->
+
+            <!-- 
+            form의 속성값
+            1. fieldset → form을 이루는 하나의 영역
+            2. legend → 각 fieldset의 제목
+            
+            3. input → 데이터를 입력할 수 있게 함. label과 연관 있다. 
+              (1) type : 입력을 받을 데이터의 유형을 정의
+               1) text : 텍스트 형식을 입력받는다.
+               2) radio : 단건선택 / checkbox : 복수선택
+                + radio 사용 시 이들이 하나의 범위 안에 있는 목록임을 표시하려면, name을 동일하게 해 주어야 한다.
+
+              (2) id : label과 관계 있는 값
+              (3) name : 해당 input에 입력된 값(value)이 서버로 전송될 때, 서버에 이 값이 무엇인지 알려줄 이름.
+
+              (4) value : 서버로 전달될 값
+               1) input의 데이터로 기본값은 "". 
+               2) checkbox나 radio의 경우 값 설정이 필요 (label은 서버 전달값 아님!)
+            
+
+            4. label → 
+              (1) input이 무엇인지 설명해주는 영역.
+              (2) label for 와 input id를 맞춰주면, 라벨을 클릭해도 연결된 input의 box에 데이터를 입력할 수 있다. 
+            -->
+
+            <div>
+              <fieldset>
+                <legend>필수양식</legend>
+                <label for="user_name_id">아이디 입력</label>:
+                <input type="text" id="user_name_id" name="user_name" value="" />
+              </fieldset>
+
+              <fieldset>
+                <legend>선택양식</legend>
+
+                <div>
+                  <input type="checkbox" id="ck" name="ck_send" value="" />
+                  <label for="ck">선택항목</label>
+                </div>
+
+                <div class="select_list clearfix">
+                  <ol>
+
+                    <!-- radio를 사용하고 name을 동일하게 하여 하나의 범위임을 표현 -->
+                    <!-- checkbox나 radio의 경우 value가 필요 -->
+
+                    <li><input type="radio" id="selector_01" name="send" value="남성"></li>
+                    <li><input type="radio" id="selector_02" name="send" value="여성"></li>
+                  </ol>
+                  <ul>
+                    <li><label for="selector_01">남성</label></li>
+                    <li><label for="selector_02">여성</label></li>
+                  </ul>
+                </div>
+
+                <div>
+
+                  <!-- 아래와 같이 label 안에 input이 들어가는 형태는 권장하지 않음 -->
+                  <label for="">
+                    내용을 작성하세요 :
+                    <input type="text">
+                  </label>
+                </div>
+
+              </fieldset>
+
+              <fieldset>
+                <legend>가입버튼</legend>
+                <button type="submit">확인</button>
+              </fieldset>
+            </div>  
+          
+        </form>
+      </div>
     </div>
   </div>
   <!-- javascript -->
