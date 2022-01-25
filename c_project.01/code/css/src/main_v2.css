@@ -369,7 +369,7 @@ min-width을 1200px로 설정
     /* background-color: aquamarine; */
   }
 
-    #subBox li.subBox_left_1 {
+    #subBox li.subBox_image {
       float: left;
       width: 460px; height: 300px;
       background-image: url("../../img/main_page/04_subBox/sub_banner_image.png");
@@ -378,46 +378,39 @@ min-width을 1200px로 설정
       background-size: cover;
     }
 
-    #subBox li.subBox_right {
+    #subBox li.subBox_text_btn {
       float: right;
       width: 400px; height: 200px;
       margin-right: 70px;
       margin-top: 52px;
     }
 
-    .subBox_right h2 { 
+    .subBox_text_btn h2 { 
       font-size: 2.5rem; color: #333333; 
       text-transform: capitalize; margin-bottom: 20px;
     }
-    .subBox_right p { 
+    .subBox_text_btn p { 
       width: 300px; height: 79px;
       font-size: 1.125rem; color: #505050; 
       margin-bottom: 20px;
     }
 
 
-    .subBox_right button:first-child {
+    .subBox_text_btn button:first-child {
       width: 160px; height: 45px; background-color: #1A5D54;
       margin-right: 20px;
       border-radius: 5px;
+      font-size: 1.375rem; color: #fff;
+      font-weight: 700;
     }
 
-      .subBox_right button:first-child a {
-        font-size: 1.375rem; color: #fff;
-        font-weight: 700;
-      }
-
-    .subBox_right button:last-child {
+    .subBox_text_btn button:last-child {
       width: 110px; height: 45px; background-color: #fff;
       margin-right: 30px;
       border-radius: 5px;
+      font-size: 1.375rem; color: #1A5D54;
+      font-weight: 700;
     }
-
-      .subBox_right button:last-child a {
-        font-size: 1.375rem; color: #1A5D54;
-        font-weight: 700;
-      }  
-
 
 
 /* bestBox ----------------------- */
@@ -755,14 +748,14 @@ min-width를 설정
 
 /* leftBox */
 
-  #footBox li.leftBox {
+  #footBox li.infoBox {
     display: block;
     float: left;
     width: 500px; height: 200px;
     /* background-color: aquamarine; */
   }
 
-    #footBox li.leftBox li {
+    #footBox li.infoBox li {
       display: block;
       float: left;
       font-size: 0.75rem; color: #fff;
@@ -771,8 +764,8 @@ min-width를 설정
       margin-right: 14px;
     }
 
-    #footBox li.leftBox li:hover,
-    #footBox li.leftBox li:focus {
+    #footBox li.infoBox li:hover,
+    #footBox li.infoBox li:focus {
       color : #FFBD55
     }
 
@@ -788,9 +781,9 @@ min-width를 설정
 
 
 
-/* rightBox */
+/* linkBox */
 
-  #footBox li.rightBox {
+  #footBox li.linkBox {
     display: block;
     float: right;
     width: 200px; height: 160px;
@@ -798,7 +791,7 @@ min-width를 설정
     /* background-color: aquamarine; */
   }
 
-    #footBox li.rightBox li {
+    #footBox li.linkBox li {
       display: block; float: left;
       width: 40px; height: 40px; 
       margin-right: 20px;
@@ -806,25 +799,25 @@ min-width를 설정
       /* background-color: #fff; */
     }
 
-    #footBox li.rightBox ul a {
+    #footBox li.linkBox ul a {
       display: block;
       width: 40px; height: 40px;
       margin: auto;
     }
 
-      #footBox li.rightBox li:nth-child(1) {
+      #footBox li.linkBox li:nth-child(1) {
         background-image: url("../../img/common_page/08_footBox/facebook.png");
       }
-      #footBox li.rightBox li:nth-child(2) {
+      #footBox li.linkBox li:nth-child(2) {
         background-image: url("../../img/common_page/08_footBox/youtube.png");
       }
-      #footBox li.rightBox li:last-child { 
+      #footBox li.linkBox li:last-child { 
         background-image: url("../../img/common_page/08_footBox/naver.png");
         margin-right: 0; 
       }
 
     
-      #footBox li.rightBox .footBox_familysite {
+      #footBox li.linkBox .footBox_familysite {
         width: 160px; height: 30px; background-color: #fff;
         border-radius: 5px;
         margin-bottom: 10px;
@@ -835,7 +828,7 @@ min-width를 설정
           display: block; padding: 5px;
         }
 
-      #footBox li.rightBox .footBox_textarea {
+      #footBox li.linkBox .footBox_textarea {
         width: 160px; height: 50px; background-color: #fff;
         border-radius: 5px;
       }
