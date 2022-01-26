@@ -1,0 +1,109 @@
+/* f_02_border_radius.css */
+
+
+.radius li {
+  width: 30rem; height: 30rem; margin: 5rem; padding: 2rem;
+  box-sizing: border-box; background-color: #acf;
+}
+
+
+  /* 
+  border-radius: 
+  (1) 좌상 | 우상 | 우하 | 좌하 >> 값 4
+  (2) 좌상 우하 | 우상 좌하 >> 값 2
+  (3) 모든 방향  >> 값 1 
+  */
+
+  .radius li:nth-child(1) { border-radius: 30px; }
+  .radius li:nth-child(2) { border-radius: 30px 0; }
+  .radius li:nth-child(3) { border-radius: 50px 100px 0; }
+  .radius li:nth-child(4) { border-radius: 30px 60px 90px 120px; }
+
+  /* .radius li:nth-child(5) { border-radius: 48px; } */
+  .radius li:nth-child(5) { border-radius: 3rem; }
+
+  /* width/height가 각 30rem이므로 10%면 각 3rem만큼 둥글게 처리된다. */
+  .radius li:nth-child(6) { border-radius: 10%; }
+
+  /* 50% > 원형이 되며, 50% 초과 값은 50%로 인식된다. */
+  .radius li:nth-child(7) { border-radius: 50%; }
+  .radius li:nth-child(8) { border-radius: 30px; }
+
+  /* 높이와 너비가 다른 경우 타원형이 된다. */
+  .radius li:nth-child(9) {
+    height: 15rem; border-radius: 50%;
+  }
+
+  
+  /* 
+
+  대상 도형의 높낮이가 서로 다를 경우
+
+  (1) border-radius 값을 %가 아닌 수치(rem, px)로 주는 경우 :
+  높낮이 관계없이 수치만큼 둥글어지고, 짧은 쪽이 최대로 둥글어지면 긴 쪽은 더 둥글어지지 않는다.
+  (2) %로 주는 경우 :
+  높낮이 각 비율에 비례하여 둥글어지고, 최대 50%까지 둥글어진다. 
+
+  */
+
+  .radius li:nth-child(10) {
+    height: 15rem; border-radius: 20rem;
+  }
+
+  .radius li:nth-child(11) { padding: 0; }
+    .radius li:nth-child(11) a { 
+      width: 100%; height: 100%;
+      display: block; background-color: #fac;
+      border-radius: 30rem;
+    }
+
+
+    /** -------------------------------------------- */
+
+.radius_2 li {
+  width: 20rem; height: 20rem;
+  background-color: #05a; color: #fff;
+  font-size: 2rem;
+  padding: 1rem; box-sizing: border-box;
+  margin-bottom: 30px;
+}
+
+  .radius_2 li:nth-child(1) {
+    border: 20px solid #fa0;
+    border-radius: 20px;
+  }
+
+  .radius_2 li:nth-child(2) {
+    border: 20px solid #fa0;
+    border-radius: 20px;
+    box-sizing: content-box;
+  }
+
+  .radius_2 li:nth-child(3) {
+    border: 20px solid #fa0;
+    border-radius: 30px;
+
+    /* [border-상/하-좌/우-radius : 값] 형식으로 쓰면 모퉁이별 값 조절이 가능 */
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+  }
+
+  .radius_2 li:nth-child(4) {
+    border: 20px solid #fa0;
+    border-top-left-radius: 40px;
+  }
+
+  .radius_2 li:nth-child(5) {
+    border: 20px solid #fa0;
+
+    /* 모퉁이별 값을 줄 때, 값을 2개 써서 조금 더 세밀한 컨트롤이 가능(고정값) */
+    border-bottom-left-radius: 7rem 10rem;
+  }
+
+  .radius_2 li:nth-child(6) {
+    border: 20px solid #fa0;
+    width: 25rem;
+
+    /* 모퉁이별 값을 줄 때, 값을 2개 써서 조금 더 세밀한 컨트롤이 가능(%) */
+    border-bottom-left-radius: 40% 20%
+  }
