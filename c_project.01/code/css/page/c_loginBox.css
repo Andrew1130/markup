@@ -1,0 +1,203 @@
+/* c_loginBox.css */
+
+#wrap {
+  background-image: url("../../img/login_page/login_bg.png");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: cover;
+  border: 1px solid;
+}
+
+#loginBox {
+  width: 68.75rem; height: 600px; 
+  background-color: #fff;
+  margin: 15.625rem auto 18.75rem;
+  box-shadow: 8px 8px 12px rgba(0,0,0,0.25);
+  border-radius: 5px;
+
+  /* 부모 요소에 radius를 적용했는데, 자식 요소가 새로 생겨 radius가 사라진 경우 다시 radius를 되살리고 싶으면 overflow:hidden을 쓴다. */
+  overflow: hidden;
+}
+
+.intro_part {
+  position: relative; z-index: 20;
+  float: left; height: 100%;
+  width: 28.75rem; 
+  /* background-color: #dfd; */
+  padding-top: 10rem;
+  padding-left: 1.25rem; padding-right: 3.75rem;
+  box-sizing: border-box;
+  text-align: right;
+
+  background-image: url("../../img/login_page/intro_part_img.png");
+  background-repeat: no-repeat;
+  background-position: 100% 50%;
+  overflow: hidden;
+}
+
+  .intro_inner {
+    float: right;
+    width: 15.625rem; height: auto;
+    color: #fff;
+    /* background-color: #daf; */
+  }
+
+    .intro_inner > h2 { 
+      width: 100%; height: auto; 
+      margin-top: 50px; margin-bottom: 15px;
+      font-size: 2.5rem; font-weight: 700;
+      text-transform: capitalize;
+    }
+
+    .intro_inner > p {
+      width: 100%; height: auto;
+      font-size: 1.125rem; font-weight: 500;
+    }
+
+
+  .video_inner {
+    position:absolute; top: 0; left: 0; z-index: -1;
+    background-color: #fff;
+    width: 100%; height: 100%; 
+  }
+
+    .video_inner video {
+      float: right;
+      width: auto; 
+      min-width: 100%; height: 100%;
+    }
+
+  .company_logo {
+    display: inline-block;
+    width: 7.5rem; height: 4.375rem;
+    /* background-color: #fff; */
+    background-image: url("../../img/login_page/osam_sub_logo.png");
+    background-image: url("../../img/login_page/osam_sub_logo.svg");
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: contain;
+  }
+
+
+
+
+
+ /* ----------------------------- */
+  
+.login_form {
+  float: left; height: 100%;  
+  padding-top: 220px; box-sizing: border-box; 
+  width: 40rem; 
+  /* background-color: #fdd; */
+}
+
+form, fieldset {
+  margin: 0; padding: 0; border: 0;
+}
+
+legend { 
+  display: block; 
+  width: 0; height: 0; position: absolute; 
+  z-index: -1; overflow: hidden ;}
+
+  .login_form > form {
+    width: 28.75rem; height: 18.75rem;
+    background-color: #fff;
+    margin: auto;
+  }
+
+  .login_form fieldset:nth-of-type(1) {
+    width: 100%; height: 8.125rem;
+    margin-bottom: 3.125rem;
+    /* background-color: #aca; */
+  }
+
+  .login_form fieldset:nth-of-type(2) {
+    width: 100%; height: 7.5rem;
+    text-align: center;
+    margin-bottom: 3.125rem;
+    /* background-color: #a7a; */
+  }
+
+  .user_input {
+    width: 100%; height: 3.125rem; margin-bottom: 1.875rem;
+    border-bottom: 0.125rem solid #1A5D54;
+    padding-bottom: 0.625rem; padding-left: 0.5rem;
+    box-sizing: border-box;
+  }
+  
+  .user_input:last-child { margin-bottom: 0; }
+
+    .user_input label { float:left; margin-right: 30px; }
+    .user_input input { 
+      float:left; 
+      width: 21.25rem; height: 100%; 
+      border: 0; padding: 0; 
+      font-size: 1rem; color: #757575;
+      text-indent: 8px;
+    }
+
+.icon {
+  display: block;
+  width: 2.5rem; height: 2.5rem; 
+  /* background-color: #f55; */
+  background-repeat: no-repeat;
+  background-size: contain; background-position: 50% 50%;
+}
+
+label[for="user_mail"] i { 
+  background-image: url("../../img/login_page/mail.png"); 
+  background-image: url("../../img/login_page/mail.svg"); 
+}
+
+label[for="user_password"] i { 
+  background-image: url("../../img/login_page/key.png"); 
+  background-image: url("../../img/login_page/key.svg");
+}
+
+
+.btn_inner { width: 100%; height: auto; }
+
+  .btn_inner a {
+    display: inline-block;
+    font-size: 16px; background-color: #fff;
+  }
+
+    .btn_inner a:nth-of-type(1) {
+      padding: 12px 10px; margin-right: 50px;
+    }
+    .btn_inner a:nth-of-type(2) {
+      border: 1px solid #333;
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+      border-radius: 8px;
+      padding: 12px 25px;
+    }
+
+input[type="submit"] {
+  width: 300px; height: 45px;
+  background-color: #1a5d54;
+  border: 0;
+  color: #fff; 
+  border-radius: 8px;
+  margin-bottom: 34px;
+
+  font-size: 22px; font-weight: 700;
+  cursor: pointer;    
+}
+
+
+input[type="submit"]:hover {
+  box-shadow: 0 8px 8px rgba(0, 0, 0, 0.25);
+}
+.btn_inner a:hover {
+  font-weight: 700; color: #1a5d54;
+}
+
+input[type="submit"]:focus { 
+  border: 3px solid #1A5D54; box-sizing: border-box; 
+  color: #1A5D54;
+  outline-offset: 10px;
+  background-color: #fff;}
+.btn_inner a:focus {
+  background-color: #1A5D54; color: #fff; 
+}

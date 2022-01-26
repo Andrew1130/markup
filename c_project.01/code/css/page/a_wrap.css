@@ -1,0 +1,16 @@
+/* a_wrap.css */
+
+
+/* 
+화면을 줄였을 때 
+bestBox의 마지막 박스(#bestBox > .bestbox_04)가 
+아래로 튀어나가는 문제를 해결하기 위해
+min-width을 1200px로 설정 
+*/
+
+#wrap {
+  width:100%; min-width:1200px; 
+  height: auto;
+  min-height: 500px;
+  margin: auto;
+}
