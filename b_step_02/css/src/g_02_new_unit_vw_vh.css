@@ -1,0 +1,54 @@
+/* g_02_new_unit_vw_vh.css */
+
+b { font-weight: 700; }
+
+.code_exam { width: 700px; }
+.ex_wrap > div {
+  height: 100px;
+  background-color: #f72;
+  margin:auto; margin-bottom: 1rem;
+}
+
+.ex_wrap > div:nth-of-type(1){
+  width: 100%; 
+}
+
+.ex_wrap > div:nth-of-type(2){
+  width: 200%; 
+
+  /* 중앙 정렬 */
+  position: relative; top:0; left:50%;
+  transform: translate(-50%);
+}
+
+.ex_wrap > div:nth-of-type(3){
+  width: 30vw; 
+  position: relative; top:0; left:50%;
+  transform: translate(-50%);
+}
+
+.ex_wrap > div:nth-of-type(4){
+  width: 50vw; 
+  position: relative; top:0; left:50%;
+  transform: translate(-50%);
+}
+
+.ex_wrap > div:nth-of-type(5){
+  width: 10vw; height: 10vw;
+}
+
+.ex_wrap > div:nth-of-type(6){
+  width: 10vw; height: 10vw;
+  max-width: 200px; max-height: 200px;
+  min-width: 150px; min-height: 150px;
+}
+
+
+/* =================================== */
+
+.other > div { width: 100px; background-color:  #07a; color: #fff; }
+.other > div:nth-of-type(1) { height: 100px; }
+.other > div:nth-of-type(2) { height: 200px; }
+.other > div:nth-of-type(3) { height: 10vh; }
+.other > div:nth-of-type(4) { font-size: 2vw; }
+.other > div:nth-of-type(5) { font-size: 2vh; }
