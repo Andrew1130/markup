@@ -1,0 +1,801 @@
+
+/* main.css */
+/* reset.css ======================= */
+body { margin:0; }
+h1,h2,h3,h4,h5,h6 { margin:0; }
+ul, ol, dl, li, dt, dd { margin:0 ; padding: 0; }
+ul, ol, li { list-style: none; }
+
+
+/* common.css ======================= */
+.max_width_01 {
+
+  /* 
+  너비 1024px 모니터를 위해 
+  min-width를 940px 정도로 설정한다.
+  */ 
+
+  min-width: 940px;
+  width: 95%; 
+  max-width: 1280px; 
+  margin: auto;
+}
+
+
+
+/* design ======================= */
+
+/* 
+화면을 줄였을 때 
+bestBox의 마지막 박스(#bestBox > .bestbox_04)가 
+아래로 튀어나가는 문제를 해결하기 위해
+min-width을 1200px로 설정 
+*/
+
+#wrap {
+  width:100%; min-width:1200px; 
+  height: auto;
+  min-height: 500px;
+  margin: auto;
+}
+
+
+
+/*? headBox ----------------------- */
+#headBox {
+  width: 100%; height: auto;
+  background-color: #fff;
+  box-shadow: 0 4px 4px rgba(0,0,0,0.25);
+  
+  padding: 20px 100px 10px;
+  box-sizing: border-box;
+  position: fixed; top:0;
+  z-index: 100;
+}
+
+.area_head {
+  width: 100%; max-width: 1440px;
+  height: auto;
+  margin: auto;
+}
+
+  .area_head:after,
+  .area_head::after {
+    content:"";
+    display: block;
+    width: 100%; height: 0;
+    clear: both;
+  }
+
+#logo {
+  float: left;
+  width: 120px; height: 70px;
+  background-color: #fff;
+}
+
+  #logo a {
+    display: block;
+    width: 100%; height: 100%;
+    background-image: url("../../img/common_page/01_headBox/osam_logo.png");
+    background-image: url("../../img/common_page/01_headBox/osam_logo.svg");
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+  }
+
+#navBox { 
+  float: right;
+  width: 520px; height: 70px;
+  background-color: #fff;
+}
+
+  #navBox ul:after,
+  #navBox ul::after {
+    content: "";
+    display: block;
+    width: 100%; height: 0;
+    clear: both;
+  }
+
+
+
+  .unb ul,
+  .gnb ul {
+    height: auto; box-sizing: border-box;
+  }
+
+
+  .unb {
+    float: right;
+    width: 270px;
+    height: 26px;
+    /* background-color: #eee; */
+  }
+
+    .unb a {
+      display: block; width: 100%; height: 100%;
+      word-spacing: -3px; text-transform: capitalize;
+      color: #505050; font-size: 0.75rem; text-align: center;
+    }
+
+    .unb li {
+      display: block;
+      float: left; width: 50px; height: 20px;
+      margin-top: 3px;
+      margin-right: 20px;
+    }
+      .unb li.unb_li_start { margin-left: 4px }
+      .unb li.unb_li_end { margin-right: 0 } 
+      .unb li:first-child { float: right; }
+
+
+
+  .gnb {
+    margin-top: 25px;
+    width: auto; min-width: 510px;
+    height: 35px;
+    /* background-color: #eee; */
+  }
+
+  .gnb ul { float: right; width: auto; }
+
+    .gnb li {
+      display: block; float: left;
+      width: auto; height: 20px;
+      margin-top: 15px; padding-top: 3px;
+      /* margin-right: 9px; */
+      padding: 0 15px;
+      border-right: 1px solid #aaa;
+    }
+
+    .gnb li a { 
+      padding: 5px;
+      color: #505050; font-size: 1rem; 
+    }
+
+      .gnb li.gnb_li_start { margin-left: 5px; }
+      .gnb li:nth-child(4) { 
+        text-transform: uppercase; 
+        word-spacing: -3px;
+      }
+      .gnb li.gnb_li_end { 
+        margin-right: 0; border-right: 0; border-right: 0
+      }
+
+
+
+/*? slideBox ----------------------- */
+#slideBox {
+  position: relative;
+  margin-top: 100px;
+  width: 100%; height: 600px;
+  box-sizing: border-box;
+  /* background-color: #aaa; */
+}
+
+.slide_area { 
+  width: 100%; height: 100%; 
+  padding-top: 100px; padding-bottom: 100px;
+  box-sizing: border-box;
+  background-image: url("../../img/main_page/02_slideBox/slide_bg_1.png");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: cover;
+}
+
+.slide_content {
+  position: relative;
+  width: 780px; height: 400px;
+  /* background-color: #ddd; */
+  display: block;
+  box-sizing: border-box;
+  margin:auto;
+}
+
+  .slide_content_part { 
+    position: absolute; top: 0; bottom: 0;
+    margin: auto;
+    width: 300px; height: 264px;
+    /* background-color: #fff; */
+  } 
+
+    .slide_content_part h3 {
+      width: 100%; height: 60px;
+      font-size: 2.5rem; font-weight: 700;
+      line-height: 60px;
+      margin-bottom: 10px;
+      color: #171717; text-transform: capitalize;
+    }
+
+    .slide_content_part p {
+      width: 100%; height: 140px;
+      font-size: 1.125rem; color:#505050;
+      line-height: 150%;
+    }
+
+    .slide_content_part .link {
+      width: 220px; height: 50px;
+    }
+
+      .link a {
+        display: block;
+        border-radius: 5px;
+        width: 100%; height: 100%;
+        line-height: 50px;
+        color: #fff; background-color: #1a5d54;
+        font-size: 22px;
+        font-size: 1.375rem; 
+        font-weight: 700;
+
+        padding: 0 18px; box-sizing: border-box;
+      }
+
+        .link a i { float: right; margin-top: 15px;}
+        .link a:hover { text-decoration: underline;}    
+        .link a:focus { outline: 2px solid #ffbd55;}
+
+  .slide_img_part { 
+    float: right; 
+    width: 388px; height: 408px;
+   } 
+
+    .slide_img_part > div {
+      width: 100%; height: 100%;
+      background-repeat: no-repeat; background-position: 0, 0;
+      background-size: contain;
+    }
+
+    .slide_01 {
+      background-image: url("../../img/main_page/02_slideBox/slide_main_1.png");
+    }
+
+
+.next_btn { 
+  position: absolute; top: 50%; right: 0;
+  background-image: url("../../img/common_image/indi_btn.png");
+  background-repeat: no-repeat;
+  background-position: -88px 0;
+  width: 64px; height: 44px;
+}
+
+  .next_btn:focus,
+  .next_btn:hover { background-color: #777; }
+
+.prev_btn { 
+  position: absolute; top: 50%; left: 0;
+  background-image: url("../../img/common_image/indi_btn.png");
+  background-repeat: no-repeat;
+  background-position: -162px 0;
+  width: 64px; height: 44px;
+}
+
+  .prev_btn:focus,
+  .prev_btn:hover { background-color: #777; } 
+
+
+
+
+/*? newBox ----------------------- */
+#newBox {
+  /* margin-top: 100px; */
+  width: 100%; height: 750px;
+  padding-top: 65px; padding-bottom: 71px;
+  box-sizing: border-box;
+  /* background-color: #eee; */
+}
+
+.area_title {
+  width:940px; height: 70px;
+  margin: auto; padding-top: 10px; box-sizing: border-box;
+  /* background-color: #ccc; */
+  font-size: 40px;
+  font-size: 2.5rem; 
+  font-weight: 700;
+}
+
+.area_content {
+  width: 940px; height: 370px;
+  /*
+  margin: auto;
+  margin-top: 48px;
+  margin-bottom: 50px;
+  */
+  margin : 48px auto 50px;
+  /* background-color: #ccc; */
+}
+
+  #newBox > .area_content li {
+    display: block;
+    float: left;
+    width: 300px; height: 370px;
+    margin-right: 19px;
+    /* background-color: aquamarine; */
+  }
+
+
+    .area_content li:nth-child(1) a {background-image: url("../../img/main_page/03_newBox/new_product_01.png");}
+    .area_content li:nth-child(2) a {background-image: url("../../img/main_page/03_newBox/new_product_02.png");}
+    .area_content li:nth-child(3) a {background-image: url("../../img/main_page/03_newBox/new_product_03.png");}
+
+    #newBox li.area_content_li_end {
+      float: right;
+      margin-right: 0;
+    }
+
+.area_indicator {
+  width: 150px; height: 30px;
+  margin: auto; 
+  /* background-color: #ccc; */
+}
+
+  .area_indicator li {
+    display: block; float: left;
+    width: 30px; height: 30px; margin-right: 24px;
+    /* background-color: #777; */
+  }
+
+  .area_indicator a {
+    border-radius: 100%;
+    background-color: #c4c4c4;
+  }
+
+    .area_indicator li.act a { background-color: #1A5D54; }
+
+    .area_indicator li:last-child { margin-right: 0; }
+
+
+
+
+
+/*? subBox ----------------------- */
+#subBox {
+  width: 100%; 
+  height: auto;
+  min-height: 380px;
+  padding-top: 57px;
+  box-sizing: border-box;
+  background-color: #FFBD55;
+  border: 0 solid black;
+}
+
+#subBox > .area {
+  height: 300px;
+  /* background-color: #ddd; */
+}
+
+  #subBox li {
+    display: block;
+    /* background-color: aquamarine; */
+  }
+
+    #subBox li.subBox_image {
+      float: left;
+      width: 460px; height: 300px;
+      background-image: url("../../img/main_page/04_subBox/sub_banner_image.png");
+      background-repeat: no-repeat;
+      background-position: 50% 50%;
+      background-size: cover;
+
+      filter: drop-shadow(30px 25px 0 #efefef);
+    }
+
+    #subBox li.subBox_text_btn {
+      float: right;
+      width: 400px; height: 200px;
+      margin-right: 70px;
+      margin-top: 52px;
+    }
+
+    .subBox_text_btn h2 { 
+      font-size: 2.5rem; color: #333333; 
+      text-transform: capitalize; margin-bottom: 20px;
+    }
+    .subBox_text_btn p { 
+      width: 300px; height: 79px;
+      font-size: 1.125rem; color: #505050; 
+      margin-bottom: 20px;
+    }
+
+
+    .subBox_text_btn button:first-child {
+      width: 160px; height: 45px; background-color: #1A5D54;
+      margin-right: 20px;
+      border-radius: 5px;
+      font-size: 1.375rem; color: #fff;
+      font-weight: 700;
+    }
+
+    .subBox_text_btn button:last-child {
+      width: 110px; height: 45px; background-color: #fff;
+      margin-right: 30px;
+      border-radius: 5px;
+      font-size: 1.375rem; color: #1A5D54;
+      font-weight: 700;
+    }
+
+
+
+/*? bestBox ----------------------- */
+#bestBox {
+  width: 100%; 
+  height: 700px;
+  /* background-color: #eee; */
+  padding-top: 175px;
+  box-sizing: border-box;
+}
+
+
+/* 
+화면을 줄였을 때 
+마지막 박스가 아래로 튀어나가는 문제를 해결하기 위해
+min-width를 설정 
+*/
+
+#bestBox > .area {
+  width: 100%;
+  height: 390px;
+  min-width: 1000px;
+  /* background-color: #ccc; */
+}
+
+  #bestBox li {
+    display: block;
+    float: left;
+    height: 380px;
+  }
+
+  #bestBox .description_area {
+    display: block; float: left;
+    height: 100%;  
+  }
+
+    #bestBox li.bestBox_01 {
+      width: 230px;
+      /* background-color: goldenrod; */
+      margin-right: 70px;
+    }
+
+     .bestBox_01 h2 {
+       font-size: 2.5rem; font-weight: 700;
+       text-transform: capitalize;
+       margin-bottom: 15px; color: #171717;
+       line-height: 150%;
+     }
+
+     .bestBox_01 p {
+        width: 200px; height: 83px;
+        font-size: 1rem;
+        color: #757575;
+        margin-bottom: 20px;
+     }
+
+     .bestBox_01 button:nth-child(1){
+      width: 100px; height: 30px; margin-left: 7px;
+      background-image: url("../../img/main_page/05_bestBox/bestBox_next.png");
+     }
+
+     .bestBox_01 button:nth-child(2){
+      float: left;
+      width: 100px; height: 30px;
+      background-image: url("../../img/main_page/05_bestBox/bestBox_prev.png");
+     }
+
+     .bestBox_buttons > a {
+       position: relative;
+       display: block;
+       margin-top: 10px;
+       width: 209px; height: 55px; 
+       background-color: #1A5D54;
+       border-radius: 10px;
+     }
+
+      .bestBox_buttons > a span {
+        display: block;
+        position: absolute; top: 30%; left: 30%;
+        /* transform: translate(60px, 17px); */
+        font-size: 1.375rem; font-weight: 700; color: #fff;
+      }
+
+
+/** 카드 css */
+
+/* 카드 ul */
+#bestBox .card_area_control {
+  width: 850px; height: 100%;
+  overflow: hidden;
+}
+#bestBox .card_area {
+  display: block;
+  width: 300%; height: 100%;
+}
+
+/* 카드 공통 부분 */
+#bestBox .card_area li {
+  width: 240px;
+  border: 1px solid #757575;
+  border-radius: 5px;
+  margin-right: 40px;
+}
+
+#bestBox .card_area .card_image {
+    width: auto; height: 181px;
+    margin: 10px;
+    background-repeat: no-repeat; background-size: cover;
+    background-position: 50% 50%;
+    border-radius: 5px;
+  }
+
+  #bestBox .card_area h2 {
+    width: 100%; height: auto;
+    font-size: 1.375rem; font-weight: 700;
+    text-transform: capitalize;
+    margin: 10px;
+    margin-top: 15px; color: #171717;
+  }
+
+  #bestBox .card_area p {
+    width: 100%; height: auto;
+    margin: 10px; margin-bottom: 30px;
+    font-size: 1rem; color: #777;
+  }
+
+  #bestBox .card_area .card_date {
+    width: 216; height: auto;
+    margin-left: 12px; margin-right: 12px;
+    border-top: 1px solid #757575;
+  }
+
+  .card_area .card_date span {
+      display: block;
+      margin: 5px; margin-left: 10px;
+      font-size: 0.75rem; color: #505050;
+    }
+
+
+/* 카드 이미지 */
+.card_area li:nth-child(1) .card_image {
+  background-image: url("../../img/main_page/05_bestBox/best_img_01.png");
+}
+.card_area li:nth-child(2) .card_image {
+  background-image: url("../../img/main_page/05_bestBox/best_img_02.png");
+}
+.card_area li:nth-child(3) .card_image {
+  background-image: url("../../img/main_page/05_bestBox/best_img_03.png");
+}
+
+
+
+/*? galleryBox ----------------------- */
+#galleryBox {
+  width: 100%; height: 750px;
+  background-color: #F7E9D3;
+  padding-top: 75px;
+}
+
+#galleryBox .area_title { 
+  /* background-color: #fff; */
+  font-size: 2.5rem; font-weight: 700;
+  color: #171717;
+}
+
+#galleryBox .area_content { 
+  height: 420px;
+  /* background-color: #777; */
+}
+
+  #galleryBox li {
+    display: block;
+  }
+
+    #galleryBox li.imageArea {
+      float: left;
+      width: 540px; height: 420px;
+      background-image: url("../../img/main_page/06_galleryBox/gallery_main_01.png");
+      background-repeat: no-repeat;
+      background-position: 50% 50%;
+      background-size: cover;
+      /* background-color: aquamarine; */
+    }
+
+    #galleryBox li.listArea {
+      float: right;
+      width: 320px; height: 270px;
+      margin-top: 150px;
+      /* background-color: aquamarine; */
+    }
+
+      #galleryBox li.listArea ul { list-style: circle; }
+      #galleryBox li.listArea li {
+        padding: 10px; box-sizing: border-box;
+        width: auto; height: 50px;
+        margin-bottom: 18px;
+        /* background-color: #fff; */
+        text-transform: capitalize;
+        font-size: 1.375rem; border-bottom: 1px solid #505050;
+        }
+        
+        #galleryBox li.listArea li a { background-image: none;}
+        #galleryBox li.listArea li:last-child {
+          margin-bottom: 0;
+        }
+
+
+
+/*? sponserBox ----------------------- */
+#sponserBox {
+  width: 100%; height: 100px;
+  /* background-color: #999; */
+  padding-top: 10px;
+  box-sizing: border-box;
+}
+
+.sponsor_area {
+  height: 80px;
+  /* background-color: #fff; */
+  overflow: hidden;
+}
+
+.sponsor_area ul {
+  width: 1760px;
+  height: 100%;
+}
+
+  #sponserBox li {
+    display: block;
+    float: left;
+    width: 140px; height: 80px;
+    margin-right: 20px;
+    background-image: url("../../img/main_page/07_sponserBox/sponsersprite.png");
+    background-repeat: no-repeat
+  }
+
+  #sponserBox a {
+    display: block;
+    width: 120px; height: 80px;
+    margin: auto;
+  }
+
+    #sponserBox li:nth-child(2) { background-position: -300px 0; }
+    #sponserBox li:nth-child(3) { background-position: -450px 0; }
+    #sponserBox li:nth-child(4) { background-position: -600px 0; }
+    #sponserBox li:nth-child(5) { background-position: -750px 0; }
+    #sponserBox li:nth-child(6) { background-position: -900px 0; }
+    #sponserBox li:nth-child(7) { background-position: -1050px 0; }
+    #sponserBox li:nth-child(8) { background-position: -1200px 0; }
+    #sponserBox li:nth-child(9) { background-position: -1350px 0; }
+    #sponserBox li:nth-child(10) { background-position: -1500px 0; }
+
+  #sponserBox li.sponserBox_li_end {
+    margin-right: 0;
+  }
+
+
+
+/*? footBox ----------------------- */
+#footBox {
+  width: 100%; height: 450px;
+  padding-top: 68px; box-sizing: border-box;
+  background-color: #171717;
+}
+
+.area_foot { height: auto; }
+
+.info_logo {
+  width: 120px; height: 70px;
+  margin-bottom: 45px;
+  /* background-color: #aaa; */
+  background-image: url("../../img/common_page/08_footBox/osam_sub_logo.png");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: cover;
+}
+
+  .info_logo a {
+    display: block;
+    width: 120px; height: 70px;
+  }
+
+.info_company {
+  width: 100%; height: 200px;
+  /* background-color: #aaa; */
+}
+
+
+
+/** infoBox */
+
+  #footBox li.infoBox {
+    display: block;
+    float: left;
+    width: 600px; height: 200px;
+    /* background-color: aquamarine; */
+  }
+
+    #footBox li.infoBox li {
+      display: block;
+      float: left;
+      font-size: 1rem; color: #fff;
+      margin-top: 28px;
+      margin-bottom: 28px;
+      margin-right: 16px;
+    }
+
+    #footBox li.infoBox li:hover,
+    #footBox li.infoBox li:focus {
+      color : #FFBD55
+    }
+
+    #footBox .footBox_companyinfo {
+      font-size: 1rem; color: #fff;
+      margin-bottom: 28px;
+      line-height: 200%;
+    }
+
+    address { width: 100%; height: auto; font-style: normal; }
+    address p{ width: 100%; height: 22px; padding-left: 8px; }
+
+    address dl { width: 100%; height: auto; margin-bottom: 30px;}
+
+    address dt { display: inline-block; padding: 5px; }
+      address dt::after { content:":"; padding-left: 5px; }
+
+    address dd { display: inline-block; padding: 5px; }
+      address dd::after { content:"|"; padding-left: 8px; }
+        address dd:last-child::after { content: ""; }
+
+
+
+/** linkBox */
+
+  #footBox li.linkBox {
+    display: block;
+    float: right;
+    width: 200px; height: 160px;
+    margin-top: 40px;
+    /* background-color: aquamarine; */
+  }
+
+    #footBox li.linkBox li {
+      display: block; float: left;
+      width: 40px; height: 40px; 
+      margin-right: 20px;
+      margin-bottom: 10px;
+      /* background-color: #fff; */
+    }
+
+    #footBox li.linkBox ul a {
+      display: block;
+      width: 40px; height: 40px;
+      margin: auto;
+    }
+
+      #footBox li.linkBox li:nth-child(1) {
+        background-image: url("../../img/common_page/08_footBox/facebook.png");
+      }
+      #footBox li.linkBox li:nth-child(2) {
+        background-image: url("../../img/common_page/08_footBox/youtube.png");
+      }
+      #footBox li.linkBox li:last-child { 
+        background-image: url("../../img/common_page/08_footBox/naver.png");
+        margin-right: 0; 
+      }
+
+    
+      #footBox li.linkBox .footBox_familysite {
+        width: 160px; height: 30px; background-color: #fff;
+        border-radius: 5px;
+        margin-bottom: 10px;
+        font-size: 0.75rem; color: #555; text-transform: capitalize;
+      }
+
+        #footBox .footBox_familysite select {
+          display: block; 
+          width: 100%; height: 30px; border-radius: 5px;
+          border: 0;
+        }
+
+      #footBox li.linkBox .footBox_textarea {
+        width: 160px; height: 50px; background-color: #fff;
+        border-radius: 5px;
+      }
+
+

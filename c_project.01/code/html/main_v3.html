@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<!-- main_v2.html -->
+<!-- main_v3.html -->
 <html lang="ko-KR">
   <head>
     <meta charset="UTF-8">
@@ -11,8 +11,8 @@
 
     <link rel="stylesheet" href="../css/common/common.css">
     <link rel="stylesheet" href="../css/common/reset.css">
-    <link rel="stylesheet" href="../css/src/main_v2.css">
-    <title>main_v2</title>
+    <link rel="stylesheet" href="../css/src/main_v3.css">
+    <title>main_v3</title>
   </head>
   <body>
 
@@ -107,7 +107,7 @@
         <div class="area_indicator">
           <!-- area_indicator -->
           <ul class="blind_area">
-            <li><a href="#"><span>첫번째 탐색 버튼</span></a></li>
+            <li class="act"><a href="#"><span>첫번째 탐색 버튼</span></a></li>
             <li><a href="#"><span>두번째 탐색 버튼</span></a></li>
             <li><a href="#"><span>세번째 탐색 버튼</span></a></li>
           </ul>  
@@ -148,59 +148,123 @@
         <article class="max_width_01 area">
           <!-- area -->
           <ul>
-            <li class="bestBox_01">
-              <h2 tabindex="0">인기상품<br/>list</h2>
-              <p tabindex="0">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed voluptatum 
-              </p>
-              <div class="bestBox_buttons">
-                <button type="button"><span class="blind">next</span></button>
-                <button type="button"><span class="blind">prev</span></button>
-                <button type="button"><span>+ 더보기</span></button>
-              </div>
-            </li>
 
-            <li class="bestBox_02">
-              <span class="blind">bestBox_02</span>
-              <div class="bestBox_02_image">
+            <li class="description_area_control">
+              <ul class="description_area clearfix">
+                <li class="bestBox_01">
+                <h2 tabindex="0">인기상품<br/>list</h2>
+                <p tabindex="0">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed voluptatum 
+                </p>
+                <div class="bestBox_buttons">
+                  <button type="button"><span class="blind">next</span></button>
+                  <button type="button"><span class="blind">prev</span></button>
+                  <a><span>+ 더보기</span></a>
+                </div>
+                </li> 
+              </ul>  
+            </li> <!-- 설명 및 버튼 -->
 
-              </div>
-              <h2><a href="#">god father</a></h2>
-              <p tabindex="0">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, eum.
-              </p>
-              <div class="bestBox_02_date">
-                <span tabindex="0">2021. 06. 17</span>
-              </div>
-            </li> <!-- / card 1 (bestBox_02) -->
+            <li class="card_area_control">
+              <ul class="card_area clearfix">
+                <li class="card_01">
+                  <a href="#">
+                    <span class="blind">bestBox_02</span>
+                    <div class="card_image">
+                      <!-- 카드 이미지  -->
+                    </div>
+                    <h2 tabindex="-1">god father</h2>
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, eum.
+                    </p>
+                    <div class="card_date">
+                      <span>2021. 06. 17</span>
+                    </div>
+                  </a>  
+                </li> <!-- / card_01 -->
 
-            <li class="bestBox_03">
-              <span class="blind">bestBox_03</span>
-              <div class="bestBox_03_image">
+                <li class="card_02">
+                  <a href="#">
+                    <span class="blind">bestBox_03</span>
+                    <div class="card_image">
+                      <!-- 카드 이미지  -->
+                    </div>
+                    <h2>esspresso</h2>
+                    <p tabindex="0">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, eum. 
+                    </p>
+                    <div class="card_date">
+                      <span tabindex="0">2021. 06. 17</span>
+                    </div>
+                  </a>
+                </li> <!-- / card_02 -->
 
-              </div>
-              <h2><a href="#">esspresso</a></h2>
-              <p tabindex="0">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, eum.
-              </p>
-              <div class="bestBox_03_date">
-                <span tabindex="0">2021. 06. 17</span>
-              </div>
-            </li> <!-- / card 2 (bestBox_03) -->
+                <li class="card_03">
+                  <a href="#">
+                    <span class="blind">bestBox_04</span>
+                    <div class="card_image">
+                      <!-- 카드 이미지  -->
+                    </div>
+                    <h2>latte art</h2>
+                    <p tabindex="0">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, eum.
+                    </p>
+                    <div class="card_date">
+                      <span tabindex="0">2021. 06. 17</span> 
+                    </div>
+                  </a>  
+                </li> <!-- / card_03 -->
 
-            <li class="bestBox_04">
-              <span class="blind">bestBox_04</span>
-              <div class="bestBox_04_image">
+                <li class="card_04">
+                  <a href="#">
+                    <span class="blind">bestBox_04</span>
+                    <div class="card_image">
+                      <!-- 카드 이미지  -->
+                    </div>
+                    <h2>latte art</h2>
+                    <p tabindex="0">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, eum.
+                    </p>
+                    <div class="card_date">
+                      <span tabindex="0">2021. 06. 17</span> 
+                    </div>
+                  </a>  
+                </li> <!-- / card_03 -->
 
-              </div>
-              <h2><a href="#">latte art</a></h2>
-              <p tabindex="0">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, eum.
-              </p>
-              <div class="bestBox_04_date">
-                <span tabindex="0">2021. 06. 17</span> <!-- / card 3 (bestBox_04) -->
-              </div>
-            </li>
+                <li class="card_05">
+                  <a href="#">
+                    <span class="blind">bestBox_04</span>
+                    <div class="card_image">
+                      <!-- 카드 이미지  -->
+                    </div>
+                    <h2>latte art</h2>
+                    <p tabindex="0">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, eum.
+                    </p>
+                    <div class="card_date">
+                      <span tabindex="0">2021. 06. 17</span> 
+                    </div>
+                  </a>  
+                </li> <!-- / card_03 -->
+
+                <li class="card_06">
+                  <a href="#">
+                    <span class="blind">bestBox_04</span>
+                    <div class="card_image">
+                      <!-- 카드 이미지  -->
+                    </div>
+                    <h2>latte art</h2>
+                    <p tabindex="0">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, eum.
+                    </p>
+                    <div class="card_date">
+                      <span tabindex="0">2021. 06. 17</span> 
+                    </div>
+                  </a>  
+                </li> <!-- / card_03 -->
+              </ul> 
+            </li>    
+
           </ul>
         </article>
       </section> <!-- / #bestBox -->
@@ -275,24 +339,39 @@
             <ul>
               <li class="infoBox">
                 <span class="blind">infoBox</span>
-                  <ul class="clearfix">
-                    <li><a href="#"><span>이용약관</span></a></li>
-                    <li><a href="#"><span>개인정보처리방침</span></a></li>
-                    <li><a href="#"><span>운영정책</span></a></li>
-                    <li><a href="#"><span>권리침해신고안내</span></a></li>
-                    <li><a href="#"><span>공지사항</span></a></li>
-                    <li><a href="#"><span>contant us</span></a></li>
-                  </ul>
-                  <div class="footBox_companyinfo">
+
+                  <div>
+                    <ul class="company_bottom_movingbox clearfix">
+                      <li><a href="#"><span>이용약관</span></a></li>
+                      <li><a href="#"><span>개인정보처리방침</span></a></li>
+                      <li><a href="#"><span>운영정책</span></a></li>
+                      <li><a href="#"><span>권리침해신고안내</span></a></li>
+                      <li><a href="#"><span>공지사항</span></a></li>
+                      <li><a href="#"><span>contant us</span></a></li>
+                    </ul>
+                  </div>
+                
+                  <address class="footBox_companyinfo">
                     <p>
-                      서울특별시 강남구 논현동 000 MEGA빌딩 (서울특별시 강남구 논현동 000-00)<br />
-                      Tel : 02-0000-0000 | fax : 02-0000-0001<br />
-                      사업자등록번호 : 100-00-00000 | 통신판매업 신고 : 강남 제 000000호 | <br />
-                      대표이사 : 000
-                    </p>
-                  </div>  
-                  <div class="footBox_rights">
+                      서울특별시 강남구 논현동 000 MEGA빌딩 (서울특별시 강남구 논현동 000-00)
+                    </p>  
+                    <dl class="clearfix">
+                      <dt>tel</dt>
+                      <dd>02-0000-0000</dd>
+                      <dt>fax</dt>
+                      <dd>02-0000-0001</dd>
+                      <dt>사업자등록번호</dt>
+                      <dd>100-00-00000</dd>
+                      <dt>통신판매업 신고</dt>
+                      <dd>강남 제 000000호</dd>
+                      <dt>대표이사</dt>
+                      <dd>000</dd>
+                    </dl>
                     <p>&#169; coffinx Crop. All rights reserved.</p>
+                  </address>  
+
+                  <div class="footBox_rights">
+                    
                   </div>
               </li> <!-- / infoBox -->
 
@@ -305,7 +384,12 @@
                   <li><a href="#"><span class="blind">오삼커피 naver 블로그로 이동</span></a></li>
                 </ul>
                 <div class="footBox_familysite">
-                  <a href="#">family site</a>
+                  <label for="site" class="blind">family site</label>
+                  <select name="familysite" id="site">
+                    <option value="#">site_01</option>
+                    <option value="#">site_02</option>
+                    <option value="#">site_03</option>
+                  </select>  
                 </div>
                 <div class="footBox_textarea"></div>
               </li> <!-- /linkBox -->

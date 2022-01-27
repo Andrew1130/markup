@@ -1,0 +1,102 @@
+/* f_05_animation.css */
+
+
+.ani > li {
+  width: 150px; height: 150px;
+  background-color: #0ac;
+  line-height: 130px; 
+  text-align: center;
+  color: #fff; font-weight: 700;
+  border-radius: 100%;
+}
+
+  .ani > li:nth-child(1) { transition: all 1000ms linear; }
+  .ani > li:nth-child(1):hover { 
+    transform: translate(500px) rotate(360deg);
+  }
+
+
+  /* 
+  애니메이션 쓰는 법
+
+  1. 애니메이션 속성 지정 [(1), (2)는 필수]
+  (1) animation-name : 애니메이션의 이름 지정 (임의로 지어도 무방)
+  (2) animation-duration : 애니메이션이 1회 완결되는 데 걸릴 시간
+  (3) animation-iteration-count : 애니메이션이 반복될 수 
+      >> 1 | 2 | ... | infinite (무한 반복)  
+  (4) animation-direction : 추가 동작
+    1) alternate : 원상회복 
+    2) alternate-reverse : 완결점 > 시작점 > 완결점 > 시작점 ... 으로 동작
+    3) reverse : '완결점 > 시작점' 으로만 동작
+    4) 
+  (5) animation-fill-mode : 애니메이션의 반복이 끝났을 때, 해당 속성이 어디에 위치할지와 관련된 값
+    1) forward : 완결점
+    2) backward : 시작점
+    3) both : 애니메이션이 완결된 지점
+  (6) animation-delay : 지연 시간
+  (7) 
+
+  2. @keyframes 설정 : 하단 예시 참고.
+  */
+
+  .ani > li:nth-child(2) { 
+    animation-name: move; 
+    animation-duration: 2000ms;
+    animation-iteration-count: 2;
+    animation-direction: alternate; 
+  }
+
+  .ani > li:nth-child(3) {
+    animation-name: move; 
+    animation-duration: 2000ms;
+    animation-iteration-count: 2;
+    animation-direction: alternate-reverse;
+    animation-fill-mode: backwards;
+  }
+
+  .ani > li:nth-child(4) {
+    animation-name: move; 
+    animation-duration: 3000ms;
+    animation-iteration-count: 3;
+    animation-direction: reverse;
+    animation-delay: 3000ms;
+  }
+
+  .ani > li:nth-child(5) {
+    animation-name: move; 
+    animation-duration: 3000ms;
+    animation-iteration-count: 3;
+    animation-direction: alternate-reverse;
+    animation-fill-mode: both;
+    animation-delay: 2000ms;
+  }
+
+
+  .ani > li:nth-child(6) {
+    animation-name: move; 
+    animation-duration: 3000ms;
+    animation-iteration-count: 3;
+    animation-direction: alternate-reverse;
+    animation-fill-mode: both;
+    /* animation-play-state를 쓰면 액션 발생 시(ex.hover) 애니메이션을 멈추게 할 수 있다. */
+    animation-play-state: running;
+  }
+
+    .ani > li:nth-child(6):hover { animation-play-state: paused; }  
+
+  
+  .ani > li:nth-child(7) {
+    /* animation : name duration function count direction delay fill state */
+    animation: move 3000ms 3 alternate both
+  } 
+
+@keyframes move {
+  /* from { transform: translate(0) rotate(0); }
+  to { transform: translate(500px) rotate(360deg); } */
+  0% { transform: translate(0) rotate(0); }
+  30% { transform: scale(1.2); }
+  100% { transform: scale(1) translate(500px) rotate(360deg); }
+}
+
+
+  
