@@ -1,0 +1,91 @@
+/* g_01_variable.css */
+
+
+/* 
+변수 할당
+>> --'정할 변수명'-'설명' 식으로 작성 [(-'설명') 부분은 필수사항은 아님]
+>> 변수를 호출할 때는 [var(--'변수명'-'설명')] 방식으로 호출한다.  
+>> 어떤 범위 안에서 정해진 변수는 그 범위 + 자손 범위 안에서만 유효
++ body, html, root와 같은 곳에 변수를 설정하면 그 변수를 사실상 모든 곳에서 쓸 수 있다.
+*/
+
+
+:root {
+  --color-white : #fff;
+  --color-blue : #02c;
+  --color-sky : #07a;
+  --font-size01 : 30px;
+  --size-01 : 20px;
+  --size-02 : 140px;
+}
+
+/* li {
+  --color-sky : #07a;
+} */
+
+.ex_wrap > li:nth-child(1) {
+  font-weight: 700; color: var(--color-sky) ;
+  background-color: #fff;
+  border-bottom: 2px solid var(--color-sky);
+  font-size: var(--font-size01);
+}
+
+.ex_wrap > li:nth-child(2) {
+  font-weight: 700;
+  background-color: #fff;
+  border-bottom: 2px solid var(--color-sky);
+}
+
+  .ex_wrap > li:nth-child(2) span { color: var(--color-sky); }
+
+
+p {
+  color: var(--color-sky);
+}
+
+.ex_wrap > li:nth-child(3) {
+  width: 200px; height: 100px; 
+  border-radius: var(--size-01);
+  background-color: #fff;
+  color: var(--color-sky);
+}
+
+
+
+/* 구형 브라우저 및 익스플로러를 고려한 코드 작성 1 (추천) */
+
+/** 지원 안 될 경우 적용될 코드 */
+.ex_wrap > li:nth-child(4) {
+  width: 140px; height: 140px;
+  background-color: #ccc;
+  color: #fff
+}
+
+/** ( ) 부분이 지원될 경우 적용될 코드 */
+@supports ( color: var(--color-sky) ) {
+  .ex_wrap > li:nth-child(4) {
+    width: var(--size-02); height: var(--size-02);
+    background-color: var(--color-blue);
+    color: #fff
+  }
+} 
+
+
+
+/* 구형 브라우저 및 익스플로러를 고려한 코드 작성 2 */
+
+.ex_wrap > li:nth-child(5) {
+  width: 140px; height: 140px;
+  color: #07a; 
+  font-size: 20px;
+  background-color: #fff;
+  border-radius: 20px;
+
+  width: var(--size-02); height: var(--size-02);
+  color: var(--color-sky);
+  font-size: var(--size-01);
+  background-color: var(--color-white);
+  border-radius: var(--size-01);
+
+  line-height: 20px;
+}
