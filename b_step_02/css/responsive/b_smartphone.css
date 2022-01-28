@@ -1,0 +1,13 @@
+/* b_smartphone.css */
+
+
+/** smartphone --------------------------------------- */
+
+/* 767px 이하일 경우 */
+@media screen and (max-width:767px) {
+  #wrap {
+    background-color: #acc;
+  }  
+}
+
+/* @media screen and (max-width:767px) */

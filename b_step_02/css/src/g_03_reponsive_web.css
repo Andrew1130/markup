@@ -1,0 +1,14 @@
+/* g_03_reponsive_web.css */
+
+
+/* old device는 맨 위에 와야 한다. (css 적용순위를 생각해 보자) */
+@import url("../responsive/a_old_device.css");
+@import url("../responsive/b_smartphone.css");
+@import url("../responsive/c_tablet.css");
+@import url("../responsive/d_laptop.css");
+
+
+
+
+
+

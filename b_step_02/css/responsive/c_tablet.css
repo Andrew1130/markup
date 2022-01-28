@@ -1,0 +1,13 @@
+/* c_tablet.css */
+
+
+/** tablet --------------------------------------- */
+
+/* 768px 이상이고 1439px 이하일 경우 */
+@media screen and (min-width:768px) and (max-width : 1439px) {
+  #wrap {
+    background-color: #faa;
+  }
+}
+
+/* @media screen and (min-width:1280px) and (max-width : 1439px) */

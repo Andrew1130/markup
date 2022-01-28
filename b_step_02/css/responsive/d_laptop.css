@@ -1,0 +1,13 @@
+/* d_laptop.css */
+
+
+/** pc -------------------------------------------- */
+
+/* 1440px 이상일 경우 */
+@media screen and ( min-width:1440px ) {
+  #wrap {
+    background-color: #ddd;
+  }
+}
+
+/* @media screen and ( min-width:1440px ) */
