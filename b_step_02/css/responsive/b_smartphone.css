@@ -1,13 +1,56 @@
 /* b_smartphone.css */
+:root {
+  --color-red : #fc7676;
+}
 
-
+@supports (background-color: var(--color-red)) {
 /** smartphone --------------------------------------- */
 
 /* 767px 이하일 경우 */
 @media screen and (max-width:767px) {
+/*? 기준디바이스 크기 : 320px  */
+/* 
+vw, wh 계산
+> size(px) / 기준 [기준디바이스 크기, 여기서는 320px] * 100 
+*/
+
+
+
+/* old_device #wrap의 min-width을 상쇄하기 위해 min-width:auto를 설정 */
   #wrap {
-    background-color: #acc;
-  }  
+    width: 100%; min-width: auto; height: auto; 
+    background-color: #faa;
+  }
+
+  #headBox { 
+    position: fixed; top: 0; left: 0; z-index: 1000;
+    width: 100%; height: 6.25rem; 
+    background-color: #cacaca;
+  }
+
+  #viewBox { 
+    width: 100%; 
+    /* height: 25rem;  */
+    height: 125vw; min-height: 25rem;
+    padding-top: 6.25rem;
+    background-color: #fc7676;
+    background-color: var(--color-red)
+  }
+
+  #contentBox { 
+    width: 100%; height: auto; min-height: 8.75rem; 
+    background-color: #bcf88d; 
+  }
+
+
+  /* 반응 part에 따라 어떤 부분은 안 보이게 해야 할 경우,
+  아래와 같이 할 수도 있다.
+  다만 이렇게 숨긴 박스에 미디어가 있으면 그 재생은 못 막으므로 주의.  */
+  #supportBox { display: none; }
+  #footBox { display: none; }
+
+
 }
 
 /* @media screen and (max-width:767px) */
+}

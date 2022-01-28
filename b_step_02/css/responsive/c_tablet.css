@@ -1,13 +1,49 @@
 /* c_tablet.css */
 
 
-/** tablet --------------------------------------- */
+@supports (background-color : var(--color-red)) {
 
 /* 768px 이상이고 1439px 이하일 경우 */
 @media screen and (min-width:768px) and (max-width : 1439px) {
+  /*? 기준 디바이스 크기 : 768px */
+
+
   #wrap {
-    background-color: #faa;
+    width: 100%; min-width: auto; height: auto; 
+    margin: auto;
+    background-color: #daa;
   }
+  
+  #headBox { 
+    position: fixed; top: 0; left: 0; z-index: 1000;
+    width: 100%; height: 5rem; 
+    background-color: #cacaca;
+  }
+  
+  #viewBox { 
+    width: 100%; 
+    min-height: 31.25rem; max-height: 50rem;
+    height: 65.104167vw;
+    padding-top: 6.25rem;
+    background-color: #fc7676; 
+  }
+  
+  #contentBox { 
+    width: 100%; max-width: 80rem;
+    height:auto; min-height: 23.375rem;
+    margin: auto; 
+    background-color: #bcf88d; 
+  }
+
+  #supportBox { display: none; }
+
+  #footBox {
+    width: 100%; height: 7.5rem;
+    background-color: #cacaca;
+  }
+
+
 }
 
 /* @media screen and (min-width:1280px) and (max-width : 1439px) */
+}
