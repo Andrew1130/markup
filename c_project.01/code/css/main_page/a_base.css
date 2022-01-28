@@ -1,0 +1,92 @@
+/* main_page/a_base.css */
+
+
+/*TODO: 구형 브라우저를 신경써야 하는가? 신경써야 하면 어디까지 해야 하는가? 생각 필요. */
+
+@media screen {
+
+  #wrap {
+    width:100%; 
+    min-width:20rem; 
+    height: auto; min-height: 62.5rem;
+    margin: auto; padding-top: 0;
+  }
+
+
+  /*? headBox ----------------------- */
+  #headBox {
+    
+    position: fixed; top:0; left:0; z-index: 1500;
+    box-shadow: 0 0.25rem 0.25rem rgba(0,0,0,0.25);
+    /* padding: 1.25rem 6.25rem 0.625rem; box-sizing: border-box;  */
+
+    width: 100%; 
+    height: auto;
+    background-color: #fff;   
+    background-color: var(--color-white); 
+  }
+
+  #headBox > * { display: none; } 
+
+
+  /*? slideBox ----------------------- */
+  #slideBox {
+    position: relative;
+    width: 100%; height: 100vh; min-height: 500px; 
+    padding-top: 50px; box-sizing: border-box;
+    background-color: #afd;
+  }
+  
+  
+  /*? newBox ----------------------- */
+  #newBox {
+    position: relative;
+    width: 100%; 
+    /* padding-top: 65px;  */
+    box-sizing: border-box;
+    background-color: #e8e;
+  }
+  
+  
+  /*? subBox ----------------------- */
+  #subBox {
+    position: relative;
+    width: 100%; 
+    min-height: 380px;
+    /* padding-top: 57px; box-sizing: border-box; */
+    background-color: #FFBD55;
+  }
+
+
+  /*? bestBox ----------------------- */
+  #bestBox {
+    width: 100%; 
+    padding-top: 175px; box-sizing: border-box;
+    background-color: #fff;
+  }
+
+
+  /*? galleryBox ----------------------- */
+  #galleryBox {
+    width: 100%; height: 750px;
+    padding-top: 75px; box-sizing: border-box;
+    background-color: rgba(255,189,85,0.2)
+  }
+
+
+  /*? sponserBox ----------------------- */
+  #sponserBox {
+    width: 100%; height: 100px;
+    /* padding-top: 10px; box-sizing: border-box; */
+    background-color: #999;
+  }
+
+  
+  /*? footBox ----------------------- */
+  #footBox {
+    width: 100%;
+    padding-top: 68px; box-sizing: border-box;
+    background-color: #333;
+  }
+
+} /* @media screen */

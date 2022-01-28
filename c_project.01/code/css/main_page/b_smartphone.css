@@ -3,5 +3,56 @@
 
 @media screen and (max-width: 599px) {
   /*? 기준 디바이스 크기 : 320px */
-  body { background-color: var(--color-primary_01);}  
-}
+
+  body { background-color: #eee; }
+  /* #wrap { } */
+
+  /*? headBox ----------------------- */
+  #headBox { height: 3.125rem; padding: 0.5rem }
+  #headBox > * { display: none; } 
+
+
+  /*? slideBox ----------------------- */
+  #slideBox {
+    min-height: 31.25rem; 
+    padding-top: 5.125rem;
+  }
+  
+  
+  /*? newBox ----------------------- */
+  #newBox {
+    height: 100vh; min-height: 37.5rem;
+    padding-top: 5rem; padding-bottom: 5.625rem; 
+  }
+  
+  
+  /*? subBox ----------------------- */
+  #subBox { height: 100vh; min-height: 31.25rem;}
+
+
+  /*? bestBox ----------------------- */
+  #bestBox {
+    height: auto; min-height: 43.75rem;
+    padding: 2.5rem; padding-bottom: 8.75rem;
+  }
+
+
+  /*? galleryBox ----------------------- */
+  #galleryBox {
+    height: auto; min-height: 61.25rem;
+    padding-top: 1.5rem; padding-bottom: 8.75rem;
+  }
+
+
+  /*? sponserBox ----------------------- */
+  #sponserBox {
+    height: 25rem;
+  }
+
+  
+  /*? footBox ----------------------- */
+  #footBox { height: 26.5625rem; }
+  #footBox > * { display: none; }
+
+  
+} /* @media screen and (max-width: 599px) */
