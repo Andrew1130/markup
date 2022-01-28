@@ -1,0 +1,7 @@
+/* main_page/d_laptop.css */
+
+
+@media screen and (min-width: 1024px) and (max-width: 1439px) {
+  /*? 기준 디바이스 크기 : 1024px */
+  body { background-color: var(--color-black_01); }
+}

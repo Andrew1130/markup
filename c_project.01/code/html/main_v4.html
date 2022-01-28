@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<!-- main_v4.html -->
+<html lang="ko-KR" class="no-js">
+  <head>
+    <meta charset="UTF-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../fonts/fontawesome/css/all.min.css">
+
+    <link rel="stylesheet" href="../css/common/reset.css">
+    <link rel="stylesheet" href="../css/common/common.css">
+    
+    
+    <!-- 
+      익스플로러 10, 11 및 다른 구형 브라우저를 위해 main_v3 호출
+      (아래 if IE는 익스플로러 9 이하부터 적용된다)
+    -->
+    <link rel="stylesheet" href="../css/src/main_v3.css">
+
+    <!--[if IE]>
+      <link rel="stylesheet" href="../css/src/main_v3.css">
+      <script src="../ie/modernizr-custom.js"></script>
+    <![endif]-->
+
+    <link rel="stylesheet" href="../css/src/main_v4.css">
+    
+    <title>main_v4</title>
+  </head>
+  <body>
+
+    <div id = "wrap">
+
+      <header id="headBox">
+        <div class="area_head">
+          <h1 id="logo">
+            <a href="#"><span class="blind">coffee brand 오삼 로고</span></a>
+          </h1>
+          <nav id="navBox">
+          <h2 class="blind">Navigation_bar</h2>   
+            <span class="blind">Navbox</span>
+            <div class="unb">
+              <!-- unb -->
+              <ul>
+                <li class="unb_li_end"><a href="#">한국어</a></li>
+                <li class="unb_li_start"><a href="./login.html">Log In</a></li>
+                <li><a href="#">Join</a></li>
+                <li><a href="#">Site map</a></li>
+              </ul>
+            </div>
+            <div class="gnb">
+              <!-- gnb -->
+              <ul>
+                <li class="gnb_li_start"><a href="#">About us</a></li>
+                <li><a href="#">Menu</a></li>
+                <li><a href="#">Gift</a></li>
+                <li><a href="#"><abbr title="frequetly asked question">F A Q</abbr></a></li>
+                <li><a href="#">Event</a></li>
+                <li class="gnb_li_end"><a href="#">Notice</a></li>
+              </ul>
+            </div>
+          </nav>  
+        </div>  
+      </header> <!-- / #headBox -->
+  
+      
+      <section id="slideBox">
+        <h2 class="blind">slideBox</h2>
+        <div class="slide_area">
+          <article id="adCon_01" class="slide_content">
+            
+            <div class="slide_content_part">
+              <h3 tabindex="0">
+                Banner Title
+              </h3> 
+              <p tabindex="0">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil omnis assumenda ex animi impedit ducimus aliquid. 
+              </p>
+              <div class="link">
+                <a href="#">
+                  바로가기
+                  <i class="fas fa-arrow-right"></i>
+                </a>
+              </div>
+            </div> <!-- / content -->
+
+            <figure class="slide_img_part">
+              <figcaption class="blind">이미지 부연 설명_제목</figcaption>
+              <div class="slide_01">
+                <span class="blind">이미지 부연 설명_내용</span>
+              </div>
+            </figure> <!-- / image -->
+
+          </article>  
+        </div>  
+
+          <button type="button" class="next_btn">
+            <span class="blind">다음</span>
+          </button>
+          <button type="button" class="prev_btn">
+            <span class="blind">이전</span>
+          </button>  
+      </section>  <!-- / #slideBox -->
+
+
+      <section id="newBox">
+        <h2 tabindex="0" class="area_title">
+          최신상품
+        </h2> 
+        <article class="area_content blind_area">
+          <h2 class="blind">newBox</h2>
+          <!-- area_content -->
+          <ul>
+            <li tabindex="0"><a href="#"><span>첫번째 상품 사진</span></a></li>
+            <li tabindex="0"><a href="#"><span>두번째 상품 사진</span></a></li>
+            <li tabindex="0" class="area_content_li_end">
+              <a href="#"><span>세번째 상품 사진</span></a></li>
+          </ul>
+        </article>
+        <div class="area_indicator">
+          <!-- area_indicator -->
+          <ul class="blind_area">
+            <li class="act"><a href="#"><span>첫번째 탐색 버튼</span></a></li>
+            <li><a href="#"><span>두번째 탐색 버튼</span></a></li>
+            <li><a href="#"><span>세번째 탐색 버튼</span></a></li>
+          </ul>  
+        </div>
+      </section> <!-- / #newBox -->
+
+
+      <section id="subBox">
+      <h2 class="blind">subBox</h2>
+        <article class="max_width_01 area">
+          <!-- area -->
+          <ul>
+            <li class="subBox_image">
+              <span class="blind">
+                subBox_image
+              </span>
+            </li>
+            <li class="subBox_text_btn">
+              <span class="blind">
+                subBox_text_btn
+              </span>
+              <h2 tabindex="0">banner title</h2>
+              <p tabindex="0">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum repellat et blanditiis, commodi id libero.
+              </p>
+                <div class="subBox_button">
+                  <button type="button">버튼a</button>
+                  <button type="button">버튼b</button>
+               </div>
+            </li>
+          </ul>
+        </article>
+      </section> <!-- / #subBox -->
+
+
+      <section id="bestBox">
+        <h2 class="blind">bestBox</h2>
+        <article class="max_width_01 area">
+          <!-- area -->
+          <ul>
+
+            <li class="description_area_control">
+              <ul class="description_area clearfix">
+                <li class="bestBox_01">
+                <h2 tabindex="0">인기상품<br/>list</h2>
+                <p tabindex="0">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed voluptatum 
+                </p>
+                <div class="bestBox_buttons">
+                  <button type="button"><span class="blind">next</span></button>
+                  <button type="button"><span class="blind">prev</span></button>
+                  <a><span>+ 더보기</span></a>
+                </div>
+                </li> 
+              </ul>  
+            </li> <!-- / 설명 및 버튼 영역 -->
+
+            <li class="card_area_control">
+              <ul class="card_area clearfix">
+                <li class="card_01">
+                  <a href="#">
+                    <span class="blind">bestBox_02</span>
+                    <div class="card_image">
+                      <!-- 카드 이미지  -->
+                    </div>
+                    <h2 tabindex="-1">god father</h2>
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, eum.
+                    </p>
+                    <div class="card_date">
+                      <span>2021. 06. 17</span>
+                    </div>
+                  </a>  
+                </li> <!-- / card_01 -->
+
+                <li class="card_02">
+                  <a href="#">
+                    <span class="blind">bestBox_03</span>
+                    <div class="card_image">
+                      <!-- 카드 이미지  -->
+                    </div>
+                    <h2>esspresso</h2>
+                    <p tabindex="0">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, eum. 
+                    </p>
+                    <div class="card_date">
+                      <span tabindex="0">2021. 06. 17</span>
+                    </div>
+                  </a>
+                </li> <!-- / card_02 -->
+
+                <li class="card_03">
+                  <a href="#">
+                    <span class="blind">bestBox_04</span>
+                    <div class="card_image">
+                      <!-- 카드 이미지  -->
+                    </div>
+                    <h2>latte art</h2>
+                    <p tabindex="0">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, eum.
+                    </p>
+                    <div class="card_date">
+                      <span tabindex="0">2021. 06. 17</span> 
+                    </div>
+                  </a>  
+                </li> <!-- / card_03 -->
+
+                <li class="card_04">
+                  <a href="#">
+                    <span class="blind">bestBox_04</span>
+                    <div class="card_image">
+                      <!-- 카드 이미지  -->
+                    </div>
+                    <h2>latte art</h2>
+                    <p tabindex="0">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, eum.
+                    </p>
+                    <div class="card_date">
+                      <span tabindex="0">2021. 06. 17</span> 
+                    </div>
+                  </a>  
+                </li> <!-- / card_03 -->
+
+                <li class="card_05">
+                  <a href="#">
+                    <span class="blind">bestBox_04</span>
+                    <div class="card_image">
+                      <!-- 카드 이미지  -->
+                    </div>
+                    <h2>latte art</h2>
+                    <p tabindex="0">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, eum.
+                    </p>
+                    <div class="card_date">
+                      <span tabindex="0">2021. 06. 17</span> 
+                    </div>
+                  </a>  
+                </li> <!-- / card_03 -->
+
+                <li class="card_06">
+                  <a href="#">
+                    <span class="blind">bestBox_04</span>
+                    <div class="card_image">
+                      <!-- 카드 이미지  -->
+                    </div>
+                    <h2>latte art</h2>
+                    <p tabindex="0">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, eum.
+                    </p>
+                    <div class="card_date">
+                      <span tabindex="0">2021. 06. 17</span> 
+                    </div>
+                  </a>  
+                </li> <!-- / card_03 -->
+              </ul> 
+            </li> <!-- / 카드 영역 -->   
+
+          </ul>
+        </article>
+      </section> <!-- / #bestBox -->
+
+
+      <section id="galleryBox">
+        <h2 class="max_width_01 area_title" tabindex="0">추천 미리보기</h2>
+        <article class="max_width_01 area_content">
+          <h2 class="blind">galleryBox_area_content</h2>
+          <!-- area_content -->
+          <ul>
+            <li class="imageArea">
+              <span class="blind">imageArea</span>
+            </li>
+            <li class="listArea">
+              <ul>
+                <li>
+                  <a href="#"><span>&#149;&nbsp;&nbsp;</span>list_content_01</a>
+                </li>
+                <li>
+                  <a href="#"><span>&#149;&nbsp;&nbsp;</span>list_content_02</a>
+                </li>
+                <li>
+                  <a href="#"><span>&#149;&nbsp;&nbsp;</span>list_content_03</a>
+                </li>
+                <li>
+                  <a href="#"><span>&#149;&nbsp;&nbsp;</span>list_content_04</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </article>
+      </section> <!-- / #galleryBox -->
+
+
+      <section id="sponserBox">
+      <h2 class="blind">sponserBox</h2>  
+        <article class="max_width_01 sponsor_area">
+        <h2 class="blind">sponserBox_sponsor_area</h2>
+          <!-- sponser_area -->
+          <ul>
+            <li><a href="#"><span class="blind">sponser_01</span></a></li>
+            <li><a href="#"><span class="blind">sponser_02</span></a></li>
+            <li><a href="#"><span class="blind">sponser_03</span></a></li>
+            <li><a href="#"><span class="blind">sponser_04</span></a></li>
+            <li><a href="#"><span class="blind">sponser_05</span></a></li>
+            <li><a href="#"><span class="blind">sponser_06</span></a></li>
+            <li><a href="#"><span class="blind">sponser_07</span></a></li>
+            <li><a href="#"><span class="blind">sponser_08</span></a></li>
+            <li><a href="#"><span class="blind">sponser_09</span></a></li>
+            <li><a href="#"><span class="blind">sponser_10</span></a></li>
+            <li class="sponserBox_li_end">
+              <a href="#"><span class="blind">sponser_11</span></a>
+            </li>
+          </ul>
+        </article>
+      </section> <!-- / #sponserBox -->
+
+      
+      <section id="footBox">
+      <h2 class="blind">footBox</h2>  
+        <article class="max_width_01 area_foot">
+        <h2 class="blind">footBox_area_foot</h2>  
+          <h2 class="info_logo">
+            <a href="./main_v2.html">
+              <span class="blind">오삼 company 하단 로고</span>
+            </a>
+
+          </h2>
+          <div class="info_company">
+            <!-- company -->
+            <ul>
+              <li class="infoBox">
+                <span class="blind">infoBox</span>
+
+                  <div>
+                    <ul class="company_bottom_movingbox clearfix">
+                      <li><a href="#"><span>이용약관</span></a></li>
+                      <li><a href="#"><span>개인정보처리방침</span></a></li>
+                      <li><a href="#"><span>운영정책</span></a></li>
+                      <li><a href="#"><span>권리침해신고안내</span></a></li>
+                      <li><a href="#"><span>공지사항</span></a></li>
+                      <li><a href="#"><span>contant us</span></a></li>
+                    </ul>
+                  </div>
+                
+                  <address class="footBox_companyinfo">
+                    <p>
+                      서울특별시 강남구 논현동 000 MEGA빌딩 (서울특별시 강남구 논현동 000-00)
+                    </p>  
+                    <dl class="clearfix">
+                      <dt>tel</dt>
+                      <dd>02-0000-0000</dd>
+                      <dt>fax</dt>
+                      <dd>02-0000-0001</dd>
+                      <dt>사업자등록번호</dt>
+                      <dd>100-00-00000</dd>
+                      <dt>통신판매업 신고</dt>
+                      <dd>강남 제 000000호</dd>
+                      <dt>대표이사</dt>
+                      <dd>000</dd>
+                    </dl>
+                    <p>&#169; coffinx Crop. All rights reserved.</p>
+                  </address>  
+
+                  <div class="footBox_rights">
+                    
+                  </div>
+              </li> <!-- / infoBox -->
+
+
+              <li class="linkBox">
+                <span class="blind">linkBox</span>
+                <ul class="footBox_sns clearfix">
+                  <li><a href="#"><span class="blind">오삼커피 facebook 페이지로 이동</span></a></li>
+                  <li><a href="#"><span class="blind">오삼커피 youtube 페이지로 이동</span></a></li>
+                  <li><a href="#"><span class="blind">오삼커피 naver 블로그로 이동</span></a></li>
+                </ul>
+                <div class="footBox_familysite">
+                  <label for="site" class="blind">family site</label>
+                  <select name="familysite" id="site">
+                    <option value="#">site_01</option>
+                    <option value="#">site_02</option>
+                    <option value="#">site_03</option>
+                  </select>  
+                </div>
+                <div class="footBox_textarea"></div>
+              </li> <!-- /linkBox -->
+
+
+            </ul>
+          </div>
+        </article>
+      </section> <!-- / #footBox -->
+
+
+    </div> <!-- / #wrap -->
+  </body>
+</html>
