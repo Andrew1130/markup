@@ -22,12 +22,67 @@
   /*? newBox ----------------------- */
   #newBox {
     height: 100vh; min-height: 37.5rem;
+    max-height: 37.5rem;
     padding-top: 5rem; padding-bottom: 5.625rem; 
   }
   
+  .area_title {
+    width: 100%; height: auto;
+    text-align: center;
+    padding-top: 0;
+    font-size: 1.75rem;
+  }
+
+  .area_indicator { bottom: 4.375rem; }
+
+  .newBox_area { width: 50.875rem; height: 20rem; }
+  .newBox_area li { width: 16.25rem; margin-left: 1.0625rem; }
   
+
   /*? subBox ----------------------- */
-  #subBox { height: 100vh; min-height: 31.25rem;}
+  #subBox { height: 36.25rem; min-height: 31.25rem; }
+
+  #subBox li { display: block; }
+
+  #subBox > .area {
+    position: relative;
+    width: 100%; min-width: auto; height: 100%; 
+
+    background-image: url("../../img/main_page_re/main_page_re/mobile/e_subBox/sub_img.png");
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+    
+  }
+
+  #subBox > .area::before {
+    content: ""; opacity: 0.5; position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0; background-color: #fff;
+  }
+
+  #subBox li.subBox_image { width: 0; height: 0; background-image: none; }
+
+
+  #subBox li.subBox_text_btn {
+    position: absolute;
+    top: 0; bottom: 0; left: 0; right: 0;
+    width: 100%; height: 100%;
+    margin-top: 181px;
+  }
+
+  .subBox_text_btn h2 { color: #171717; text-align: center; }
+  .subBox_text_btn p { text-align: center; margin: auto; margin-bottom: 40px; }
+
+
+  .subBox_text_btn button:first-child {
+    display: block; width: 244px; 
+    margin: auto; margin-bottom: 14px;
+  }
+
+  .subBox_text_btn button:last-child {
+    display: block; width: 244px; 
+    margin: auto; margin-bottom: 14px;
+  }
 
 
   /*? bestBox ----------------------- */
@@ -42,6 +97,10 @@
     height: auto; min-height: 61.25rem;
     padding-top: 1.5rem; padding-bottom: 8.75rem;
   }
+
+    #galleryBox .area_content {
+      width: 100%; 
+    }
 
 
   /*? sponserBox ----------------------- */

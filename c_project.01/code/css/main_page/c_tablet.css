@@ -22,12 +22,77 @@
   /*? newBox ----------------------- */
   #newBox {
     height: 100vh; min-height: 37.5rem;
+    max-height: 37.5rem;
     padding-top: 3.75rem; padding-bottom: 5.625rem; 
   }
+
+  .area_title {
+    width: 100%; height: auto; 
+    text-align: center;
+    padding-top: 0;
+    font-size: 1.75rem;
+  }
+
+  .area_indicator { bottom: 4.375rem; }
+
+  .newBox_area { width: 50.875rem; height: 20rem; margin-top: 3.25rem; }
+  .newBox_area li { width: 16.25rem; margin-left: 1.0625rem; }
+
   
   /*? subBox ----------------------- */
   #subBox { height: 37.5rem; }
 
+  #subBox > .area {
+    width: 100%; min-width: auto; height: 100%; 
+
+    background-image: url("../../img/main_page_re/main_page_re/mobile/e_subBox/sub_img.png");
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+  }
+
+  #subBox > .area::before {
+    content: ""; opacity: 0.5; position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0; background-color: #fff;
+  }
+
+  #subBox li.subBox_image { width: 0; height: 0; background-image: none; }
+
+
+  #subBox li.subBox_text_btn {
+    position: absolute;
+    top: 0; bottom: 0; left: 0; right: 0;
+    width: 100%; height: 100%;
+  }
+
+  /* .subBox_text_btn h2 { 
+    margin-top: 263px; 
+    margin-left: 84px;  
+    color: #171717; 
+   }
+
+  .subBox_text_btn p { 
+    width: 425px; height: 65px;
+    margin-top: 14px; 
+    margin-left: 94px; 
+    margin-bottom: 40px; } */
+
+  .subBox_text_btn h2 { margin-top: 263px;  color: #171717; text-align: center; }
+  .subBox_text_btn p { width: 425px; height: 65px; text-align: center; margin: auto; margin-bottom: 40px; }
+
+
+
+  .subBox_button { margin:  auto; }
+  
+  .subBox_text_btn button:first-child {
+    display: block; width: 244px; 
+    margin: auto; margin-bottom: 14px;
+  }
+
+  .subBox_text_btn button:last-child {
+    display: block; width: 244px; 
+    margin: auto; margin-bottom: 14px;
+  }
 
   /*? bestBox ----------------------- */
   #bestBox {
@@ -41,6 +106,10 @@
     height: 61.25rem;
     padding-top: 7.75rem; padding-bottom: 7.5rem;
   }
+
+    #galleryBox .area_content {
+      width: 100%; 
+    }
 
 
   /*? sponserBox ----------------------- */

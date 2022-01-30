@@ -25,9 +25,14 @@
     padding-top: 4.0625rem; padding-bottom: 4.375rem;
   }
   
+  .area_title { width: 58.75rem; }
+
   
   /*? subBox ----------------------- */
-  #subBox { height: 21.875rem; }
+  #subBox { height: 21.875rem; padding-bottom: 1.25rem; }
+  #subBox li.subBox_text_btn { margin-top: 60px; margin-right: 150px; }
+  .subBox_text_btn button:first-child { margin-right: 30px; }
+
 
 
   /*? bestBox ----------------------- */
@@ -35,6 +40,7 @@
     height: 43.75rem;
     padding-top: 10.9375rem; padding-bottom: 9.0625rem;
   }
+  
 
 
   /*? galleryBox ----------------------- */
