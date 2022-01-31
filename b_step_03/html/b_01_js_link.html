@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<!-- b_01_js_link.html -->
+<html lang="ko-KR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;400;700&display=swap" >
+    <link rel="stylesheet" href="../fonts/fontawesome/css/all.min.css">
+
+    <link rel="stylesheet" href="../css/common/reset.css">
+    <link rel="stylesheet" href="../css/common/common.css">
+    <link rel="stylesheet" href="../css/src/b_01_js_link.css">
+
+    <link rel="apple-touch-icon" href="../favicon.png">
+    <link rel="shortcut icon" href="../favicon.png" type="image/png">
+
+
+    <!-- 외부 js 불러오기 -->
+    <script src="../js/src/b_01_js_link.js">
+      // 이 내부에는 js를 사용할 수 없다.
+    </script>
+
+
+    <title>b_01_js_link</title>
+
+    <!-- head에 js를 작성 -->
+    <script>
+      // document.write ("<a href='#'>js를 처음으로 작성하였습니다.</a>");
+      document.write ("<a href='#'>js를 주석 아래에 작성</a>");
+    </script>
+
+    
+</head>
+<body>
+  
+  <!-- layout -->
+    <div class="code_exam">
+      <h1><a href="./a_00_content.html">웹표준</a></h1>
+      <hr />
+
+      <div class="part">
+        <h2>코드삽입위치</h2>
+        <div class="ex_wrap">
+          <script>
+            document.write ('<p>js 코드를 문서 중간에 작성</p>')
+          </script>
+        </div>  
+
+      </div> <!-- 코드삽입위치 -->
+
+
+      <!-- js를 인라인으로 작성 : 권장하지 않는다고 한다. -->
+      <div class="part" onclick="console.log('안뇽')"> 
+        <h2>주석작성방법</h2>
+        <div class="ex_wrap">
+          <ul>
+            <li><b>단일주석</b> : //</li>
+            <li><b>여러 줄의 주석</b> : /* ~ */ (css와 동일)</li>
+          </ul>
+        </div>  
+
+      </div> <!-- 주석작성방법 -->
+
+    </div>
+
+  <!-- javascript -->
+  <script>
+    document.write('문서의 마지막에 내용을 작성 : 주로 작성하는 곳');
+    // alert("alert");
+    console.log('결과 확인');
+    console.warn('경고메시지');
+    console.error('문제발생');
+    console.info('정보');
+  </script>
+
+</body>
+</html>
