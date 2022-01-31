@@ -9,7 +9,7 @@
 }
 
 #loginBox {
-  width: 68.75rem; height: 600px; 
+  width: 68.75rem; height: 900px; 
   background-color: #fff;
   margin: 15.625rem auto 18.75rem;
   box-shadow: 8px 8px 12px rgba(0,0,0,0.25);
@@ -47,11 +47,13 @@
       margin-top: 50px; margin-bottom: 15px;
       font-size: 2.5rem; font-weight: 700;
       text-transform: capitalize;
+      color: #171717;
     }
 
     .intro_inner > p {
       width: 100%; height: auto;
       font-size: 1.125rem; font-weight: 500;
+      color: #171717;
     }
 
 
@@ -71,8 +73,8 @@
     display: inline-block;
     width: 7.5rem; height: 4.375rem;
     /* background-color: #fff; */
-    background-image: url("../../img/login_page/osam_sub_logo.png");
-    background-image: url("../../img/login_page/osam_sub_logo.svg");
+    background-image: url("../../img/common_page/01_headBox/osam_logo.png");
+    background-image: url("../../img/common_page/01_headBox/osam_logo.svg");
     background-repeat: no-repeat;
     background-position: 50% 50%;
     background-size: contain;
@@ -145,12 +147,12 @@ legend {
   background-size: contain; background-position: 50% 50%;
 }
 
-label[for="user_mail"] i { 
+label[for="join_mail"] i { 
   background-image: url("../../img/login_page/mail.png"); 
   background-image: url("../../img/login_page/mail.svg"); 
 }
 
-label[for="user_password"] i { 
+label[for="join_password"] i { 
   background-image: url("../../img/login_page/key.png"); 
   background-image: url("../../img/login_page/key.svg");
 }

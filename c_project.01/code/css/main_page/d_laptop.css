@@ -4,13 +4,24 @@
 @media screen and (min-width: 1024px) and (max-width: 1439px) {
   /*? 기준 디바이스 크기 : 1024px */
 
-  body { background-color: #efe; }
   #wrap { min-height: auto; }
 
   /*? headBox ----------------------- */
-  #headBox { height: 6.25rem; padding: 1.25rem 2.5rem 0.625rem; }
-  #headBox > * { display: none; }
+  #headBox { height: auto; padding-top : 2rem; padding-bottom: 1.25rem; }
 
+    .area_head { height: 70px; padding-left: 35px; padding-right: 35px; box-sizing: border-box; }
+
+  #logo { width: 120px; height: 70px }
+  
+    #logo a {
+      background-repeat: no-repeat;
+      background-position: 50% 50%;
+    }
+
+    .gnb li.gnb_li_end { 
+      margin-right: 0; border-right: 0; border-right: 0
+    }
+  
 
   /*? slideBox ----------------------- */
   #slideBox {

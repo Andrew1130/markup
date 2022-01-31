@@ -4,13 +4,90 @@
 @media screen and (min-width: 600px) and (max-width: 1023px) {
   /*? 기준 디바이스 크기 : 600px */
 
-  body { background-color: #fee; }
+  body { background-color: rgb(255, 56, 56); }
   /* #wrap { } */
 
   /*? headBox ----------------------- */
-  #headBox { height: 3.125rem; padding: 0.5rem 1.0625rem; }
-  #headBox > * { display: none; }
+  #headBox { height: 3.1875rem; }
 
+    .area_head { height: 2.1875rem; padding: 0.5rem 0.9375rem 0.5rem 1.5625rem }
+
+  #logo { width: 3.75rem; height: 2.1875rem; top: 0.5rem }
+
+  .nav_btn { display: block; float: right; width: 2.1875rem; height: 2.1875rem; position: relative; z-index: 20; }
+
+  #navBox { 
+    display: none;
+    position: absolute; top: 0; left: 0; 
+    width: 100%; height: 70vh; z-index: 10;
+    background-image: url("../../img/main_page_re/main_page_re/mobile/b_navBox/tablet_nav_origin.png");
+    background-size: cover;
+    background-position: 50% 100%;
+    background-repeat: no-repeat;
+    padding: 0.5rem; box-sizing: border-box;
+  }
+
+    #navBox:before,  
+    #navBox::before {
+      content: ""; display: block; z-index: -1;
+      position: absolute; top: 0; left: 0; 
+      width: 100%; height: 100%; 
+      /* background-color: rgba(131, 76, 51, 1); */
+      background-image: linear-gradient(rgba(131, 76, 51, 1) 50%, transparent);
+      opacity: 0.7;
+    }
+
+
+  #navBox h2 {
+    position: relative; float: left;
+    width: 3.75rem; height: 2.1875rem; z-index: 2; margin-left: 1.5625rem;
+    background-image: url("../../img/main_page_re/main_page_re/mobile/b_navBox/logo_white.svg");
+    background-image: url("../../img/main_page_re/main_page_re/mobile/b_navBox/logo_white.png");
+    background-size: contain;
+    background-repeat: no-repeat; background-position: 50% 50%;
+  }
+
+  
+  .unb, .gnb { 
+    float: none; 
+    width: 100%; min-width:auto; 
+  }
+
+  .unb { 
+    width: 80%; margin: auto; margin-top: 3.125rem; 
+    border-bottom: 0.0625rem solid #fff; 
+    height: auto; 
+  }
+
+    .unb li {
+      float: left; width: 25%; height: 1.875rem;
+      /* background-color: #aaf; */
+      margin-right: 0; line-height: 1.875rem;
+      margin-bottom: 0.3125rem; margin-top: 0;
+    }
+    .unb a { font-size: 1rem; }
+      .unb li:first-child { float: right; }
+      .unb li.unb_li_start { float: left; margin: 0; margin-bottom: 0.3125rem; }
+      .unb li.unb_li_end { margin: 0; margin-bottom: 0.3125rem; } 
+
+
+  .gnb ul { float: none; width: 85%; height: auto; margin: auto; } 
+  .gnb li { 
+    padding: 0; float: left; 
+    width: 31%; height: 3.75rem; 
+    margin: 0.375rem;
+  }
+    .gnb li:nth-child(1) { margin-left: 0; }
+    .gnb li:nth-child(4) { margin-left: 0; }
+
+  .unb a { color: #fff; }
+  .gnb a { 
+    display: block; width: 100%; height: 100%;
+    padding-left: 0.625rem; box-sizing: border-box; border: 0.0625rem solid #fff;
+    border-radius: 0.3125rem; font-size: 18px;
+    color: #fff; line-height: 3.125rem;
+    font-weight: 400;
+  } 
 
   /*? slideBox ----------------------- */
   #slideBox {

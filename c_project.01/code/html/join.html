@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<!-- login.html -->
+<!-- join.html -->
 <html lang="ko-KR">
   <head>
     <meta charset="UTF-8">
@@ -11,9 +11,9 @@
 
     <link rel="stylesheet" href="../css/common/common.css">
     <link rel="stylesheet" href="../css/common/reset.css">
-    <link rel="stylesheet" href="../css/src/login.css">
+    <link rel="stylesheet" href="../css/src/join.css">
 
-    <title>login</title>
+    <title>join</title>
   </head>
   <body>
 
@@ -58,7 +58,7 @@
             <div class="company_logo">
               <!-- logo 이미지 삽입 -->
             </div>
-            <h2>log in</h2>
+            <h2>join</h2>
             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iste error minus totam consequuntur incidunt nobis deserunt? Quidem, quis! Tempore, praesentium.</p>
           </div>
           <div class="video_inner">
@@ -73,27 +73,74 @@
         <div class="login_form">
           <form action="#" method="POST">
             <fieldset>
-              <legend>사용자 계정 입력</legend>
+              <legend>사용자 계정 생성</legend>
+
               <div class="user_input">
-                <label for="user_mail">
+                <label for="join_name">
                   <span class="blind"> 
-                    사용자 로그인을 위한 계정 이메일주소를 입력하세요.
+                    이름을 입력하세요.
                   </span>
                   <i class="icon"></i>
                 </label>
-                <input type="text" id="user_mail" name="user_mail" value="" 
+                <input type="text" id="join_name" name="join_name" value="" 
+                         placeholder="이름" required/>
+              </div>
+
+              <div class="user_input">
+                <label for="join_mail">
+                  <span class="blind"> 
+                    계정으로 사용할 이메일주소를 입력하세요.
+                  </span>
+                  <i class="icon"></i>
+                </label>
+                <input type="text" id="join_mail" name="join_mail" value="" 
                          placeholder="email@hostname.com" required/>
               </div>
+
               <div class="user_input">
-                <label for="user_password">
+                <label for="join_password">
                   <span class="blind">
-                    사용자의 로그인 비밀번호를 입력하세요.
+                    로그인 시 사용할 비밀번호를 입력하세요.
                   </span>
                   <i class="icon"></i>
                 </label>
-                <input type="password" id="user_password" name="user_password" value=""
-                         placeholder="password" required/>
+                <input type="password" id="join_password" name="join_password" value=""
+                         placeholder="비밀번호" required/>
               </div>
+
+              <div class="user_input">
+                <label for="join_password_check">
+                  <span class="blind">
+                    로그인 시 사용할 비밀번호를 다시 한번 입력해 주세요.
+                  </span>
+                  <i class="icon"></i>
+                </label>
+                <input type="password" id="join_password_check" name="join_password_check" value=""
+                         placeholder="비밀번호 확인" required/>
+              </div>
+
+              <div class="user_input">
+                <label for="join_tel">
+                  <span class="blind">
+                    휴대폰 번호를 입력해 주세요.
+                  </span>
+                  <i class="icon"></i>
+                </label>
+                <input type="text" id="join_tel" name="join_tel" value=""
+                         placeholder="010" required/>
+              </div>
+
+              <div class="user_input">
+                <label for="join_birthday">
+                  <span class="blind">
+                    생년월일을 입력해 주세요.
+                  </span>
+                  <i class="icon"></i>
+                </label>
+                <input type="text" id="join_birthday" name="join_birthday" value=""
+                         placeholder="년(4자)" required/>
+              </div>
+
             </fieldset>
 
             <fieldset>
@@ -102,7 +149,7 @@
                   <input type="submit" value="로그인" />
                 </div>
                 <div class="btn_inner">
-                  <a href="#">비밀번호 찾기</a>
+                  <a href="#">취소</a>
                   <a href="#">회원가입</a>
                 </div>
             </fieldset>
