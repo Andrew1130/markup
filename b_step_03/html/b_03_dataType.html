@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<!-- b_03_dataType.html -->
+<html lang="ko-KR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;400;700&display=swap" >
+    <link rel="stylesheet" href="../fonts/fontawesome/css/all.min.css">
+
+    <link rel="stylesheet" href="../css/common/reset.css">
+    <link rel="stylesheet" href="../css/common/common.css">
+    <!-- <link rel="stylesheet" href="../css/src/b_03_dataType.css"> -->
+
+    <link rel="apple-touch-icon" href="../favicon.png">
+    <link rel="shortcut icon" href="../favicon.png" type="image/png">
+
+    <title>b_03_dataType</title>
+</head>
+<body>
+  
+  <!-- layout -->
+    <div class="code_exam">
+      <h1><a href="./a_content.html">웹표준</a></h1>
+      <hr />
+      <div class="part">
+        <h2>자료형 파악하기</h2>
+        <p>
+          JS에서 보여주는 내용은 모두 각각의 구조 타입이 존재<br />
+          숫자, 문자, 참/거짓, undefined/null, array, object(object/array), function
+        </p>
+        <div class="ex_wrap"></div>
+      </div>
+    </div>
+
+  <!-- javascript -->
+  <script>
+    // 자료형 -> 자료의 구조를 파악하는 방법 : typeof(값)
+    // 기본형 : 숫자, 문자, 논리, undefined, null
+    var n = 0;
+    console.log('n: ', n, typeof n);
+    n = '10';
+    console.log('n: ', n, typeof n);
+
+    var result = true; // false
+    console.log('result: ', result, typeof result);
+    var result = false;
+    console.log('result: ', result, typeof result);
+    var result = !result; // !의 의미 : 부정 (기존 값이 true면 false, false면 true로 만듬)
+    console.log('result: ', result, typeof result)
+
+    var num = 10;
+    console.log( 'num: ', num, typeof(num) );
+    var num = !10; // !을 붙이면 자료형이 논리형으로 바뀜
+    console.log( 'num: ', num, typeof(num) );
+    var num = !!10; // !! >> 부정의 부정.
+    console.log( 'num: ', num, typeof(num) );
+
+    // a = b -> a에 b를 대입 (변수에 값 대입을 위해 사용) / a === b -> a와 b는 같다 (논리값 도출 위해 사용)
+    console.log( num === false );
+
+
+    // 콘솔 초기화
+    console.clear()
+
+
+    var andrew;
+    console.log( andrew, typeof (andrew) );
+    andrew = 'JW'
+    console.log( andrew, typeof (andrew) );
+    andrew = undefined;
+    console.log( andrew, typeof (andrew) );
+
+    var nul;
+    console.log( nul, typeof (nul) );
+    nul = 10;
+    console.log( nul, typeof (nul) );
+    nul = null;
+    console.log( nul, typeof (nul) );
+    nul = 0;
+    console.log( nul, typeof (nul) );
+
+
+    // ---------------------------------------------------
+    // 특수형 : 객체, 함수
+
+    // 콘솔 초기화
+    console.clear()
+
+    var obj = {};
+    // console.log('obj :' , obj, typeof(obj) );
+    console.log( obj.constructor ); // object | array | function을 판독
+
+    var arr = []
+    console.log('arr :' , arr, typeof(arr) );
+    // console.log( arr.constructor );
+
+    var fn = function(){}
+    console.log('fn :' , fn, typeof(fn) );
+    console.log( fn.constructor );
+
+
+    // ---------------------------------------------------
+    // Object
+
+    // 콘솔 초기화
+    console.clear()
+
+
+    // 객체
+    var obj2 = {
+      "samsung":"galaxy s21",
+      "lg":"gram laptop",
+      "2":"web_publisher_bootcamp"
+    };
+    console.log(obj2)
+    console.log(obj2.samsung)
+    console.log(obj2.lg)
+    console.log(obj2[2])
+
+
+    console.warn("--------------------")
+
+    //배열
+    var arr2 = ['marine', 'medic', 'firebat', 'ghost'];
+    console.log(arr2);
+    console.log(arr2[0]);
+    console.log(arr2[1]);
+    console.log(arr2[2]);
+    console.log(arr2[3]);
+
+
+    console.warn("--------------------")
+
+    // 함수
+    var fn2 = function(a){
+      return a*a;
+    };
+    console.log(fn2(5))
+    console.log(fn2("하윙")) // NaN -> 숫자내용이 아니라는 의미 (NaN 자체의 type은 number)
+
+
+
+  </script>
+
+</body>
+</html>
