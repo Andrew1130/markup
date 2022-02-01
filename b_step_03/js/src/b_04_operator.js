@@ -177,6 +177,7 @@ var btn = document.getElementById('btn');
 var par = document.getElementsByClassName('content')[0];
 var i = 0;
 
+// btn에 click이라는 이벤트가 발생하면 function을 실행한다.
 btn.addEventListener("click", function(){
   ++i
   par.innerText = i + " 번 클릭하셨습니다."
