@@ -86,7 +86,7 @@ var button = btn.querySelectorAll('button');
 console.log( button );
 
 button.forEach(function(data, idx){
-  data.addEventListener('click', function(){
+  data.addEventListener('click', function(){ //클릭시 함수작동
     console.log( data, idx );
     btnCon.innerText = arr[idx];
   });
