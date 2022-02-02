@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>jQuery 내용 설치방법</title>
+</head>
+<body>
+
+  <!-- layout -->
+  <div id="wrap">
+    <h1><a href="./a_content.html">jQuery</a></h1>
+    <ul class="ul_wrap">
+      <li><a href="#">content01</a></li>
+      <li><a href="#">content02</a></li>
+      <li><a href="#">content03</a></li>
+    </ul>
+  </div>
+  <!-- script -->
+  <script src="../js/common/jquery-3.6.0.min.js"></script>
+  <script src="../js/common/jquery-ui.min.js"></script>
+
+
+
+  <!-- 제이쿼리 작성 방식 -->
+  <script>
+    // 작성방식 1 -----
+    /*
+    $(document).ready(function(){
+      // jQuery 코드를 작성
+    });
+    */
+
+    // 작성방식 2 (권장) ----
+    (function f($){
+      // jQuery 코드를 작성
+    })(jQuery);
+
+
+
+  
+  </script>
+    
+
+  <!-- 자바스크립트와 제이쿼리의 차이  -->
+  <script>
+    // js : 복잡한 내용을 세밀히 처리
+    var wrap = document.getElementById('wrap');
+    var h1 = document.getElementsByTagName('h1')[0];
+    var ul = document.getElementsByClassName('ul_wrap')[0];
+    var li = ul.getElementsByTagName('li');
+
+    li.forEach(function(data, idx){ 
+      data.addEventListener('click', function(){
+        // 내용 작성
+       });
+     });
+
+  </script>
+  <script>
+    // jQuery : 간단한 내용을 빠르게 처리
+    (function f($){
+      // jQuery 코드를 작성
+      console.log ( $.fn ); // 기능 및 버전 확인
+      var wrap2 = $('#wrap');
+      var hTitle = $('h1');
+      var ulWrap = $('.ul_wrap');
+      var list = ulWrap.children('li');
+
+      list.on('click', function(){
+        // 내용 작성
+      });
+    })(jQuery);
+  </script>
+
+</body>
+</html>
