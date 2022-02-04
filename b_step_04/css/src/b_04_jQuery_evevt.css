@@ -1,0 +1,13 @@
+/* b_04_jQuery_evevt.css */
+
+.code_exam { padding-bottom: 1500px; }
+
+.evt a { display: block; width: 100%; height: 100%; }
+.evt li:nth-child(1):hover { background-color: #af6; }
+.evt li:nth-child(1):active { background-color: #a6f; }
+
+.evt li { 
+  width:300px; height: auto; 
+  background-color:#fa6; text-align:center;
+  box-sizing : border-box; 
+}

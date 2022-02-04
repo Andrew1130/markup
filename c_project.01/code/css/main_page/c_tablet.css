@@ -89,11 +89,63 @@
     font-weight: 400;
   } 
 
+
   /*? slideBox ----------------------- */
   #slideBox {
-    min-height: 25rem;
-    padding-top: 5.125rem; 
+    min-height: 31.25rem; 
+    padding-top: 3.125rem;
   }
+
+  .slide_area {
+    background-image: url("../../img/main_page_re/main_page_re/mobile/c_slideBox/slide_img_3.png");
+    border: 0.0625rem solid white;
+    background-position: 50% 80%;
+  }
+
+    .slide_content_part { width: 90%; margin: auto; }
+
+    .slide_content_part h3 {
+      height: 2.1875rem;
+      font-size: 1.75rem; 
+      margin-top: 30vh; margin-bottom: 1.25rem;
+      text-align: center;
+    }
+
+    .slide_content_part p {
+      width: 70%; max-width: 34.375rem; height: 7.375rem; 
+      font-size: 1rem; color:#171717;
+      display: block; margin: auto;
+      text-align: center;
+    }
+
+    .slide_content_part .link {
+      height: 2.5rem; margin: auto;
+    }
+
+      .link a {
+        line-height: 2.3125rem;
+        font-size: 1.125rem; font-weight: 500;
+        text-align: center;
+      }
+
+        .link a i { float: right; margin-top: 0.5625rem;}
+
+  
+  .slide_img_part { display: none; }
+
+  .next_btn {
+    width: 1.5625rem; height: 5rem;
+    background-position: 0;
+    background-image: url("../../img/main_page_re/main_page_re/mobile/c_slideBox/next.svg");
+    background-image: url("../../img/main_page_re/main_page_re/mobile/c_slideBox/next.png");
+  }     
+
+  .prev_btn {
+    width: 1.5625rem; height: 5rem;
+    background-position: 0;
+    background-image: url("../../img/main_page_re/main_page_re/mobile/c_slideBox/prev.svg");
+    background-image: url("../../img/main_page_re/main_page_re/mobile/c_slideBox/prev.png");
+  }      
   
   
   /*? newBox ----------------------- */

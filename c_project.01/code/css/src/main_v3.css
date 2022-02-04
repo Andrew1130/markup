@@ -332,7 +332,7 @@ min-width을 1200px로 설정
 }
 
 #subBox > .area {
-  position: absolute; bottom: 0; left: 0; right: 0;
+  /* position: absolute; bottom: 0; left: 0; right: 0; */
   height: 300px;
   margin: auto;
   /* background-color: #ddd; */
