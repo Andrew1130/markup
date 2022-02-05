@@ -60,8 +60,18 @@
       line-height: 200%;
     }
 
+      .footBox_companyinfo dt, dd {
+        display: inline-block;
+        padding: 2px; padding-right: 5px;
+      }
+
+      /* .footBox_companyinfo dd {
+        float: right;
+      } */
+
     #footBox .footBox_rights {
       font-size: 0.75rem; color: #fff;
+      margin-top: 20px;
     }
 
 
@@ -109,8 +119,9 @@
         font-size: 0.75rem; color: #555; text-transform: capitalize;
       }
 
-        #footBox .footBox_familysite a {
-          display: block; padding: 5px;
+        #footBox .footBox_familysite #site {
+          display: block; 
+          width: 160px; height: 30px; border-radius: 5px;
         }
 
       #footBox li.linkBox .footBox_textarea {

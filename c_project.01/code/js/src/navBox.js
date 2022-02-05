@@ -1,13 +1,13 @@
-// main_v4.js
+// navBox.js
 
 (function($){
   var navBtndiv = $('.nav_btn')
   var navBtn = navBtndiv.children('button')
   var navBox = $('#navBox')
   var timed = 500;
-  // var i = 0
 
   navBtn.on('click', function(){
+    
     navBox.stop().slideToggle(timed);
 
     // if(i%2 === 0){
@@ -23,3 +23,4 @@
   })
 
 })(jQuery);
+
