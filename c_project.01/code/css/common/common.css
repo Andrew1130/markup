@@ -6,7 +6,9 @@
 .none { display: none; }
 
 .max_width_01 {
-  width: 95%; min-width: 940px; max-width: 1280px;
+  width: 95%; 
+  /* min-width: 940px;  */
+  max-width: 1280px;
   margin: auto;
 }
 @media screen and (max-width:939px) {

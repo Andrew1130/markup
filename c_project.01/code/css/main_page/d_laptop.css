@@ -78,9 +78,26 @@
 
   /*? bestBox ----------------------- */
   #bestBox { 
-    height: 43.75rem;
-    padding-top: 10.9375rem; padding-bottom: 9.0625rem;
+    width: 64rem; height: 40.75rem;
+    padding-top: 9.9375rem; padding-bottom: 8.0625rem;
+    margin: auto;
   }
+
+
+  /* 제목 및 설명 --------------------- */
+  #bestBox .description_area_control { margin-right: 2.5rem; }
+
+
+  /** 카드 css */
+
+  /* 카드 ul */
+  #bestBox .card_area_control { width: 37.5rem; }
+  #bestBox .card_area { width: 400%; }
+
+  /* 카드 공통 부분 */
+  #bestBox .card_area li { margin-right: 1.875rem; }
+
+
 
 
   /*? galleryBox ----------------------- */

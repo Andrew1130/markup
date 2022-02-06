@@ -364,6 +364,122 @@
     background-color: #fff;
   }
 
+  #bestBox li {
+    display: block;
+    float: left;
+    height: 380px;
+  }
+
+  .bestBox_01 h2 {
+    font-size: 2.5rem; font-weight: 700;
+    text-transform: capitalize;
+    margin-bottom: 15px; color: #171717;
+    line-height: 150%;
+  }
+
+  .bestBox_01 p {
+     width: 200px; height: 83px;
+     font-size: 1rem;
+     color: #757575;
+     margin-bottom: 20px;
+  }
+
+  .bestBox_01 button:nth-child(1){
+    width: 100px; height: 30px; margin-left: 7px;
+    background-image: url("../../img/main_page/05_bestBox/bestBox_next.png");
+   }
+
+  .bestBox_01 button:nth-child(2){
+  float: left;
+  width: 100px; height: 30px;
+  background-image: url("../../img/main_page/05_bestBox/bestBox_prev.png");
+  }
+
+  .bestBox_buttons > a {
+    position: relative;
+    display: block;
+    margin-top: 10px;
+    width: 209px; height: 55px; 
+    background-color: #1A5D54;
+    border-radius: 10px;
+  }
+
+   .bestBox_buttons > a span {
+     display: block;
+     position: absolute; top: 30%; left: 30%;
+     /* transform: translate(60px, 17px); */
+     font-size: 1.375rem; font-weight: 700; color: #fff;
+   }
+
+  /** 카드 css */
+
+/* 카드 ul */
+#bestBox .card_area_control {
+  width: 850px; height: 100%;
+  overflow: hidden;
+}
+#bestBox .card_area {
+  display: block;
+  width: 300%; height: 100%;
+}
+
+/* 카드 공통 부분 */
+#bestBox .card_area li {
+  width: 240px;
+  border: 1px solid #757575;
+  border-radius: 5px;
+  margin-right: 40px;
+}
+
+#bestBox .card_area .card_image {
+    width: auto; height: 181px;
+    margin: 10px;
+    background-repeat: no-repeat; background-size: cover;
+    background-position: 50% 50%;
+    border-radius: 5px;
+  }
+
+  #bestBox .card_area h2 {
+    width: 100%; height: auto;
+    font-size: 1.375rem; font-weight: 700;
+    text-transform: capitalize;
+    margin: 10px;
+    margin-top: 15px; color: #171717;
+  }
+
+  #bestBox .card_area p {
+    width: 100%; height: auto;
+    margin: 10px; margin-bottom: 30px;
+    font-size: 1rem; color: #777;
+  }
+
+  #bestBox .card_area .card_date {
+    width: 216; height: auto;
+    margin-left: 12px; margin-right: 12px;
+    border-top: 1px solid #757575;
+  }
+
+  .card_area .card_date span {
+      display: block;
+      margin: 5px; margin-left: 10px;
+      font-size: 0.75rem; color: #505050;
+    }
+
+
+/* 카드 이미지 */
+.card_area li:nth-child(1) .card_image {
+  background-image: url("../../img/main_page/05_bestBox/best_img_01.png");
+}
+.card_area li:nth-child(2) .card_image {
+  background-image: url("../../img/main_page/05_bestBox/best_img_02.png");
+}
+.card_area li:nth-child(3) .card_image {
+  background-image: url("../../img/main_page/05_bestBox/best_img_03.png");
+}
+.card_area li:nth-child(4) .card_image {
+  background-image: url("../../img/menu/menu_02.jpg");
+}
+
 
   /*? galleryBox ----------------------- */
   #galleryBox {
