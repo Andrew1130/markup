@@ -57,3 +57,46 @@
 
 .accor dl i { transition: all 300ms linear; }
 .accor dl.on dt i { transform: rotate(180deg); }
+
+
+
+/* accor2 -------------------------------------- */
+
+.accor2 {
+  width: 100%; height: auto;
+  margin: auto; margin-top: 2rem; background-color: #fff;
+}
+
+  .accor2 > ul {
+    width: 100%; height: auto; 
+  }
+  .accor2 li {
+    width: 100%; height: auto; 
+    border: 1px solid #777;
+    margin-bottom: 1rem;
+  }
+
+  .nav_title {
+    width: 100%; height: auto;
+    padding: 0.5rem; box-sizing: border-box;
+  }
+    .nav_title button {
+      width: 100%; height: auto;
+      padding: 0.3rem; 
+      text-indent: 1rem; text-align-last: left;
+      /* background-color: #faa; */
+      font-weight: 700;
+      border-radius: 0.3rem;
+      border-bottom: 1px solid #333;
+    }
+
+  .sub_list { 
+    display: none;
+    padding: 0.5rem; width: 100%; height: auto; 
+    box-sizing: border-box;
+  }
+    .sub_list a {
+      padding: 0.2rem 0.5rem;
+      border-radius: 0.3rem;
+      background-color: #fdd;
+    }

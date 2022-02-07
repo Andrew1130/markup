@@ -8,12 +8,13 @@
   /* 
   (1) dt를 클릭 시 이후에 나오는 dd를 나타나게 만들기 (펴기)
    1) dt를 클릭시 선행 이벤트발생 정지
-   2) dt>button 키보드 포커스 처리시 dd를 나타나게 만들기
    3) dt를 클릭시 이후에 오는 모든 형제인 dd를 나타나게 하기
    4) dt를 클릭 시 다른 dl에 있는 dd를 사라지게 만들기
 
   (2) dt를 클릭 시 뒤에 오는 dd 요소가 나타나 있는 경우 사라지게 만들기 (접기)
    1) class를 삽입하며 존재하면 사라지게 하고, 없다면 나타나게
+
+  (3) 포커스 시에도 (1), (2)가 동일하게 동작하도록 하기
   */
 
 
@@ -58,8 +59,39 @@
       console.log(i)
       accorDl.eq(i).siblings().find('dd').hide() */
     }
-  
+
   });
+
+
+  //* (3)
+  accorDt.children('button').on('focus', function(e){
+    var _this = $(this);
+
+    e.preventDefault(); //* 1)
+    
+    
+    // dl은 button 기준으로는 2대 위므로 parents를 2번 작성
+    var i = _this.parent().parent().index();
+    var diI = accorDl.eq(i)
+
+    // class기능의 유무 판단 : hasClass('className') -> true or false
+    if(diI.hasClass('on')){
+      accorDl.removeClass('on');
+      diI.find('dd').stop().slideUp();
+    } else {
+      diI.addClass('on');
+      diI.siblings().removeClass('on');
+
+      // dt는 button 기준으로는 1대 위
+      $(this).parent().nextAll(accorDd).stop().slideDown()
+
+      // dl은 button 기준으로는 2대 위
+      $(this).parent().parent().siblings(accorDl).find(accorDd).stop().slideUp()
+
+    }
+
+  });
+
 
 
 })(jQuery);
