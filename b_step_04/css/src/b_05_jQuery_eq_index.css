@@ -1,0 +1,25 @@
+/* b_05_jQuery_eq_index.css */
+
+.check {
+  padding: 2rem;
+  border: 1px solid #f5a;
+  margin-top: 20px; margin-bottom: 20px;
+}
+
+.check li {
+  float: left;
+  width: 50px; height: 30px; border: 2px solid #777;
+  border-radius: 0.3rem; background-color: #0ac;
+  margin: 1rem; padding-top: 5px; padding-left: 12px;
+}
+
+  .check li button {
+    color: #fff; font-weight: bold; 
+  }
+
+
+.set { padding: 2rem; border: 1px solid #377; }
+.set li span { display: none; }
+
+.set li.action { background-color: #07a; color: #fd0; font-weight: 700; }
+.set li.action span { display: block; }
