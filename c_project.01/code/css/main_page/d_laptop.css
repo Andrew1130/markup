@@ -104,11 +104,17 @@
   #galleryBox {
     height: 46.875rem;
     padding-top: 5rem; padding-bottom: 8.125rem;
+    width: 100%
+  }
+
+  #galleryBox li.imageArea { 
+    background-image: url("../../img/main_page_re/main_page_re/all_device/g_galleryBox/gallery_1.png");
   }
 
 
   /*? sponserBox ----------------------- */
   #sponserBox { height: 6.25rem; }
+  .sponsor_area ul { margin-top: 0.8125rem; }
 
   
   /*? footBox ----------------------- */

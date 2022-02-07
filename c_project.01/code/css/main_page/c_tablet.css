@@ -92,6 +92,7 @@
 
   /*? slideBox ----------------------- */
   #slideBox {
+    height: 70vh;
     min-height: 31.25rem; 
     padding-top: 3.125rem;
   }
@@ -107,7 +108,7 @@
     .slide_content_part h3 {
       height: 2.1875rem;
       font-size: 1.75rem; 
-      margin-top: 30vh; margin-bottom: 1.25rem;
+      margin-top: 25vh; margin-bottom: 1.25rem;
       text-align: center;
     }
 
@@ -258,21 +259,55 @@
 
   /*? galleryBox ----------------------- */
   #galleryBox {
-    height: 61.25rem;
-    padding-top: 7.75rem; padding-bottom: 7.5rem;
+    height: 65rem; 
+    padding-top: 1.5rem; padding-bottom: 8.75rem;
+    width: 100%; margin: auto;
   }
 
-    #galleryBox .area_content {
-      width: 100%; 
+  #galleryBox .area_title { margin-top: 7.5rem; margin-bottom: 3.125rem;}
+  #galleryBox .area_content {
+    width: 28.75rem; height: 56.25rem; margin: auto; 
+  }
+
+    #galleryBox li.imageArea {
+      width: 28.75rem; height: 26.25rem;
+      background-image: url("../../img/main_page_re/main_page_re/all_device/g_galleryBox/gallery_1.png");
+      margin: auto; overflow: hidden; 
     }
+
+    .gallery_imgs img { width: auto; height: 26.25rem; }
+
+
+    #galleryBox li.listArea { width: 100%; margin-top: 70px; }
+      #galleryBox li.listArea li {
+        display: inline-block;
+        width: 47%; font-size: 1.75rem; 
+        margin-right: 1.25rem; margin-bottom: 1.25rem;
+        }
+
+        #galleryBox li.listArea li:nth-child(2n) { margin-right: 0; }
 
 
   /*? sponserBox ----------------------- */
-  #sponserBox { height: 18.75rem; }
+  #sponserBox {
+    height: 15rem;
+    border: 0.0625rem solid #fff; /* .sponsor_area에 마진을 줬을 때 sponserBox도 같이 딸려 내려오는 문제를 해결하기 위해 border 설정 */
+  }
+
+  .sponsor_area { margin-top: 1.875rem; margin-bottom: 1.875rem; height: 10.625rem; }
+  .sponsor_area ul { width: 28.75rem; height: 56.25rem; margin: auto; }
+
+  #sponserBox li.sponserBox_li_end { margin-right: 1.25rem; } 
+  #sponserBox li:nth-child(3n) { margin-right: 0; }
 
   
   /*? footBox ----------------------- */
-  #footBox { height: 26.5625rem; }
+  #footBox { height: 26.5625rem; position: relative; }
+  .area_foot { width: 90%; margin: auto; }
+
+  #footBox li.linkBox { position: absolute; top: 5%; right: 2%; }
+  .footBox_textarea { display: none; }
+
 
 
 } /* @media screen and (min-width: 600px) and (max-width: 1023px) */

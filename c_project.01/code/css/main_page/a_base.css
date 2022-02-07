@@ -482,19 +482,119 @@
 
 
   /*? galleryBox ----------------------- */
+  /*TODO : 69강 내용 적용가능 (JS로 이미지 슬라이딩) */
   #galleryBox {
     width: 100%; height: 750px;
     padding-top: 75px; box-sizing: border-box;
     background-color: rgba(255,189,85,0.2)
   }
 
+  #galleryBox .area_title { 
+    /* background-color: #fff; */
+    font-size: 2.5rem; font-weight: 700;
+    color: #171717;
+    text-transform: capitalize;
+  }
+  
+  #galleryBox .area_content { 
+    height: 420px;
+    /* background-color: #777; */
+  }
+
+  #galleryBox li {
+    display: block;
+  }
+
+    #galleryBox li.imageArea {
+      position: relative;
+      float: left;
+      width: 540px; height: 420px;
+      background-repeat: no-repeat;
+      background-position: 50% 50%;
+      background-size: cover;
+    }
+
+    .gallery_imgs img { 
+      visibility: hidden;
+      position: absolute; top: 50%; left: 50%;
+      width: 100%; height: auto;
+      transform: translate(-50%, -50%);
+    }
+
+      .gallery_imgs img.on { visibility: visible; } 
+      
+    #galleryBox li.listArea {
+      float: right;
+      width: 320px; height: 270px;
+      margin-top: 150px;
+      /* background-color: aquamarine; */
+    }
+
+    #galleryBox li.listArea li.on a { font-weight: 700; } 
+
+      #galleryBox li.listArea ul { list-style: circle; }
+      #galleryBox li.listArea li {
+        padding: 10px; box-sizing: border-box;
+        width: auto; height: 50px;
+        margin-bottom: 18px;
+        /* background-color: #fff; */
+        text-transform: capitalize;
+        font-size: 1.375rem; border-bottom: 1px solid #505050;
+        }
+        
+        #galleryBox li.listArea li a { background-image: none;}
+        #galleryBox li.listArea li:last-child {
+          margin-bottom: 0;
+        }
+
 
   /*? sponserBox ----------------------- */
   #sponserBox {
     width: 100%; height: 100px;
     /* padding-top: 10px; box-sizing: border-box; */
-    background-color: #999;
+    background-color: #fff;
   }
+
+  .sponsor_area {
+    height: 80px;
+    /* background-color: #fff; */
+    overflow: hidden;
+  }
+  
+  .sponsor_area ul {
+    width: 1760px;
+    height: 100%;
+  }
+  
+    #sponserBox li {
+      display: block;
+      float: left;
+      width: 140px; height: 80px;
+      margin-right: 20px;
+      background-image: url("../../img/main_page/07_sponserBox/sponsersprite.png");
+      background-repeat: no-repeat
+    }
+  
+    #sponserBox a {
+      display: block;
+      width: 120px; height: 80px;
+      margin: auto;
+    }
+  
+      #sponserBox li:nth-child(2) { background-position: -300px 0; }
+      #sponserBox li:nth-child(3) { background-position: -450px 0; }
+      #sponserBox li:nth-child(4) { background-position: -600px 0; }
+      #sponserBox li:nth-child(5) { background-position: -750px 0; }
+      #sponserBox li:nth-child(6) { background-position: -900px 0; }
+      #sponserBox li:nth-child(7) { background-position: -1050px 0; }
+      #sponserBox li:nth-child(8) { background-position: -1200px 0; }
+      #sponserBox li:nth-child(9) { background-position: -1350px 0; }
+      #sponserBox li:nth-child(10) { background-position: -1500px 0; }
+  
+    #sponserBox li.sponserBox_li_end {
+      margin-right: 0;
+    }
+  
 
   
   /*? footBox ----------------------- */
@@ -503,5 +603,133 @@
     padding-top: 68px; box-sizing: border-box;
     background-color: #333;
   }
+
+    .area_foot { height: auto; }
+
+  .info_logo {
+    width: 120px; height: 70px;
+    margin-bottom: 45px;
+    /* background-color: #aaa; */
+    background-image: url("../../img/common_page/08_footBox/osam_sub_logo.png");
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+  }
+
+    .info_logo a {
+      display: block;
+      width: 120px; height: 70px;
+    }
+
+  .info_company {
+    width: 100%; height: 200px;
+    /* background-color: #aaa; */
+  }
+
+
+
+  /* infoBox */
+
+    #footBox li.infoBox {
+      display: block;
+      float: left;
+      width: 500px; height: 200px;
+      /* background-color: aquamarine; */
+    }
+
+      #footBox li.infoBox li {
+        display: block;
+        float: left;
+        font-size: 0.75rem; color: #fff;
+        margin-top: 28px;
+        margin-bottom: 28px;
+        margin-right: 14px;
+      }
+
+      #footBox li.infoBox li:hover,
+      #footBox li.infoBox li:focus {
+        color : #FFBD55
+      }
+
+      #footBox .footBox_companyinfo {
+        font-size: 0.75rem; color: #fff;
+        margin-bottom: 28px;
+        line-height: 200%;
+      }
+
+        .footBox_companyinfo dt, dd {
+          display: inline-block;
+          padding: 2px; padding-right: 5px;
+        }
+
+        /* .footBox_companyinfo dd {
+          float: right;
+        } */
+
+      #footBox .footBox_rights {
+        font-size: 0.75rem; color: #fff;
+        margin-top: 20px;
+      }
+
+      #footBox .copyright {
+        font-size: 0.75rem; color: #fff;
+      }
+
+
+
+  /* linkBox */
+
+    #footBox li.linkBox {
+      display: block;
+      float: right;
+      width: 200px; height: 160px;
+      margin-top: 40px;
+      /* background-color: aquamarine; */
+    }
+
+      #footBox li.linkBox li {
+        display: block; float: left;
+        width: 40px; height: 40px; 
+        margin-right: 20px;
+        margin-bottom: 10px;
+        /* background-color: #fff; */
+      }
+
+      #footBox li.linkBox ul a {
+        display: block;
+        width: 40px; height: 40px;
+        margin: auto;
+      }
+
+        #footBox li.linkBox li:nth-child(1) {
+          background-image: url("../../img/common_page/08_footBox/facebook.png");
+        }
+        #footBox li.linkBox li:nth-child(2) {
+          background-image: url("../../img/common_page/08_footBox/youtube.png");
+        }
+        #footBox li.linkBox li:last-child { 
+          background-image: url("../../img/common_page/08_footBox/naver.png");
+          margin-right: 0; 
+        }
+
+      
+        #footBox li.linkBox .footBox_familysite {
+          width: 160px; height: 30px; background-color: #fff;
+          border-radius: 5px;
+          margin-bottom: 10px;
+          font-size: 0.75rem; color: #555; text-transform: capitalize;
+        }
+
+          #footBox .footBox_familysite #site {
+            display: block; 
+            width: 160px; height: 30px; border-radius: 5px;
+          }
+
+        #footBox li.linkBox .footBox_textarea {
+          width: 160px; height: 50px; background-color: #fff;
+          border-radius: 5px;
+        }
+
+
 
 } /* @media screen */

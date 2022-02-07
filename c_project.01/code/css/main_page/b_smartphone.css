@@ -98,6 +98,7 @@
 
   /*? slideBox ----------------------- */
   #slideBox {
+    height: 70vh;
     min-height: 31.25rem; 
     padding-top: 3.125rem;
   }
@@ -112,7 +113,7 @@
     .slide_content_part h3 {
       height: 2.1875rem;
       font-size: 1.625rem; 
-      margin-top: 30vh; margin-bottom: 1.25rem;
+      margin-top: 25vh; margin-bottom: 1.25rem;
       text-align: center;
     }
 
@@ -258,24 +259,52 @@
 
   /*? galleryBox ----------------------- */
   #galleryBox {
-    height: auto; min-height: 61.25rem;
+    height: 70rem; 
     padding-top: 1.5rem; padding-bottom: 8.75rem;
+    margin: auto;
   }
 
-    #galleryBox .area_content {
-      width: 100%; 
+  #galleryBox .area_title { margin-top: 1.25rem; margin-bottom: 1.875rem;}
+  #galleryBox .area_content {
+    width: 18.75rem; height: 56.25rem; margin: auto; 
+  }
+
+  #galleryBox li.imageArea { 
+    width: 18.75rem; height: 28.75rem; overflow: hidden; 
+  }
+  .gallery_imgs img { width: auto; height: 28.75rem; }
+
+    #galleryBox li.gallery_imgs {
+      width: 18.75rem; height: 28.75rem;
+      background-image: url("../../img/main_page_re/main_page_re/all_device/g_galleryBox/gallery_1.png");
+      margin: auto;
     }
+
+    #galleryBox li.listArea { width: 100%; margin-top: 4.375rem; }
+      #galleryBox li.listArea li { font-size: 1.75rem; }
 
 
   /*? sponserBox ----------------------- */
   #sponserBox {
-    height: 25rem;
+    height: 19rem;
+    border: 0.0625rem solid #fff; /* .sponsor_area에 마진을 줬을 때 sponserBox도 같이 딸려 내려오는 문제를 해결하기 위해 border 설정 */
   }
+
+  .sponsor_area { margin-top: 1.875rem; margin-bottom: 1.875rem; height: 15rem; }
+  .sponsor_area ul { width: 18.75rem; height: 56.25rem; margin: auto; }
+
+  #sponserBox li.sponserBox_li_end { margin-right: 1.25rem;}
+  #sponserBox li:nth-child(2n) { margin-right: 0;}
 
   
   /*? footBox ----------------------- */
-  #footBox { height: 26.5625rem; }
-  #footBox > * { display: none; }
+  #footBox { height: 26.5625rem; position: relative; }
+  #footBox li.infoBox { display: none; }
+
+
+  .info_logo { margin: auto; margin-bottom: 2.8125rem;}
+  #footBox li.linkBox { width: 10rem; margin: auto; float: none; }
+ 
 
   
 } /* @media screen and (max-width: 599px) */
