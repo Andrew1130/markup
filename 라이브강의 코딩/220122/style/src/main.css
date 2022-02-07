@@ -1,0 +1,115 @@
+/* main.css */
+
+#wrap { 
+  width: 100%; min-width: 1200px; 
+  height: auto; 
+  min-height: 500px;
+  max-width: 1600px;
+  margin: auto;
+  background-color: #eee;
+
+  padding: 1rem;
+  box-sizing: border-box;
+}
+
+/* #workBox ----------------------------------------- */
+.container {
+  position:relative;
+  width: 100%; height: auto; padding:150px 0;
+  box-sizing: border-box;
+}
+  .container:before,
+  .container::before {
+    position: absolute; top: 0; left: 0;
+    content:""; display: block; width: 70%; height: 100%;
+    background-color: beige;
+  }
+
+#workBox {
+  position: relative;
+  width: 1200px; height: 600px; border: 1px solid #777;
+  margin:auto;
+}
+
+.title_part {
+  /* float: left; */
+  position: absolute; top: 0; left: 0;
+  z-index: 100;
+  width: 400px; height: auto;
+  background-color: #fff;
+}
+
+  .title_part > h2 {
+    width: 100%; height: 100px; 
+    /* margin, padding, border */
+    /* font, background */
+    background-color: #fff;
+    /* effect */
+  }
+
+  .title_part > h2 small {
+    font-weight: normal;
+    font-size: 0.875rem;
+  }
+  .title_part > h2 span { font-size: 3rem; text-transform: uppercase; }
+  .title_part p { 
+    width: 100%; height: auto;
+    padding-top: 1rem;
+    font-size: 1.2rem; font-weight: bold; 
+  }
+
+.data_part {
+  position:relative;
+  width: 100%; height: 600px;
+  background-color: #fff;
+}
+
+.data_btns {
+  position: absolute; bottom: 0; left: 0
+}
+
+  .data_btns button { 
+    border: 1px solid #333;
+    border-radius: 0;
+    cursor: pointer;  
+  }
+
+  .data_btns button:hover { background-color: #a7a;}
+  .data_btns button:focus { 
+    outline : none;
+    border-color: #a3a; color:#a3a;
+  }  
+
+.img_in_data {
+  float: right;
+  width: 600px; height: 100%;
+  background-color: #f29;
+}
+.data_detail {
+  position: absolute; top:50%; left:0;
+  margin-top: -125px;
+  width: 700px; height:250px;
+  background-color: #bbb;
+  box-shadow: 0.5rem 0.5rem 0.5rem #aaa;
+
+  padding: 2rem; box-sizing: border-box;
+}
+
+  .data_detail h3 {
+    width: 100%; height:auto; font-size: 2rem;
+    text-transform: uppercase; font-weight: 400; margin-bottom: 0.5rem;
+  }
+
+
+
+
+/* ------------------------------------------ */
+
+#sample {
+  width: 100%; height: 400px; background-color: #ccc;
+}
+
+  #sample > h2 {
+    float:left; margin:1rem;
+    width: 150px; height:100px; background-color: #faa;
+  }

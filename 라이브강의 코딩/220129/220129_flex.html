@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <style>
+    
+    * { margin: 0; padding: 0; }
+    #wrap { width: 500px; height: 600px;
+      margin: auto; background-color: #ccc; 
+    }
+
+    .before_box {
+      width: 100%; height: auto; min-height: 100px; 
+      border: 1px solid #333;
+      margin-bottom: 100px;
+      background-color: #afa;
+    }
+      .before_box:after,
+      .before_box::after {
+        content: ""; display: block;
+        clear: both;
+      }
+      .before_box h2 { float: left; }
+      .before_box p { float: right; }
+
+
+    /* display: flex >> 편리한 기능이나, 구형 브라우저에서는 지원하지 않음에 유의 */
+    .after_box { display: flex; justify-content: space-between; }
+    .after_box h2 { order:1 }
+    .after_box p { order:0 }
+    
+      /* .after_box:after,
+      .after_box::after {
+        content: ""; display: block;
+        clear: both;
+      }
+      .after_box h2 { float: left; }
+      .after_box p { float: right; } */
+
+    h2 { 
+      width: 200px; height: 150px;
+      background-color: #fa0;
+    }
+
+    p {
+      width: 100px; height: 150px;
+      background-color: #59d;
+    }
+
+  </style>
+
+</head>
+<body>
+  <div id="wrap">
+    <div class="before_box">
+      <h2>before</h2>
+      <p>content</p>
+    </div>
+
+    <div class="after_box">
+      <h2>after</h2>
+      <p>content</p>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,46 @@
+/* card.css */
+
+html, body {}
+ul, ol {
+  margin: 0; padding: 0;
+  list-style: none;
+}
+
+
+/* ------------------------------ */
+#wrap { width: 90%; height: auto; margin: auto; }
+h1 { padding: 1rem; background-color: #acf; }
+
+.card_area {
+  width: 100%; height: auto; min-height: 500px;
+  border: 1px solid #333; 
+  border-top: 0; padding: 1rem; box-sizing: border-box;
+}
+
+.card_area > ul {
+  width: 100%; height: auto;
+}
+  .card_area > ul::after {
+    content: ""; display: block; clear: both;
+  }
+
+  .card_area li {
+    float: left; width: 15.625rem;
+    height: 25rem;
+    background-color: #fff; margin: 0.5rem;
+    box-sizing: border-box;
+    padding: 1rem;
+    box-shadow: 0.2rem 0.2rem 0.4rem #555;
+    border-radius: 0.3rem;
+  }
+
+  .card_area .img {
+    width: 100%; height: 9.375rem;
+    background-color: #ccc;
+    background-size: cover;
+    background-repeat: no-repeat; 
+    background-image: url("../img/background/konstantin-kleine-V1NVvXmO_dk-unsplash.jpg"); 
+  }
+
+
+  
