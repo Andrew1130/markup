@@ -1,0 +1,98 @@
+/* b_09_modal.css */
+
+
+.modal {
+  width: 100%; height: auto;
+  background-color: #faa;
+}
+
+.modal_list {
+  width: 90%; height: auto;
+  margin: auto;
+}
+
+  .modal_list li {
+    float: left;
+    width: 140px; height: 200px;
+    border: 5px solid #fff;
+    border-radius: 10px;
+    margin: 20px;
+    padding: 0;
+  }
+
+    .modal_list li:hover {
+      box-shadow: 0.3rem 0.3rem 0.3rem rgba(0, 0, 0, 0.5);
+    }
+
+  .modal_list button {
+    width: 100%; height: 100%; 
+    margin: 0; padding: 0;
+
+    border-radius: 5px;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+  }
+
+
+
+/*? modal_window ------------------------ */
+
+.modal_window {
+  display: none; 
+  /* visibility: hidden; */
+  /* visibility:hidden 도 보이지 않게 하지만, 위치 형태는 그대로 남는다.
+  이 경우 visbility를 쓰면 z-index로 인해 modal 클릭이 안될 수 있으므로
+  보이지 않게 할 뿐 아니라 위치 형태까지 없애는 display:none을 사용한다. */
+
+  position: fixed; top: 0; left: 0; 
+  z-index: 2000;
+  width: 100%; height: 100%;
+  /* background-color: #fdd; */
+}
+
+.modal_data {
+  position: absolute;
+  top: 50%; left: 50%;
+  transform: translate(-50%, -50%);
+  width: 500px; height: 350px;
+  border: 1px solid #333;
+  padding: 10px;
+
+  background-color: #fff;
+  border-radius: 0.5rem;
+}
+
+.close_btn {
+  position: absolute;
+  top: -1rem; right: -1rem;
+  width: 3rem; height: 3rem;
+}
+
+  .close_btn button {
+    width: 100%; height: 100%;
+    background-color: #acf;
+    border-radius: 100%;
+  }
+
+    .close_btn button:hover{
+      background-color: #afc;
+    }
+    .close_btn button:focus {
+      font-weight: 700;
+      border: 3px solid #333;
+      box-shadow: 0.1rem 0.1rem 0.3rem rgba(0, 0, 0, 0.3);
+    }
+
+.modal_content {
+  width: 100%; height: 100%;
+  background-image: url("../../img/gallery/img/album/view/car.jpg");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: cover;
+}
+
+.modal_bg {
+  width: 100%; height: 100%;
+  background-color: rgba(0,0,0,0.7);
+}
