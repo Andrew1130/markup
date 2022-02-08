@@ -1,0 +1,68 @@
+[
+
+  {
+    "image" : "이미지 데이터",
+    "image_alt" : "이미지에 대한 설명",
+    "title" : "제목_01",
+    "content" : "내용을 간단하게 작성",
+    "link" : "./data_detail/coffee_americano.html"
+  },
+  
+  {
+    "image" : "이미지 데이터",
+    "image_alt" : "이미지에 대한 설명",
+    "title" : "제목_02",
+    "content" : "내용을 간단하게 작성",
+    "link" : "./data_detail/coffee_latte.html"
+  },
+  
+  {
+    "image" : "이미지 데이터",
+    "image_alt" : "이미지에 대한 설명",
+    "title" : "제목_03",
+    "content" : "내용을 간단하게 작성",
+    "link" : "./data_detail/coffee_mocha.html"
+  },
+  
+  {
+    "image" : "이미지 데이터",
+    "image_alt" : "이미지에 대한 설명",
+    "title" : "제목_04",
+    "content" : "내용을 간단하게 작성",
+    "link" : "./data_detail/coffee_coldbrew.html"
+  },
+  
+  {
+    "image" : "이미지 데이터",
+    "image_alt" : "이미지에 대한 설명",
+    "title" : "제목_05",
+    "content" : "내용을 간단하게 작성",
+    "link" : "./data_detail/coffee_espresso.html"
+  },
+  
+  {
+    "image" : "이미지 데이터",
+    "image_alt" : "이미지에 대한 설명",
+    "title" : "제목_06",
+    "content" : "내용을 간단하게 작성",
+    "link" : "./data_detail/coffee_doubleshot.html"
+  },
+  
+  {
+    "image" : "이미지 데이터",
+    "image_alt" : "이미지에 대한 설명",
+    "title" : "제목_07",
+    "content" : "내용을 간단하게 작성",
+    "link" : "./data_detail/coffee_americano_big.html"
+  },
+  
+  {
+    "image" : "이미지 데이터",
+    "image_alt" : "이미지에 대한 설명",
+    "title" : "제목_08",
+    "content" : "내용을 간단하게 작성",
+    "link" : "./data_detail/coffee_americano_original.html"
+  }
+  
+  
+]
