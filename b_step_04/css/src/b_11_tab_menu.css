@@ -1,7 +1,7 @@
 /* b_11_tab_menu.css */
 
 
-.tab_area { width: 100%; height: auto; background-color: #f9f9f9; }
+.tab_area { width: 100%; height: 2000px; background-color: #f9f9f9; }
 
 .tab_title { width: 100%; height: 30px; margin-bottom: 50px; }
 
@@ -14,24 +14,78 @@
     float: left;
     width: 20%; height: 100%; 
     box-sizing: border-box; padding: 0 0.4rem;
+    
   }
 
     .tab_title button {
       width: 100%; height: 100%;
-      background-color: #aff;
+      background-color: #ccc;
     }
 
     .tab_title li.on button {
-      background-color: #0af; 
+      background-color: #777; 
       font-size: 1.2rem; font-weight: 700;
     }
 
 .tab_content {
-  width: 100%; height: auto; 
+  width: 90%; height: auto; 
+  margin: auto;
   box-sizing: border-box;
   padding: 1rem 2em;
   padding-bottom: 7rem;
 }
+
+  .tab_content li {
+    float: left;
+    margin: 0.5rem;
+    width: 12rem; height: 18rem;
+    border: 0.0625rem solid #777;
+    padding: 0.5rem;
+    box-sizing: border-box;
+    border-radius: 0.4rem;
+    position: relative;
+  }
+
+  .tab_content li:hover {
+    box-shadow: 0.2rem 0.2rem 0.4rem rgba(0,0,0,0.5);
+  }
+
+  .tab_content dl { width: 100%; height: auto; }
+  .tab_content dt { 
+    width: 100%; height: auto; 
+    font-size: 1.3rem;  font-weight: 700;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid #333;
+    margin-bottom: 0.2rem;
+  }
+
+.img_con {
+  width: 100%; height: 6.25rem;
+  background-color: #ccc;
+  margin-bottom: 0.5rem;
+  border-radius: 0.4rem;
+  }
+
+.link_con {
+  position: absolute; top: 85%; left:10%;
+  width: 80%; height: 30px; 
+  background-color: #07a;
+  border-radius: 0.4rem;
+  margin-bottom: 10px;
+  }
+
+  .link_con a {
+    display: block; width: 100%; height: 100%;
+    text-align: center; line-height: 30px;
+    color: #fff; font-weight: 700;
+  }
+
+.text_con {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  height: 63px; overflow: hidden;
+}  
+  
 
 .tab_list {
   width: 100%; height: auto; min-height: 31.25rem;
