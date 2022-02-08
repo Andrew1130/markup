@@ -103,10 +103,12 @@ var coffee_list = [
 
 
 $.ajax({
+
   url:"../json/coffee_list.json",
   context: document.body
 
 }).done(function(data){
+  
   var coffee_list = data;
   console.log( coffee_list );
 
