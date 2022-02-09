@@ -1,0 +1,68 @@
+/*? common.css (공통적으로 자주 사용하는 기능들) */
+.clearfix:after,
+.clearfix::after { content: ""; display: block; width: 100%; height: 0; clear: both; }
+
+.none { display: none; }
+
+.first_margin li:first-child { margin-left: 0; }
+.last_margin li:last-child { margin-right: 0; }
+
+/* 텍스트 숨기기 */
+.blind {
+  display: block;
+  position: absolute;
+  z-index: -1;
+  width: 0; height: 0;
+  overflow: hidden;
+}
+
+
+/*? 코드 예제 세팅 */
+.code_exam {
+  width: 75rem; height: auto; min-height: 62.5rem;
+  margin: auto;
+  background-color: #eee;
+}
+
+.code_exam h1 {
+  width: 100%; height: auto;
+  font-size: 1.25rem; 
+  font-weight: 900;
+  text-align: center;
+  padding: 0.625rem;
+}
+
+.code_exam .part {
+  width: 90%; height: auto;
+  margin: auto; margin-top: 1.25rem;
+  padding: 1.25rem; box-sizing: border-box;
+  border: 0.0625rem solid black;
+  background-color: lightgoldenrodyellow;
+}
+
+.code_exam h2 {
+  width: 100%; height: auto;
+  margin-bottom: 0.625rem;
+  border-bottom: 0.0625rem solid black;
+  font-weight: 700;
+}
+
+.code_exam .ex_wrap {
+  width: 100%; height: auto; box-sizing: border-box;
+  padding: 1.25rem; border-radius: 0.625rem;
+  background-color: linen;
+}
+
+.code_exam p {
+  width: 100%; height: auto;
+  padding: 0.9375rem; box-sizing: border-box;
+  background-color: #eee;
+  border-radius: 0.625rem;
+  margin-bottom: 0.625rem;
+}
+
+.code_exam li {
+  border-bottom: 1px solid #ccc;
+  padding: 0.625rem; box-sizing: border-box;
+  margin-bottom: 0.625rem;
+}
