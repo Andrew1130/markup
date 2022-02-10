@@ -51,7 +51,7 @@
         </div>  
       </header> <!-- / #headBox -->
 
-      <article id="loginBox" class="clearfix">
+      <article id="joinBox" class="clearfix">
 
         <div class="intro_part">
           <div class="intro_inner">
@@ -72,7 +72,7 @@
 
         </div>
 
-        <div class="login_form">
+        <div class="join_form">
           <form action="#" method="POST">
             <fieldset>
               <legend>사용자 계정 생성</legend>
@@ -122,7 +122,7 @@
               </div>
 
               <div class="user_input telBox">
-                <label for="join_tel">
+                <label for="join_tel_start3">
                   <span class="blind">
                     휴대폰 번호를 입력해 주세요.
                   </span>
@@ -130,22 +130,22 @@
                 </label>
                   <ul class="clearfix">
                     <li>
-                      <input type="text" id="join_tel" name="join_tel" value=""
+                      <input type="text" id="join_tel_start3" name="join_tel_start3" value=""
                       placeholder="010" required/>
                     </li>
                     <li><p></p></li>
-                    <li><input type="text" id="join_tel" name="join_tel" value=""
+                    <li><input type="text" id="join_tel_middle4" name="join_tel_middle4" value=""
                       placeholder="0000" required/></li>
                     <li><p></p></li>
                     <li>
-                      <input type="text" id="join_tel" name="join_tel" value=""
+                      <input type="text" id="join_tel_last4" name="join_tel_last4" value=""
                       placeholder="0000" required/>
                     </li>            
                   </ul>         
               </div>
 
               <div class="user_input birthdayBox">
-                <label for="join_birthday">
+                <label for="join_birthday_year">
                   <span class="blind">
                     생년월일을 입력해 주세요.
                   </span>
@@ -162,9 +162,7 @@
                     <input type="text" id="join_birthday_day" name="join_birthday_day" value="" placeholder="일" required/>
                   </li>
                 </ul>
-                
               </div>
-
             </fieldset>
 
             <fieldset class="buttons">
@@ -172,7 +170,7 @@
               <ul>
                 <li>
                   <div class="cancle_button">
-                  <a href="#">취소</a>
+                    <a href="#">취소</a>
                   </div>
                 </li>
                 <li>
@@ -181,9 +179,6 @@
                   </div>
                 </li>
               </ul>
-                
-                
-                </div>
             </fieldset>
           </form>
         </div>
@@ -213,17 +208,26 @@
                       <li><a href="#"><span>공지사항</span></a></li>
                       <li><a href="#"><span>contant us</span></a></li>
                     </ul>
-                    <div class="footBox_companyinfo">
+
+                    <address class="footBox_companyinfo">
                       <p>
-                        서울특별시 강남구 논현동 000 MEGA빌딩 (서울특별시 강남구 논현동 000-00)<br />
-                        Tel : 02-0000-0000 | fax : 02-0000-0001<br />
-                        사업자등록번호 : 100-00-00000 | 통신판매업 신고 : 강남 제 000000호 | <br />
-                        대표이사 : 000
-                      </p>
-                    </div>  
-                    <div class="footBox_rights">
-                      <p>&#169; coffinx Crop. All rights reserved.</p>
-                    </div>
+                        서울특별시 강남구 논현동 000 MEGA빌딩 (서울특별시 강남구 논현동 000-00)
+                      </p>  
+                      <dl class="clearfix">
+                        <dt>tel</dt>
+                        <dd>02-0000-0000</dd>
+                        <dt>fax</dt>
+                        <dd>02-0000-0001</dd>
+                        <dt>사업자등록번호</dt>
+                        <dd>100-00-00000</dd>
+                        <dt>통신판매업 신고</dt>
+                        <dd>강남 제 000000호</dd>
+                        <dt>대표이사</dt>
+                        <dd>000</dd>
+                      </dl>
+                    </address>  
+                    <p class="copyright">&#169; coffinx Crop. All rights reserved.</p>
+
                 </li> <!-- / infoBox -->
   
   
@@ -235,7 +239,12 @@
                     <li><a href="#"><span class="blind">오삼커피 naver 블로그로 이동</span></a></li>
                   </ul>
                   <div class="footBox_familysite">
-                    <a href="#">family site</a>
+                    <label for="site" class="blind">family site</label>
+                    <select name="familysite" id="site">
+                      <option value="#">site_01</option>
+                      <option value="#">site_02</option>
+                      <option value="#">site_03</option>
+                    </select>  
                   </div>
                   <div class="footBox_textarea"></div>
                 </li> <!-- /linkBox -->
