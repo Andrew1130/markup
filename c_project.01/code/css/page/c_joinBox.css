@@ -1,15 +1,17 @@
-/* c_loginBox.css */
+/* c_joinBox.css */
+
+
 
 #wrap {
   background-image: url("../../img/login_page/login_bg.png");
   background-repeat: no-repeat;
   background-position: 50% 50%;
   background-size: cover;
-  border: 1px solid;
+  border: 0.1px solid #fff; /* loginBox의 margin에 의해 끌려 내려오는 현상을 방지하기 위해 테두리 설정 */
 }
 
 #loginBox {
-  width: 68.75rem; height: 900px; 
+  width: 68.75rem; height: 1000px; 
   background-color: #fff;
   margin: 15.625rem auto 18.75rem;
   box-shadow: 8px 8px 12px rgba(0,0,0,0.25);
@@ -28,11 +30,23 @@
   padding-left: 1.25rem; padding-right: 3.75rem;
   box-sizing: border-box;
   text-align: right;
+}
 
-  background-image: url("../../img/login_page/intro_part_img.png");
+.intro_part::before {
+  position: absolute;
+  top: 0; bottom: 0; left: 0; right: 0; 
+  content: "";
+  display: block;
+  width: 28.75rem; height: 100%;
+
+  background-image: url("../../img/main_page_re/main_page_re/mobile/b_navBox/smartophone_nav_origin.png");
   background-repeat: no-repeat;
-  background-position: 100% 50%;
+  background-position: 50% 50%;
+  background-size: cover;
   overflow: hidden;
+  opacity: 0.6;
+
+  z-index: -1;
 }
 
   .intro_inner {
@@ -47,18 +61,18 @@
       margin-top: 50px; margin-bottom: 15px;
       font-size: 2.5rem; font-weight: 700;
       text-transform: capitalize;
-      color: #fff;
+      color: #171717;
     }
 
     .intro_inner > p {
       width: 100%; height: auto;
       font-size: 1.125rem; font-weight: 500;
-      color: #fff;
+      color: #171717;
     }
 
 
   .video_inner {
-    position:absolute; top: 0; left: 50%; z-index: -1;
+    position:absolute; top: 0; left: 130%; z-index: -1;
     background-color: #fff;
     width: 100%; height: 100%; 
   }
@@ -88,7 +102,7 @@
   
 .login_form {
   float: left; height: 100%;  
-  padding-top: 220px; box-sizing: border-box; 
+  padding-top: 190px; box-sizing: border-box; 
   width: 40rem; 
   /* background-color: #fdd; */
 }
@@ -109,15 +123,14 @@ legend {
   }
 
   .login_form fieldset:nth-of-type(1) {
-    width: 100%; height: 8.125rem;
-    margin-bottom: 3.125rem;
+    width: 100%; height: 33.125rem;
+    margin-bottom: 9.375rem;
     /* background-color: #aca; */
   }
 
   .login_form fieldset:nth-of-type(2) {
-    width: 100%; height: 7.5rem;
+    width: 500px; height: 7.5rem;
     text-align: center;
-    margin-bottom: 3.125rem;
     /* background-color: #a7a; */
   }
 
@@ -128,7 +141,11 @@ legend {
     box-sizing: border-box;
   }
   
-  .user_input:last-child { margin-bottom: 0; }
+  /* .user_input:first-child { margin-bottom: 60px; } */
+  .nameinputBox { margin-bottom: 60px; }
+   /* .user_input:nth-child(4) { margin-bottom: 70px; } */
+  .pwcheckBox { margin-bottom: 70px; }
+  .user_input:last-child { margin-bottom: 0px; }
 
     .user_input label { float:left; margin-right: 30px; }
     .user_input input { 
@@ -139,6 +156,30 @@ legend {
       text-indent: 8px;
     }
 
+
+  /* telBox ---------------------------------- */  
+  .telBox p { 
+    display: block; width: 10px; height: 8px; 
+    border-bottom: 3px solid #333; }
+  .telBox input { width: 3rem; }
+  .telBox li { display: block; float: left; padding-top: 0.625rem; 
+    box-sizing: border-box; margin-left: 20px;} 
+    .telBox li:nth-child(2) { margin-left: 10px; }
+    .telBox li:first-child { margin: 0; }
+
+  
+  /* birthdayBox ---------------------------- */
+  .birthdayBox li { display: block; float: left; padding-top: 0.625rem; 
+    box-sizing: border-box; margin-left: 20px;} 
+    .birthdayBox input { width: 5rem; }
+    .birthdayBox li:first-child { margin: 0; } 
+  
+
+
+
+/** 아이콘 ---------------------------------------------------------- */
+
+
 .icon {
   display: block;
   width: 2.5rem; height: 2.5rem; 
@@ -147,36 +188,57 @@ legend {
   background-size: contain; background-position: 50% 50%;
 }
 
-label[for="user_mail"] i { 
+
+label[for="join_name"] i { 
+  background-image: url("../../img/join/icon/name.png"); 
+  background-image: url("../../img/join/icon/name.svg"); 
+}
+
+label[for="join_mail"] i { 
   background-image: url("../../img/login_page/mail.png"); 
   background-image: url("../../img/login_page/mail.svg"); 
 }
 
-label[for="user_password"] i { 
+label[for="join_password"] i { 
   background-image: url("../../img/login_page/key.png"); 
   background-image: url("../../img/login_page/key.svg");
 }
 
+label[for="join_password_check"] i { 
+  background-image: url("../../img/login_page/key.png"); 
+  background-image: url("../../img/login_page/key.svg");
+}
 
-.btn_inner { width: 100%; height: auto; }
+label[for="join_tel"] i { 
+  background-image: url("../../img/join/icon/mobile.png"); 
+  background-image: url("../../img/join/icon/moblie.svg"); 
+}
 
-  .btn_inner a {
-    display: inline-block;
+label[for="join_birthday"] i { 
+  background-image: url("../../img/join/icon/year.png"); 
+  background-image: url("../../img/join/icon/year.svg"); 
+}
+
+
+/** 버튼 ------------------------------ */
+
+.buttons li {
+  display: block; float: left; margin-left: 10px;
+}
+.cancle_button { width: 150px; height: 60px; }
+
+  .cancle_button a {
+    display: block; 
     font-size: 16px; background-color: #fff;
   }
-
-    .btn_inner a:nth-of-type(1) {
-      padding: 12px 10px; margin-right: 50px;
-    }
-    .btn_inner a:nth-of-type(2) {
+    .cancle_button {
       border: 1px solid #333;
-      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
       border-radius: 8px;
-      padding: 12px 25px;
+      padding: 20px 25px; box-sizing: border-box;
     }
 
 input[type="submit"] {
-  width: 300px; height: 45px;
+  width: 300px; height: 60px;
   background-color: #1a5d54;
   border: 0;
   color: #fff; 
@@ -191,15 +253,20 @@ input[type="submit"] {
 input[type="submit"]:hover {
   box-shadow: 0 8px 8px rgba(0, 0, 0, 0.25);
 }
-.btn_inner a:hover {
-  font-weight: 700; color: #1a5d54;
-}
 
 input[type="submit"]:focus { 
   border: 3px solid #1A5D54; box-sizing: border-box; 
   color: #1A5D54;
   outline-offset: 10px;
   background-color: #fff;}
-.btn_inner a:focus {
+
+  
+.cancle_button:hover {
+  font-weight: 700; color: #1a5d54;
+  box-shadow: 0 8px 8px rgba(0, 0, 0, 0.25);
+}
+.cancle_button a:focus {
   background-color: #1A5D54; color: #fff; 
 }
+
+

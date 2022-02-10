@@ -22,7 +22,7 @@
       <header id="headBox">
         <div class="area_head">
           <h1 id="logo">
-            <a href="main_v2.html"><span class="blind">coffee brand 오삼 로고</span></a>
+            <a href="main_v4.html"><span class="blind">coffee brand 오삼 로고</span></a>
           </h1>
           <nav id="navBox">
           <h2 class="blind">Navigation_bar</h2>   
@@ -61,13 +61,15 @@
             <h2>join</h2>
             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iste error minus totam consequuntur incidunt nobis deserunt? Quidem, quis! Tempore, praesentium.</p>
           </div>
-          <div class="video_inner">
+
+          <!-- <div class="video_inner">
             <video autoplay muted loop preload="auto">
               <source src="../multi/Drinking-coffee.webm" type="video/webm" />
               <source src="../multi/Drinking-coffee.ogv" type="video/ogv" />
               <source src="../multi/Drinking-coffee.mp4" type="video/mp4" />
             </video>
-          </div>
+          </div> -->
+
         </div>
 
         <div class="login_form">
@@ -75,7 +77,7 @@
             <fieldset>
               <legend>사용자 계정 생성</legend>
 
-              <div class="user_input">
+              <div class="user_input nameinputBox">
                 <label for="join_name">
                   <span class="blind"> 
                     이름을 입력하세요.
@@ -108,7 +110,7 @@
                          placeholder="비밀번호" required/>
               </div>
 
-              <div class="user_input">
+              <div class="user_input pwcheckBox">
                 <label for="join_password_check">
                   <span class="blind">
                     로그인 시 사용할 비밀번호를 다시 한번 입력해 주세요.
@@ -119,38 +121,68 @@
                          placeholder="비밀번호 확인" required/>
               </div>
 
-              <div class="user_input">
+              <div class="user_input telBox">
                 <label for="join_tel">
                   <span class="blind">
                     휴대폰 번호를 입력해 주세요.
                   </span>
                   <i class="icon"></i>
                 </label>
-                <input type="text" id="join_tel" name="join_tel" value=""
-                         placeholder="010" required/>
+                  <ul class="clearfix">
+                    <li>
+                      <input type="text" id="join_tel" name="join_tel" value=""
+                      placeholder="010" required/>
+                    </li>
+                    <li><p></p></li>
+                    <li><input type="text" id="join_tel" name="join_tel" value=""
+                      placeholder="0000" required/></li>
+                    <li><p></p></li>
+                    <li>
+                      <input type="text" id="join_tel" name="join_tel" value=""
+                      placeholder="0000" required/>
+                    </li>            
+                  </ul>         
               </div>
 
-              <div class="user_input">
+              <div class="user_input birthdayBox">
                 <label for="join_birthday">
                   <span class="blind">
                     생년월일을 입력해 주세요.
                   </span>
                   <i class="icon"></i>
                 </label>
-                <input type="text" id="join_birthday" name="join_birthday" value=""
-                         placeholder="년(4자)" required/>
+                <ul class="clearfix">
+                  <li>
+                    <input type="text" id="join_birthday_year" name="join_birthday_year" value="" placeholder="년(4자)" required/>
+                  </li>
+                  <li>
+                    <input type="text" id="join_birthday_month" name="join_birthday_month" value="" placeholder="월" required/>
+                  </li>
+                  <li>
+                    <input type="text" id="join_birthday_day" name="join_birthday_day" value="" placeholder="일" required/>
+                  </li>
+                </ul>
+                
               </div>
 
             </fieldset>
 
-            <fieldset>
+            <fieldset class="buttons">
               <legend>확인버튼 및 기타</legend>
-                <div class="btn_inner">
-                  <input type="submit" value="로그인" />
-                </div>
-                <div class="btn_inner">
+              <ul>
+                <li>
+                  <div class="cancle_button">
                   <a href="#">취소</a>
-                  <a href="#">회원가입</a>
+                  </div>
+                </li>
+                <li>
+                  <div class="join_button">
+                    <input type="submit" value="회원가입" />
+                  </div>
+                </li>
+              </ul>
+                
+                
                 </div>
             </fieldset>
           </form>
