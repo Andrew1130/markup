@@ -1,0 +1,224 @@
+/* c_menubox.css */
+
+
+
+
+/*? bannerBox ------------------------------------- */
+
+#bannerBox {
+  position: relative;
+  padding-top: 116px;
+  width: 100%; height: 250px; 
+  background-image: url("../../img/gift/banner.png");
+  background-image: url("../../img/gift/banner.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+  #bannerBox > .text_box { width: 70%; margin: auto; }
+
+    .text_box > h2 {
+      position: relative;
+      font-size: 40px; color: #fff;
+      margin-top: 92px; margin-bottom: 17px;
+      text-transform: capitalize;
+    }
+
+    .text_box > p {
+      position: relative;
+      width: 700px; height: auto;
+      font-size: 18px; color: #fff;
+    }
+
+
+
+/*? menuBox ------------------------------------- */
+
+#menuBox { width: 100%; height: 1900px; }
+
+
+/* slideBar ------------------------------- */
+
+.slideBar {
+  width: 1100px; height: 650px; margin: auto;
+  border-bottom: 3px solid #aaa;
+  position: relative;
+}
+
+.slide_wrapper {
+  position: relative;
+  height: 440px; width: 80%;
+  padding-top: 170px; padding-bottom: 90px;
+  margin: auto;
+  overflow: hidden;
+}
+
+.slide_container {
+  width: 1500px; height: 100%;
+}
+
+.slide_container > div { 
+  position: relative;
+  display: block; float: left;
+  width: 240px; height: 350px; 
+  background-color: #ccc; 
+  margin-left: 30px; margin-right: 30px; 
+  margin-top: 30px;
+}
+
+.img { 
+  position: absolute;
+  top: 0; bottom: 0; left: 0; right: 0;
+  width: 100%; height: 100%; 
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%
+  /* z-index: -1; */
+}
+
+.img::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0; bottom: 0; left: 0; right: 0;
+  width: 100%; height: 100%;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+  .slide_container h3 {
+    position: relative;
+    width: 90%; margin: auto; 
+    margin-top: 220px; 
+    margin-bottom: 5px;
+    padding-bottom: 5px;
+    font-size: 22px;
+    text-align: right;
+    text-transform: capitalize;
+    border-bottom: 1px solid #fff;
+    color: #fff;
+  }
+  .slide_container p {
+    position: relative;
+    width: 90%; margin: auto; margin-bottom: 10px;
+    font-size: 14px;
+    text-align: right;
+    color: #fff;
+  }
+  .slide_container button {
+    position: relative;
+    display: block;
+    width: 90%; height: 35px;
+    margin: auto; margin-bottom: 5px;
+    background-color: #fff;
+  }
+
+.button {
+  position: absolute;
+  top: 55%; bottom: 0; left: 0; right: 0;
+  width: 1100px; height: 0;
+}
+  .button > .prevbtn {
+    float: left;
+    width: 60px; height: 60px;
+    background-image: url("../../img/gift/prevbtn.png");
+    background-image: url("../../img/gift/prevbtn.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+    cursor: pointer;
+  }
+  .button > .nextbtn {
+    float: right;
+    width: 60px; height: 60px;
+    background-image: url("../../img/gift/nextbtn.png");
+    background-image: url("../../img/gift/nextbtn.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+    cursor: pointer;
+  }
+
+  /* cardBox ---------------------------- */
+
+  .cardBox {
+    height: 1600px; margin: auto; width: 1300px; 
+    margin-top: 100px; box-sizing: border-box;
+  }
+
+  /* .card_area {
+    display: block;
+    width: 1300px; margin: auto;
+  } */
+
+  /* 카드 공통 부분 */
+  #menuBox .card_area > li {
+    float: left;
+    width: 240px; 
+    height: 360px;
+    border: 1px solid #757575;
+    border-radius: 5px;
+    margin: 40px;
+    /* margin-right: 40px; margin-bottom: 40px; */
+  }
+
+  #menuBox .card_area .card_image {
+      width: auto; height: 181px;
+      margin: 10px;
+      background-repeat: no-repeat; background-size: cover;
+      background-position: 50% 50%;
+      border-radius: 5px;
+    }
+
+    #menuBox .card_area h2 {
+      width: 90%; height: auto;
+      font-size: 1.375rem; font-weight: 700; color: #171717;
+      text-transform: capitalize;
+      margin: 10px; margin-top: 15px; padding-bottom: 5px;
+      border-bottom: 1px solid #757575;
+    }
+
+    #menuBox .card_area p {
+      width: auto; height: auto;
+      margin-left: 15px; margin-right: 15px;
+      margin-bottom: 20px;
+      font-size: 1rem; color: #777;
+    }
+
+    #menuBox .card_area .tag_area {
+      width: 216; height: auto;
+      margin-left: 16px; margin-right: 12px;
+      margin-bottom: 12px;
+    }
+
+    /* .card_area .tag_area li {
+        display: inline-block; 
+        margin-right: 5px; padding: 2px; padding-right: 3px;
+        border: 1px solid #ccc; border-radius: 5px;
+        font-size: 14px; color: #777;
+      } */
+
+
+  /* 카드 이미지 */
+  .card_area li:nth-child(1) .card_image {
+    background-image: url("../../img/main_page/05_bestBox/best_img_01.png");
+  }
+
+
+
+  /* javascript를 위한 css */
+  
+  #menuBox .card_area .img {
+    width: auto; height: 200px;
+    margin: 10px;
+    background-repeat: no-repeat; background-size: cover;
+    background-position: 50% 50%;
+    border-radius: 5px;
+  }
+
+  .tag_css {
+    display: inline-block; 
+    margin-right: 5px; padding: 2px; padding-right: 3px;
+    border: 1px solid #ccc; border-radius: 5px;
+    font-size: 14px; color: #777;
+  }
