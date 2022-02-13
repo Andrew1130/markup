@@ -1,0 +1,39 @@
+[
+
+  {"title":"Nam dolorem recusandae", 
+  "date":"2022. 01. 05 - 2022. 03. 15",
+  "pngImg":"../../img/event/modalbar_bg_01.png",
+  "svgImg":"../../img/event/modalbar_bg_01.svg"
+}, 
+
+  {"title":"Eaque nesciunt", 
+  "date":"2021. 12. 23. - 2022. 02. 23",
+  "pngImg":"../../img/event/modalbar_bg_02.png",
+  "svgImg":"../../img/event/modalbar_bg_02.svg"
+}, 
+
+  {"title":"impedit suscipit iusto", 
+  "date":"2022. 02. 09 - 2022. 04. 12.",
+  "pngImg":"../../img/event/modalbar_bg_03.png",
+  "svgImg":"../../img/event/modalbar_bg_03.svg"
+}, 
+
+  {"title":"ducimus necessitatibus nemo", 
+  "date":"2021. 11. 30 - 2022. 05. 16",
+  "pngImg":"../../img/event/modalbar_bg_04.png",
+  "svgImg":"../../img/event/modalbar_bg_04.svg"
+}, 
+
+  {"title":"dolores doloremque aliquid", 
+  "date":"2022. 1. 29 - 2022. 3. 28",
+  "pngImg":"../../img/event/modalbar_bg_05.png",
+  "svgImg":"../../img/event/modalbar_bg_05.svg"
+},
+
+  {"title":"nam id alias accusamus", 
+  "date":"2022. 2. 11 - 2022. 2. 26",
+  "pngImg":"../../img/event/modalbar_bg_06.png",
+  "svgImg":"../../img/event/modalbar_bg_06.svg"
+}
+
+]

@@ -1,0 +1,121 @@
+/* c_FAQbox.css */
+
+
+/*? bannerBox ------------------------------------- */
+
+#bannerBox {
+  position: relative;
+  padding-top: 116px; margin-bottom: 130px;
+  width: 100%; height: 240px; 
+  background-image: url("../../img/FAQ/banner.png");
+  background-image: url("../../img/FAQ/banner.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 20%;
+}
+
+  #bannerBox > .text_box { width: 70%; margin: auto; }
+
+    .text_box > h2 {
+      position: relative;
+      font-size: 40px; color: #834C33;
+      margin-top: 79px; margin-bottom: 55px;
+      text-transform: capitalize;
+    }
+
+
+
+/*? contentBox ------------------------------------- */
+
+#contentBox { 
+  width: 100%; height: auto; min-height: 1200px; 
+  background-image: url("../../img/FAQ/contentBox_bg.png");
+  background-image: url("../../img/FAQ/contentBox_bg.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+.accor dl {
+  position: relative;
+  width: 80%; max-width: 940px; margin: auto; 
+  margin-bottom: 15px; padding-top: 40px; padding-bottom: 40px;
+  padding-left: 30px;
+  background-color: rgba(239, 239, 239, 0.7); 
+  border: 1px solid #AAAAAA;
+  box-sizing: border-box;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+  .accor dl.on .bal_top {
+    position: absolute; top:-5px; left:0;
+    width: 120px; height: 110px;
+    background-image: url("../../img/FAQ/on_bal_top.png");
+    background-image: url("../../img/FAQ/on_bal_top.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+  } /* dl이 on일 시 말풍선 나타나게 하기 (1) */
+
+  .accor dl.on .bal_down {
+    position: absolute; top:20px; left:20px;
+    width: 120px; height: 110px;
+    background-image: url("../../img/FAQ/on_bal_down.png");
+    background-image: url("../../img/FAQ/on_bal_down.svg");
+
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+  } /* dl이 on일 시 말풍선 나타나게 하기 (2) */
+
+.accor dt {display: inline-block; }
+
+  .accor dl button { display: inline-block; }
+
+    .accor dl button > p {
+      display: inline-block;
+      padding-top: 11px;
+      font-size: 22px; font-weight: 700; text-transform: capitalize; 
+      color: #333333;  
+    } /* 제목 및 제목 위치 컨트롤 */
+
+.accor dd { 
+  display: none; 
+  width: 100%; height: auto;
+  padding-top: 30px; padding-left: 10px;
+  box-sizing: border-box;
+  border-top: 1px solid #AAAAAA;
+  font-size: 18px; color: #757575;
+  line-height: 1.3;
+} /* 내용 디자인 */
+
+.circle {
+  display: block; float: left;
+  width: 14px; height: 14px;
+  margin-right: 19px;
+  margin-top: 16px;
+
+  background-image: url("../../img/FAQ/accor_front_circle.png");
+  background-image: url("../../img/FAQ/accor_front_circle.svg");
+
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+} /* 접혀진 아코디언 박스의 좌측 원형 index circle */
+
+.responsiveBtn {
+  position: absolute; 
+  top: 35px; right: 4%;
+  display: block; float: right;
+  width: 40px; height: 40px;
+  background-image: url("../../img/FAQ/accor_arrow_up.png");
+  background-image: url("../../img/FAQ/accor_arrow_up.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+} /* 접혀진 아코디언 박스의 우측 up-arrow */
+
+/* .accor dl.on .responsiveBtn { transform: rotate(180deg); } */
+/* 펼쳐진 아코디언 박스의 우측 down-arrow */
+
