@@ -1,0 +1,33 @@
+[
+  
+  {
+    "gift_name":"gift_01",
+    "gift_content":"Eos, accusantium distinctio dolore magni.",
+    "gift_img":"../../img/gift/gift_main.png"
+}, 
+  
+  {
+    "gift_name":"gift_02",
+    "gift_content":"similique veniam at voluptatum! Dolorem nihil.",
+    "gift_img":"../../img/gift/gift_main-1.png"    
+}, 
+  
+  {
+    "gift_name":"gift_03",
+    "gift_content":"Aliquam eligendi voluptatem maxime hic quae.",
+    "gift_img":"../../img/gift/gift_main-2.png"
+}, 
+  
+  {
+    "gift_name":"gift_04",
+    "gift_content":"distinctio dolore magni saepe rem nam blanditiis.",
+    "gift_img":"../../img/gift/gift_main-3.jpg"
+}, 
+  
+  {
+    "gift_name":"gift_05",
+    "gift_content":"excepturi placeat similique veniam at voluptatum.",
+    "gift_img":"../../img/gift/gift_main-4.jpg"
+}
+
+]

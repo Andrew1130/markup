@@ -1,39 +1,8 @@
 // gift.js
 
 
-//? 배열
-var slidedata  = [
-  {
-    "gift_name":"gift_01",
-    "gift_content":"Eos, accusantium distinctio dolore magni.",
-    "gift_img":"../../img/gift/gift_main.png"
-}, 
-  
-  {
-    "gift_name":"gift_02",
-    "gift_content":"similique veniam at voluptatum! Dolorem nihil.",
-    "gift_img":"../../img/gift/gift_main-1.png"    
-}, 
-  
-  {
-    "gift_name":"gift_03",
-    "gift_content":"Aliquam eligendi voluptatem maxime hic quae.",
-    "gift_img":"../../img/gift/gift_main-2.png"
-}, 
-  
-  {
-    "gift_name":"gift_04",
-    "gift_content":"distinctio dolore magni saepe rem nam blanditiis.",
-    "gift_img":"../../img/gift/gift_main-3.jpg"
-}, 
-  
-  {
-    "gift_name":"gift_05",
-    "gift_content":"excepturi placeat similique veniam at voluptatum.",
-    "gift_img":"../../img/gift/gift_main-4.jpg"
-}
-]
-
+//? 배열 -------------------------------------------
+//* json 파일로 대체 --------------
 
 
 
@@ -43,7 +12,17 @@ var slidedata  = [
 - 중간에 있는 광고영역은 커지도록
 */
 
+$.ajax({
 
+  url:"../json/gift.json",
+  context: document.body
+
+}).done(function(data){
+
+  var slidedata = data;
+
+
+  
 //? 자바스크립트 -------------------------------------
 //* 함수식 --------------------
 var makeSlideCardFn = function(gift_name, gift_content, gift_img) {
@@ -63,6 +42,7 @@ var i = 0
 for( ; i<slidedata.length ; i+=1 ) {
   makeSlideCardFn(slidedata[i].gift_name, slidedata[i].gift_content, slidedata[i].gift_img)
 }
+
 
 
 //? 제이쿼리 -------------------------------------
@@ -193,19 +173,6 @@ slideButton.eq(0).on('click', function(e){
   i = 1
   cardAniRemoveFn(i) // i = 1 >> eq(1)
 
-
-  // eq 0 g1
-  // eq 1 g2
-  // eq 2 g3
-  // eq 3 g4
-  // eq 4 g5
-
-  // 콘솔 1일때 : 1에 애니메이션, 5/2의 애니메이션 해제
-
-  // 콘솔 2일때 : 2에 애니메이션, 1/3의 애니메이션 해제
-  // 콘솔 3일때 : 3에 애니메이션, 2/4의 애니메이션 해제
-  // 콘솔 4일때 : 4에 애니메이션, 4/1의 애니메이션 해제
-
 })
 
 slideButton.eq(1).on('click', function(e){
@@ -218,9 +185,10 @@ slideButton.eq(1).on('click', function(e){
   i = 1
   cardAniRemoveFn(i) // i = 1 >> eq(1)
 
- 
-
 })
 
 
 })(jQuery);
+
+
+}) // $.ajax > .done(function(data)

@@ -1,0 +1,50 @@
+[
+ {
+   "id": 1,
+   "category": "PR",
+   "title": "사이트 오픈 행사",
+   "content": "커피사러 오삼을 오픈했습니다. 많은 관심 부탁드립니다.",
+   "summary": "웹페이지 오픈 기념행사",
+   "link": "event_sitie_open.html",
+   "image": "open_image.png",
+   "image_description": "open_image",
+   "image_use": "hidden",
+   "background": "nature_bg.png"
+ },
+ {
+   "id": 2,
+   "category": "event",
+   "title": "merry chirstmas",
+   "content": "12월 크리스마스를 맞이하여 연인, 가족을 위한 카페 이벤트를 개최하였습니다.",
+   "summary": "크리스마스 이벤트",
+   "link": "event_christmas_1st.html",
+   "image": "christmas_1st.png",
+   "image_description": "christmas_1st",
+   "image_use": "hidden",
+   "background": "christmas_bg.png"
+ },
+ {
+   "id": 3,
+   "category": "news",
+   "title": "추운 겨울 따뜻한 마음을 만들어줄 텀블러",
+   "content": "누가 보아도 따뜻한 마음을 가질 수 있는 텀블러를 출시하였습니다.",
+   "summary": "텀블러 출시 뉴스",
+   "link": "news_product_1st.html",
+   "image": "new_tumbler.png",
+   "image_description": "new_tumbler",
+   "image_use": "hidden",
+   "background": "light_bg.png"
+ },
+ {
+   "id": 4,
+   "category": "news",
+   "title": "신년맞이 원두 출시",
+   "content": "새해맞이 새로운 원두가 출시되었습니다.",
+   "summary": "원두 출시 뉴스",
+   "link": "news_coffeebean_1st.html",
+   "image": "beans_1st.png",
+   "image_description": "beans_1st",
+   "image_use": "hidden",
+   "background": "beans_1st_bg.png"
+ }
+]
