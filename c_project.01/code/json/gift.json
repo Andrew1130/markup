@@ -2,32 +2,47 @@
   
   {
     "gift_name":"gift_01",
+    "gift_detail_name":"Nam dolorem recusandae",
     "gift_content":"Eos, accusantium distinctio dolore magni.",
-    "gift_img":"../../img/gift/gift_main.png"
+    "gift_detail_content" : "Beatae illum fugiat sapiente aperiam itaque odit tempore hic, nisi sequi adipisci totam, voluptates optio? Sint magni magnam modi eligendi omnis explicabo. Et esse voluptatibus est fugit libero, eaque ipsam! Beatae ratione expedita earum, voluptates. Eos, modi ipsa perferendis sunt labore dolorum accusamus quod doloribus, temporibus, aliquid dolor architecto minus exercitationem ratione tenetur! Obcaecati enim laboriosam est voluptatum explicabo voluptate ea, neque facere possimus sunt!",
+    "gift_img":"../../img/gift/gift_main.png",
+    "gift_detail_img":"../../img/event/modal_window/modal_content_img/pic_1.jpg"
 }, 
   
   {
     "gift_name":"gift_02",
+    "gift_detail_name":"Eaque nesciunt",
     "gift_content":"similique veniam at voluptatum! Dolorem nihil.",
-    "gift_img":"../../img/gift/gift_main-1.png"    
+    "gift_detail_content" : "Beatae illum fugiat sapiente aperiam itaque odit tempore hic, nisi sequi adipisci totam, voluptates optio? Sint magni magnam modi eligendi omnis explicabo. Et esse voluptatibus est fugit libero, eaque ipsam! Beatae ratione expedita earum, voluptates. Eos, modi ipsa perferendis sunt labore dolorum accusamus quod doloribus, temporibus, aliquid dolor architecto minus exercitationem ratione tenetur! Obcaecati enim laboriosam est voluptatum explicabo voluptate ea, neque facere possimus sunt!",
+    "gift_img":"../../img/gift/gift_main-1.png",
+    "gift_detail_img":"../../img/event/modal_window/modal_content_img/pic_2.jpg"    
 }, 
   
   {
     "gift_name":"gift_03",
+    "gift_detail_name":"impedit suscipit iusto",
     "gift_content":"Aliquam eligendi voluptatem maxime hic quae.",
-    "gift_img":"../../img/gift/gift_main-2.png"
+    "gift_detail_content" : "Beatae illum fugiat sapiente aperiam itaque odit tempore hic, nisi sequi adipisci totam, voluptates optio? Sint magni magnam modi eligendi omnis explicabo. Et esse voluptatibus est fugit libero, eaque ipsam! Beatae ratione expedita earum, voluptates. Eos, modi ipsa perferendis sunt labore dolorum accusamus quod doloribus, temporibus, aliquid dolor architecto minus exercitationem ratione tenetur! Obcaecati enim laboriosam est voluptatum explicabo voluptate ea, neque facere possimus sunt!",
+    "gift_img":"../../img/gift/gift_main-2.png",
+    "gift_detail_img":"../../img/event/modal_window/modal_content_img/pic_3.jpg"
 }, 
   
   {
     "gift_name":"gift_04",
+    "gift_detail_name":"ducimus necessitatibus nemo",
     "gift_content":"distinctio dolore magni saepe rem nam blanditiis.",
-    "gift_img":"../../img/gift/gift_main-3.jpg"
+    "gift_detail_content" : "Beatae illum fugiat sapiente aperiam itaque odit tempore hic, nisi sequi adipisci totam, voluptates optio? Sint magni magnam modi eligendi omnis explicabo. Et esse voluptatibus est fugit libero, eaque ipsam! Beatae ratione expedita earum, voluptates. Eos, modi ipsa perferendis sunt labore dolorum accusamus quod doloribus, temporibus, aliquid dolor architecto minus exercitationem ratione tenetur! Obcaecati enim laboriosam est voluptatum explicabo voluptate ea, neque facere possimus sunt!",
+    "gift_img":"../../img/gift/gift_main-3.jpg",
+    "gift_detail_img":"../../img/event/modal_window/modal_content_img/pic_4.jpg"
 }, 
   
   {
     "gift_name":"gift_05",
+    "gift_detail_name":"Exercitationem accusamus dolorem",
     "gift_content":"excepturi placeat similique veniam at voluptatum.",
-    "gift_img":"../../img/gift/gift_main-4.jpg"
+    "gift_detail_content" : "Beatae illum fugiat sapiente aperiam itaque odit tempore hic, nisi sequi adipisci totam, voluptates optio? Sint magni magnam modi eligendi omnis explicabo. Et esse voluptatibus est fugit libero, eaque ipsam! Beatae ratione expedita earum, voluptates. Eos, modi ipsa perferendis sunt labore dolorum accusamus quod doloribus, temporibus, aliquid dolor architecto minus exercitationem ratione tenetur! Obcaecati enim laboriosam est voluptatum explicabo voluptate ea, neque facere possimus sunt!",
+    "gift_img":"../../img/gift/gift_main-4.jpg",
+    "gift_detail_img":"../../img/event/modal_window/modal_content_img/pic_5.jpg"
 }
 
 ]

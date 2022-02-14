@@ -10,6 +10,7 @@
 /*
 - 다음 버튼을 누르면 다음 내용이 나오고, 이전 내용을 누르면 이전 내용 나오게
 - 중간에 있는 광고영역은 커지도록
+- 상세보기 버튼을 누르면 모달윈도우 동작하게 하기
 */
 
 $.ajax({
@@ -58,14 +59,16 @@ var slideVisibleArea = $('.slide_wrapper')
 var slideTotalArea = slideVisibleArea.find('.slide_container')
 
 var slideCard = slideTotalArea.children('div')
-var origindivLen = slideCard.length;
-var slideCardImg = slideTotalArea.find('.img')
-var slideCardTitle = slideTotalArea.find('h3')
-var slideCardContent = slideTotalArea.find('p')
 var slideCardButton = slideTotalArea.find('button')
+
+var modalBackground = $("#modalWindow")
+var modalWindowArea = $(".modal_window")
+
 
 var permission = true;
 var i = 1
+
+
 
 
 //* 함수 -------------------
@@ -81,7 +84,7 @@ var nextBtnFn = function(){
   permission = true;
 
   });
-}
+} //* 무한 슬라이드 : 요소 강제이동형 함수
 
 var prevBtnFn = function(){
   permission = false; 
@@ -95,7 +98,8 @@ var prevBtnFn = function(){
   permission = true;
 
   }); // 맨 마지막 순서가 맨 앞으로 가고(-300) css로 ml처리(-300) 되어 -600 되어있는 걸 여기서 ml처리(0) 하여 결과적으로 -300만큼만 가는 애니메이션이 동작한다.
-}
+} 
+
 
 var cardAnimationFn = function(){
   slideCard.eq(i).animate({ 
@@ -116,7 +120,8 @@ var cardAnimationFn = function(){
   slideCard.eq(i).find('button').animate({ 
     width: "85%", height: "45px", 
   })
-}
+} //* 카드 애니메이션 함수
+
 
 var cardAniRemoveFn = function(){
   slideCard.eq(i).animate({ 
@@ -137,10 +142,23 @@ var cardAniRemoveFn = function(){
   slideCard.eq(i).find('button').animate({ 
     width: "90%", height: "35px", 
   })
-}
+} //* 카드 애니메이션 초기화 함수
+
+
+var makeModalWindowFn = function ( modal_title, modal_content_1, mc_img_1 ) {
+  var modalBox = document.querySelector('.modal_box')
+
+  modalBox.innerHTML = '<ul class="titlepart clearfix"><li><div class = "modal_circle"></div></li><li><h3>'+ modal_title +'</h3></li><li><div class = "modal_closebtn"></div></li></ul><div class="contentpart"><p>'+ modal_content_1 +'</p><div class="mc_img_1"></div></div>'
+
+
+  var Sel_mc_img_1 = modalBox.querySelector('.mc_img_1');
+  Sel_mc_img_1.style.backgroundImage = 'url('+ mc_img_1 +')';
+}; //* 모달윈도우 생성 함수
+
 
 
 //* 사전 실행 -----------------------
+/* gift_02가 우선 강조되어 있도록 처리 */
 slideCard.eq(1).css({ 
   width: "280px", height: "410px", 
   marginLeft: "10px", marginRight: "10px", marginTop: "0"
@@ -162,31 +180,60 @@ slideCard.eq(1).find('button').css({
 })
 
 
+
 //* 이벤트 -----------------
 slideButton.eq(0).on('click', function(e){
   nextBtnFn()
 
   // var i = 1
   i += 1;
-  console.log(i) // i = 2 >> eq(2)
+  // console.log(i) // i = 2 >> eq(2)
   cardAnimationFn(i)
   i = 1
   cardAniRemoveFn(i) // i = 1 >> eq(1)
 
-})
+}) //* 카드 애니메이션 적용 및 해제
 
 slideButton.eq(1).on('click', function(e){
   prevBtnFn()
 
   // var i = 1
   i -= 1;
-  console.log(i) // i = 0 >> eq(0)
+  // console.log(i) // i = 0 >> eq(0)
   cardAnimationFn(i)
   i = 1
   cardAniRemoveFn(i) // i = 1 >> eq(1)
 
 })
 
+
+slideCardButton.on('click', function(e){
+
+  e.preventDefault()
+  var k = $(this).siblings('h3').text();
+  var i = k.slice(6,7) //* h3의 마지막 숫자 부분 반환
+  console.log(i)
+
+  // 선택한 창에 맞는 모달 윈도우 데이터를 입력해서 창을 만들기
+  makeModalWindowFn( 
+    slidedata[i-1].gift_detail_name, 
+    slidedata[i-1].gift_detail_content, 
+    slidedata[i-1].gift_detail_img
+    )
+
+  // 만들어진 모달 윈도우를 나타나게 하기  
+  modalBackground.fadeIn()
+  modalWindowArea.fadeIn()
+
+  var modalCloseBtn = $(".modal_closebtn")
+
+  // 창 닫기
+  modalCloseBtn.on('click', function(){
+    modalBackground.fadeOut()
+    modalWindowArea.fadeOut()
+  })
+
+}) //* 상세보기 클릭 시 모달윈도우 실행
 
 })(jQuery);
 
