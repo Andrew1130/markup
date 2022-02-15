@@ -37,6 +37,7 @@ strong, b, em,i, u, ins, del {
   font-weight: normal;
   font-size: normal;
   text-decoration: none;
+  font-style: normal;
 }
 
 blockquote, q { quotes: none; }
