@@ -1,0 +1,5 @@
+#box_03 ul { 
+  width: 50%; height: auto; 
+  background-color: #fff; padding: 1rem; 
+}
+#box_03 li { margin-bottom: 0.3rem; color: #17f; }

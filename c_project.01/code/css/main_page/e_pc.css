@@ -71,9 +71,9 @@
   
   /*? subBox ----------------------- */
   #subBox { height: 21.875rem; padding-bottom: 1.25rem; }
-  #subBox li.subBox_text_btn { margin-top: 60px; margin-right: 150px; }
-  .subBox_text_btn button:first-child { margin-right: 30px; }
-
+  #subBox li.subBox_text_btn { margin-top: 3.75rem; }
+  .subBox_text_btn button:first-child { margin-right: 1.875rem; }
+  
 
 
   /*? bestBox ----------------------- */
