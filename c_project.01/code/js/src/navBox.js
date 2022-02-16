@@ -2,6 +2,7 @@
 
 (function($){
   var navBtndiv = $('.nav_btn')
+  console.log(navBtndiv)
   var navBtn = navBtndiv.children('button')
   var navBox = $('#navBox')
   var timed = 500;

@@ -60,13 +60,13 @@ jsonData.done(function(data){
   }; // slideDivSetfn : 슬라이드 내용에 css 적용 및 text 삽입
 
   var actionFn = function(i){
-    
-    console.log(i-1, i)
     viewCover = $('.view_cover');
-    viewCover.eq(i).addClass('action')
+    viewCover.eq(0).addClass('action')
+    // viewCover.eq(i).addClass('action')
+    // viewCover.eq(i).siblings().removeClass('action')
 
-    viewCover.eq(i).fadeIn()
-    viewCover.eq(i-1).fadeOut()
+    viewCover.eq(i).stop().fadeIn()
+    viewCover.eq(i).siblings('div').stop().fadeOut()
 
   };  // actionFn : 다음, 이전 버튼 클릭 시 내용 전환 처리
 
@@ -85,6 +85,7 @@ jsonData.done(function(data){
   };
 
   actionFn(0);
+  // viewCover.eq(SetNum).addClass('action')
   slideBtnMakeFn();
 
 
@@ -172,12 +173,14 @@ jsonData.done(function(data){
 
   //* 이벤트 --------------------------------
   nextBtn.on('click', function(e){
+    $(this).addClass('nexton')
     e.preventDefault();
     SetNum+=1
     actionNumSetFn(SetNum);
   });
 
   prevBtn.on('click', function(e){
+    $(this).addClass('prevon')
     e.preventDefault();
     SetNum-=1
     actionNumSetFn(SetNum);
@@ -187,6 +190,7 @@ jsonData.done(function(data){
     e.preventDefault();
     var n = $(this).parent().index();
     SetNum = n;
+    console.log(n)
     actionNumSetFn(SetNum)
   });
 

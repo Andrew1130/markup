@@ -56,6 +56,9 @@ $.each(mainSelect, function(index, selector){
   selector.load(baseUrl_main + importPage_main[index], function(){
     if(index === 0) {
       $('body').append('<script src="../js/src/main_ad_slide.js" class="pc_slide"></script>')
+      $('body').append('<script src="../js/src/navBox.js"></script>')
+    } else if (index === 4) {
+      $('body').append('<script src="../js/src/galleryBox.js"></script>')
     }
   });
 });
