@@ -46,6 +46,7 @@
   box-sizing: border-box;
   border-radius: 10px;
   overflow: hidden;
+  cursor: pointer;
 }
 
   .accor dl.on .bal_top {
@@ -73,7 +74,7 @@
 
   .accor dl button { display: inline-block; }
 
-    .accor dl button > p {
+    .accor dl button > span {
       display: inline-block;
       padding-top: 11px;
       font-size: 22px; font-weight: 700; text-transform: capitalize; 

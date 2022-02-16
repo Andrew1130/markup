@@ -52,13 +52,13 @@
       background-image: url("../../img/main_page_re/main_page_re/desktop/c_slideBox/slideboximg_01.png");
     }
   
-  .next_btn {
+  /* .next_btn {
     position: absolute; top: 55%; right: 0;
   }
 
   .prev_btn {
     position: absolute; top: 55%; right: 0;
-  }
+  } */
   
 
   /*? newBox ----------------------- */

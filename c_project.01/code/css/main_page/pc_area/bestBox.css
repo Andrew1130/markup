@@ -1,0 +1,16 @@
+/* bestBox.css */
+
+
+@media screen and (min-width: 1440px) {
+  /*? 기준 디바이스 크기 : 1440px */
+  
+  /*? bestBox ----------------------- */
+  #bestBox { 
+    height: 43.75rem;
+    padding-top: 10.9375rem; padding-bottom: 9.0625rem;
+  }
+
+  /* 제목 및 설명 --------------------- */
+  #bestBox .description_area_control { margin-right: 3.75rem; }
+
+} /* @media screen and (min-width: 1440px) */

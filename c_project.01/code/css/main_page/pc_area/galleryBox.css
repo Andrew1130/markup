@@ -1,0 +1,23 @@
+/* galleryBox.css */
+
+
+
+@media screen and (min-width: 1440px) {
+  /*? 기준 디바이스 크기 : 1440px */
+
+  /*? galleryBox ----------------------- */
+  #galleryBox {
+    height: 46.875rem;
+    padding-top: 5rem; padding-bottom: 8.125rem;
+  }
+
+  #galleryBox li.imageArea { 
+    background-image: url("../../../img/main_page_re/main_page_re/all_device/g_galleryBox/gallery_1.png");
+  }
+
+
+  #galleryBox .area_title { width: 68.75rem; }
+  #galleryBox .area_content { width: 68.75rem; }
+ 
+
+} /* @media screen and (min-width: 1440px) */

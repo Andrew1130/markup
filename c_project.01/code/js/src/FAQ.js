@@ -56,7 +56,7 @@ var makeAccorFn = function(title, content) {
   var makeDl = document.createElement('dl')
   //TODO : 변수 위치에 따라 결과가 달라지는 이유??
 
-  makeDl.innerHTML = '<i class="circle"></i><div class="bal_top"></div><div class="bal_down"></div><dt><button type="button"><p>'+ title +'</p><i class="responsiveBtn"></i></button></dt><dd>'+ content +'</dd></div>'
+  makeDl.innerHTML = '<i class="circle"></i><div class="bal_top"></div><div class="bal_down"></div><dt><button type="button"><span>'+ title +'</span><i class="responsiveBtn"></i></button></dt><dd>'+ content +'</dd></div>'
 
   accor.append(makeDl)
 }
@@ -85,10 +85,10 @@ var accorDd = accorDl.children('dd');
 
 //* 이벤트
 (function($){
-accorDt.on('click', function(e){
+accorDl.on('click', function(e){
   e.preventDefault();
 
-  var i = $(this).parent().index();
+  var i = $(this).index();
   var Dl_i = accorDl.eq(i)
   if(Dl_i.hasClass('on')){
     /* 클릭한 accorDt의 부모인 dl에 이미 on이 있었을 경우, 일단 on을 모든 Dl에서 없앤다.*/

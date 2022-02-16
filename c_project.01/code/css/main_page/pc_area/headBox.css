@@ -1,0 +1,26 @@
+/* headBox.css */
+
+
+@media screen and (min-width: 1440px) {
+  /*? 기준 디바이스 크기 : 1440px */
+  
+  #wrap { min-height: auto; }
+
+  /*? headBox ----------------------- */
+  #headBox { height: auto; padding-top : 2rem; padding-bottom: 1.25rem; }
+
+  .area_head { height: 70px; padding-left: 35px; padding-right: 35px; box-sizing: border-box; }
+
+  #logo { width: 120px; height: 70px; }
+  
+    #logo a {
+      background-repeat: no-repeat;
+      background-position: 50% 50%;
+    }
+
+    .gnb li.gnb_li_end { 
+      margin-right: 0; border-right: 0; border-right: 0
+    }
+
+
+} /* @media screen and (min-width: 1440px) */

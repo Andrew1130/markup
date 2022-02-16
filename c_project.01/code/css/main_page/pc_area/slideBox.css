@@ -1,0 +1,14 @@
+/* slideBox.css */
+
+
+@media screen and (min-width: 1440px) {
+  /*? 기준 디바이스 크기 : 1440px */
+ 
+  /*? slideBox ----------------------- */
+  #slideBox {
+    min-height: 37.5rem;
+    padding-top: 7.625rem; 
+    min-height: 43.75rem; max-height: 46.875rem;
+  }
+
+} /* @media screen and (min-width: 1440px) */

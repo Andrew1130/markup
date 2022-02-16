@@ -1,0 +1,15 @@
+/* newBox.css */
+
+
+@media screen and (min-width: 1440px) {
+  /*? 기준 디바이스 크기 : 1440px */
+ 
+  /*? newBox ----------------------- */
+  #newBox {
+    height: 43.75rem;
+    padding-top: 4.0625rem; padding-bottom: 4.375rem;
+  }
+  
+  .area_title { width: 58.75rem; }
+
+} /* @media screen and (min-width: 1440px) */

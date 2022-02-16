@@ -66,14 +66,11 @@
   border-right: 3px solid #aaa;
 }
 
-  .navBar li > a {
-    display: block;
-    border-radius: 5px;
-  }
+  .navBar li > a { display: block; }
 
   /* .navBar li:first-child { padding-left: 0; } */
   .navBar li:last-child { border-right: 0; } 
-  .navBar li:hover > a { background-color: darkseagreen; color: #fff; }
+  .navBar li:hover { background-color: darkseagreen; color: #fff; }
 
 
   /* cardBox ---------------------------- */

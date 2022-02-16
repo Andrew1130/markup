@@ -1,0 +1,13 @@
+/* sponserBox.css */
+
+
+
+@media screen and (min-width: 1440px) {
+  /*? 기준 디바이스 크기 : 1440px */
+ 
+  /*? sponserBox ----------------------- */
+  #sponserBox { height: 6.25rem; }
+  .sponsor_area ul { margin-top: 0.8125rem; }
+  
+
+} /* @media screen and (min-width: 1440px) */
