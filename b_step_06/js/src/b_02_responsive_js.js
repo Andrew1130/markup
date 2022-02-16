@@ -1,4 +1,4 @@
-// b_01_responsive_js.js
+// b_02_responsive_js.js
 
 
 (function($){
