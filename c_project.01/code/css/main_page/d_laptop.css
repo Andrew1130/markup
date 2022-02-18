@@ -67,6 +67,11 @@
     padding-top: 4.0625rem; padding-bottom: 4.375rem;
   }
 
+  .newBox_area ul { width: 300%; height: 370px; margin-left: 0%; }
+  /* 사진을 담을 수 있도록 사진 담는 영역의 너비를 넓게 설정 */
+  .newBox_area li:nth-child(3n+1) { margin-left: 0; }
+  /* 맨 앞의 이미지들은 ml을 0으로 (첫번째는 common.css에 의해 이미 ml 0) */
+
   .area_title { width: 58.75rem; }
   
   
@@ -81,6 +86,13 @@
   #bestBox { 
     width: 64rem; height: 40.75rem;
     padding-top: 9.9375rem; padding-bottom: 8.0625rem;
+    margin: auto;
+  }
+
+  .bestbox_container {
+    width: 95%; 
+    min-width: 940px; 
+    max-width: 1280px;
     margin: auto;
   }
 
@@ -115,6 +127,7 @@
 
   /*? sponserBox ----------------------- */
   #sponserBox { height: 6.25rem; }
+  .sponsor_area { width: 80%; margin: auto; max-width: 1440px; }
   .sponsor_area ul { margin-top: 0.8125rem; }
 
   

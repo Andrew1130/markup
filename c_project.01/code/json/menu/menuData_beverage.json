@@ -1,0 +1,110 @@
+[
+ {
+   "title": "beverage_01",
+   "content": "perspiciatis qui voluptatem expedita quas",
+   "tag_01": "ice",
+   "tag_02": "new",
+   "tag_03": "",
+   "tag_04": "",
+   "img": "beverage/bev01.jpg"
+ },
+ {
+   "title": "beverage_02",
+   "content": "perspiciatis qui voluptatem expedita quas",
+   "tag_01": "milk",
+   "tag_02": "lunch",
+   "tag_03": "",
+   "tag_04": "",
+   "img": "beverage/bev02.jpg"
+ },
+ {
+   "title": "beverage_03",
+   "content": "perspiciatis qui voluptatem expedita quas",
+   "tag_01": "bubble",
+   "tag_02": "eastern",
+   "tag_03": "soda",
+   "tag_04": "",
+   "img": "beverage/bev03.jpg"
+ },
+ {
+   "title": "beverage_04",
+   "content": "perspiciatis qui voluptatem expedita quas",
+   "tag_01": "ice",
+   "tag_02": "best",
+   "tag_03": "sweety",
+   "tag_04": "new",
+   "img": "beverage/bev04.jpg"
+ },
+ {
+   "title": "beverage_05",
+   "content": "perspiciatis qui voluptatem expedita quas",
+   "tag_01": "healty",
+   "tag_02": "soft",
+   "tag_03": "tasty",
+   "tag_04": "",
+   "img": "beverage/bev05.jpg"
+ },
+ {
+   "title": "beverage_06",
+   "content": "perspiciatis qui voluptatem expedita quas",
+   "tag_01": "fruit",
+   "tag_02": "green",
+   "tag_03": "best",
+   "tag_04": "",
+   "img": "beverage/bev06.jpg"
+ },
+ {
+   "title": "beverage_07",
+   "content": "perspiciatis qui voluptatem expedita quas",
+   "tag_01": "sour",
+   "tag_02": "new",
+   "tag_03": "",
+   "tag_04": "",
+   "img": "beverage/bev07.jpg"
+ },
+ {
+   "title": "beverage_08",
+   "content": "perspiciatis qui voluptatem expedita quas",
+   "tag_01": "ade",
+   "tag_02": "comfortable",
+   "tag_03": "art",
+   "tag_04": "",
+   "img": "beverage/bev08.jpg"
+ },
+ {
+   "title": "beverage_09",
+   "content": "perspiciatis qui voluptatem expedita quas",
+   "tag_01": "ice",
+   "tag_02": "fruit",
+   "tag_03": "healthy",
+   "tag_04": "",
+   "img": "beverage/bev09.jpg"
+ },
+ {
+   "title": "beverage_10",
+   "content": "perspiciatis qui voluptatem expedita quas",
+   "tag_01": "leaf",
+   "tag_02": "temple",
+   "tag_03": "western",
+   "tag_04": "",
+   "img": "beverage/bev10.jpg"
+ },
+ {
+   "title": "beverage_11",
+   "content": "perspiciatis qui voluptatem expedita quas",
+   "tag_01": "hot",
+   "tag_02": "new",
+   "tag_03": "comfortable",
+   "tag_04": "",
+   "img": "beverage/bev11.jpg"
+ },
+ {
+   "title": "beverage_12",
+   "content": "perspiciatis qui voluptatem expedita quas",
+   "tag_01": "ice",
+   "tag_02": "appetizer",
+   "tag_03": "",
+   "tag_04": "",
+   "img": "beverage/bev12.jpg"
+ }
+]

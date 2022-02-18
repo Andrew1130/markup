@@ -3,146 +3,20 @@
 
 
 //? 배열 --------------------------------
-//* modal - bar
-var modalBardata = [
-
-  {"title":"Nam dolorem recusandae", 
-  "date":"2022. 01. 05 - 2022. 03. 15",
-  "pngImg":"../../img/event/modalbar_bg_01.png",
-  "svgImg":"../../img/event/modalbar_bg_01.svg"
-}, 
-
-  {"title":"Eaque nesciunt", 
-  "date":"2021. 12. 23. - 2022. 02. 23",
-  "pngImg":"../../img/event/modalbar_bg_02.png",
-  "svgImg":"../../img/event/modalbar_bg_02.svg"
-}, 
-
-  {"title":"impedit suscipit iusto", 
-  "date":"2022. 02. 09 - 2022. 04. 12.",
-  "pngImg":"../../img/event/modalbar_bg_03.png",
-  "svgImg":"../../img/event/modalbar_bg_03.svg"
-}, 
-
-  {"title":"ducimus necessitatibus nemo", 
-  "date":"2021. 11. 30 - 2022. 05. 16",
-  "pngImg":"../../img/event/modalbar_bg_04.png",
-  "svgImg":"../../img/event/modalbar_bg_04.svg"
-}, 
-
-  {"title":"dolores doloremque aliquid", 
-  "date":"2022. 1. 29 - 2022. 3. 28",
-  "pngImg":"../../img/event/modalbar_bg_05.png",
-  "svgImg":"../../img/event/modalbar_bg_05.svg"
-},
-
-  {"title":"nam id alias accusamus", 
-  "date":"2022. 2. 11 - 2022. 2. 26",
-  "pngImg":"../../img/event/modalbar_bg_06.png",
-  "svgImg":"../../img/event/modalbar_bg_06.svg"
-}
-
-];
+//* json 호출로 대체
 
 
-//* modal - window
-var modalWindowdata = [
-  { "modal_title":"Nam dolorem recusandae",
+var dataList = []
+$.ajax({url:'../json/event_modalbar.json'}).done(function(modalBardata){
+  $.ajax({url:'../json/event_modalwindow.json'}).done(function(modalWindowdata){
+    dataList[0] = modalBardata;
+    dataList[1] = modalWindowdata;
 
-    "modal_content_1":"Beatae illum fugiat sapiente aperiam itaque odit tempore hic, nisi sequi adipisci totam, voluptates optio? Sint magni magnam modi eligendi omnis explicabo. Et esse voluptatibus est fugit libero, eaque ipsam! Beatae ratione expedita earum, voluptates. Eos, modi ipsa perferendis sunt labore dolorum accusamus quod doloribus, temporibus, aliquid dolor architecto minus exercitationem ratione tenetur! Obcaecati enim laboriosam est voluptatum explicabo voluptate ea, neque facere possimus sunt!",
-    "mc_img_1":"../../img/event/modal_window/modal_content_img/pic_1.jpg",
+    console.log(dataList[0])
+    console.log(dataList[1])
 
-    "modal_content_2":"Eos suscipit quibusdam voluptatem odio. Velit facere dolor illo quos! Vitae obcaecati, quia nobis distinctio explicabo nisi modi ipsam reiciendis repellat illo natus, magni, quod illum. Ab libero eveniet dolores! Dicta, exercitationem numquam consequatur tenetur vel animi quia expedita cumque nesciunt hic corrupti iusto neque accusamus. Aut eveniet id ea. Exercitationem!",
-    "mc_img_2_01":"../../img/event/modal_window/modal_content_img/pic_2.jpg",
-    "mc_img_2_02":"../../img/event/modal_window/modal_content_img/pic_3.jpg",
+    //code 수행
 
-    "modal_content_3":"e quod unde amet sequi ullam fugit ex cumque tenetur consequuntur, saepe obcaecati nam, autem sint at expedita fuga doloremque. cum in consectetur molestiae vero perspiciatis totam. Neque, sit. Magni delectus natus voluptates eligendi ducimus deserunt error dolorem sed repellendus consequatur. Earum alias, aliquid animi ratione qui dignissimos, numquam ea non.",
-    "mc_img_3":"../../img/event/modal_window/modal_content_img/pic_4.jpg",
-
-    "modal_content_4":"iciendis repellat illo natus, magni, quod illum. Ab libero eveniet dolores! Dicta, exercitationem numquam consequatur tenetur vel animi quia expedita cumque nesciunt hic corrupti iusto neque accusamus. Aut eveniet id ea. Exercitationem quia incidunt sapiente nesciunt nemo hic, earum ex provident. Odio sed nam ullam facer. Beatae illum fugiat sapiente aperiam itaque odit tempore hic, nisi sequi adipisci totam, voluptates optio? Sint magni magnam modi eligendi omnis explicabo. Et esse voluptatibus est fugit libero, eaque ipsam! "
-}, 
-  
-  {
-    "modal_title": "Eaque nesciunt",
-
-    "modal_content_1":"Beatae illum fugiat sapiente aperiam itaque odit tempore hic, nisi sequi adipisci totam, voluptates optio? Sint magni magnam modi eligendi omnis explicabo. Et esse voluptatibus est fugit libero, eaque ipsam! Beatae ratione expedita earum, voluptates. Eos, modi ipsa perferendis sunt labore dolorum accusamus quod doloribus, temporibus, aliquid dolor architecto minus exercitationem ratione tenetur! Obcaecati enim laboriosam est voluptatum explicabo voluptate ea, neque facere possimus sunt!",
-    "mc_img_1":"../../img/event/modal_window/modal_content_img/pic_5.jpg",
-
-    "modal_content_2":"Eos suscipit quibusdam voluptatem odio. Velit facere dolor illo quos! Vitae obcaecati, quia nobis distinctio explicabo nisi modi ipsam reiciendis repellat illo natus, magni, quod illum. Ab libero eveniet dolores! Dicta, exercitationem numquam consequatur tenetur vel animi quia expedita cumque nesciunt hic corrupti iusto neque accusamus. Aut eveniet id ea. Exercitationem!",
-    "mc_img_2_01":"../../img/event/modal_window/modal_content_img/pic_6.jpg",
-    "mc_img_2_02":"../../img/event/modal_window/modal_content_img/pic_7.jpg",
-
-    "modal_content_3":"e quod unde amet sequi ullam fugit ex cumque tenetur consequuntur, saepe obcaecati nam, autem sint at expedita fuga doloremque. cum in consectetur molestiae vero perspiciatis totam. Neque, sit. Magni delectus natus voluptates eligendi ducimus deserunt error dolorem sed repellendus consequatur. Earum alias, aliquid animi ratione qui dignissimos, numquam ea non.",
-    "mc_img_3":"../../img/event/modal_window/modal_content_img/pic_8.jpg",
-
-    "modal_content_4":"iciendis repellat illo natus, magni, quod illum. Ab libero eveniet dolores! Dicta, exercitationem numquam consequatur tenetur vel animi quia expedita cumque nesciunt hic corrupti iusto neque accusamus. Aut eveniet id ea. Exercitationem quia incidunt sapiente nesciunt nemo hic, earum ex provident. Odio sed nam ullam facer. Beatae illum fugiat sapiente aperiam itaque odit tempore hic, nisi sequi adipisci totam, voluptates optio? Sint magni magnam modi eligendi omnis explicabo. Et esse voluptatibus est fugit libero, eaque ipsam! "
-}, 
-  
-  {
-    "modal_title":"impedit suscipit iusto",
-
-    "modal_content_1":"Beatae illum fugiat sapiente aperiam itaque odit tempore hic, nisi sequi adipisci totam, voluptates optio? Sint magni magnam modi eligendi omnis explicabo. Et esse voluptatibus est fugit libero, eaque ipsam! Beatae ratione expedita earum, voluptates. Eos, modi ipsa perferendis sunt labore dolorum accusamus quod doloribus, temporibus, aliquid dolor architecto minus exercitationem ratione tenetur! Obcaecati enim laboriosam est voluptatum explicabo voluptate ea, neque facere possimus sunt!",
-    "mc_img_1":"../../img/event/modal_window/modal_content_img/pic_9.jpg",
-
-    "modal_content_2":"Eos suscipit quibusdam voluptatem odio. Velit facere dolor illo quos! Vitae obcaecati, quia nobis distinctio explicabo nisi modi ipsam reiciendis repellat illo natus, magni, quod illum. Ab libero eveniet dolores! Dicta, exercitationem numquam consequatur tenetur vel animi quia expedita cumque nesciunt hic corrupti iusto neque accusamus. Aut eveniet id ea. Exercitationem!",
-    "mc_img_2_01":"../../img/event/modal_window/modal_content_img/pic_10.jpg",
-    "mc_img_2_02":"../../img/event/modal_window/modal_content_img/pic_11.jpg",
-
-    "modal_content_3":"e quod unde amet sequi ullam fugit ex cumque tenetur consequuntur, saepe obcaecati nam, autem sint at expedita fuga doloremque. cum in consectetur molestiae vero perspiciatis totam. Neque, sit. Magni delectus natus voluptates eligendi ducimus deserunt error dolorem sed repellendus consequatur. Earum alias, aliquid animi ratione qui dignissimos, numquam ea non.",
-    "mc_img_3":"../../img/event/modal_window/modal_content_img/pic_12.jpg",
-
-    "modal_content_4":"iciendis repellat illo natus, magni, quod illum. Ab libero eveniet dolores! Dicta, exercitationem numquam consequatur tenetur vel animi quia expedita cumque nesciunt hic corrupti iusto neque accusamus. Aut eveniet id ea. Exercitationem quia incidunt sapiente nesciunt nemo hic, earum ex provident. Odio sed nam ullam facer. Beatae illum fugiat sapiente aperiam itaque odit tempore hic, nisi sequi adipisci totam, voluptates optio? Sint magni magnam modi eligendi omnis explicabo. Et esse voluptatibus est fugit libero, eaque ipsam! "
-}, 
-  
-  {
-    "modal_title":"ducimus necessitatibus nemo",
-
-    "modal_content_1":"Beatae illum fugiat sapiente aperiam itaque odit tempore hic, nisi sequi adipisci totam, voluptates optio? Sint magni magnam modi eligendi omnis explicabo. Et esse voluptatibus est fugit libero, eaque ipsam! Beatae ratione expedita earum, voluptates. Eos, modi ipsa perferendis sunt labore dolorum accusamus quod doloribus, temporibus, aliquid dolor architecto minus exercitationem ratione tenetur! Obcaecati enim laboriosam est voluptatum explicabo voluptate ea, neque facere possimus sunt!",
-    "mc_img_1":"../../img/event/modal_window/modal_content_img/pic_13.jpg",
-
-    "modal_content_2":"Eos suscipit quibusdam voluptatem odio. Velit facere dolor illo quos! Vitae obcaecati, quia nobis distinctio explicabo nisi modi ipsam reiciendis repellat illo natus, magni, quod illum. Ab libero eveniet dolores! Dicta, exercitationem numquam consequatur tenetur vel animi quia expedita cumque nesciunt hic corrupti iusto neque accusamus. Aut eveniet id ea. Exercitationem!",
-    "mc_img_2_01":"../../img/event/modal_window/modal_content_img/pic_14.jpg",
-    "mc_img_2_02":"../../img/event/modal_window/modal_content_img/pic_15.jpg",
-
-    "modal_content_3":"e quod unde amet sequi ullam fugit ex cumque tenetur consequuntur, saepe obcaecati nam, autem sint at expedita fuga doloremque. cum in consectetur molestiae vero perspiciatis totam. Neque, sit. Magni delectus natus voluptates eligendi ducimus deserunt error dolorem sed repellendus consequatur. Earum alias, aliquid animi ratione qui dignissimos, numquam ea non.",
-    "mc_img_3":"../../img/event/modal_window/modal_content_img/pic_16.jpg",
-
-    "modal_content_4":"iciendis repellat illo natus, magni, quod illum. Ab libero eveniet dolores! Dicta, exercitationem numquam consequatur tenetur vel animi quia expedita cumque nesciunt hic corrupti iusto neque accusamus. Aut eveniet id ea. Exercitationem quia incidunt sapiente nesciunt nemo hic, earum ex provident. Odio sed nam ullam facer. Beatae illum fugiat sapiente aperiam itaque odit tempore hic, nisi sequi adipisci totam, voluptates optio? Sint magni magnam modi eligendi omnis explicabo. Et esse voluptatibus est fugit libero, eaque ipsam! "
-}, 
-  
-  {
-    "modal_title":"dolores doloremque aliquid",
-
-    "modal_content_1":"Beatae illum fugiat sapiente aperiam itaque odit tempore hic, nisi sequi adipisci totam, voluptates optio? Sint magni magnam modi eligendi omnis explicabo. Et esse voluptatibus est fugit libero, eaque ipsam! Beatae ratione expedita earum, voluptates. Eos, modi ipsa perferendis sunt labore dolorum accusamus quod doloribus, temporibus, aliquid dolor architecto minus exercitationem ratione tenetur! Obcaecati enim laboriosam est voluptatum explicabo voluptate ea, neque facere possimus sunt!",
-    "mc_img_1":"../../img/event/modal_window/modal_content_img/pic_17.jpg",
-
-    "modal_content_2":"Eos suscipit quibusdam voluptatem odio. Velit facere dolor illo quos! Vitae obcaecati, quia nobis distinctio explicabo nisi modi ipsam reiciendis repellat illo natus, magni, quod illum. Ab libero eveniet dolores! Dicta, exercitationem numquam consequatur tenetur vel animi quia expedita cumque nesciunt hic corrupti iusto neque accusamus. Aut eveniet id ea. Exercitationem!",
-    "mc_img_2_01":"../../img/event/modal_window/modal_content_img/pic_18.jpg",
-    "mc_img_2_02":"../../img/event/modal_window/modal_content_img/pic_19.jpg",
-
-    "modal_content_3":"e quod unde amet sequi ullam fugit ex cumque tenetur consequuntur, saepe obcaecati nam, autem sint at expedita fuga doloremque. cum in consectetur molestiae vero perspiciatis totam. Neque, sit. Magni delectus natus voluptates eligendi ducimus deserunt error dolorem sed repellendus consequatur. Earum alias, aliquid animi ratione qui dignissimos, numquam ea non.",
-    "mc_img_3":"../../img/event/modal_window/modal_content_img/pic_20.jpg",
-
-    "modal_content_4":"iciendis repellat illo natus, magni, quod illum. Ab libero eveniet dolores! Dicta, exercitationem numquam consequatur tenetur vel animi quia expedita cumque nesciunt hic corrupti iusto neque accusamus. Aut eveniet id ea. Exercitationem quia incidunt sapiente nesciunt nemo hic, earum ex provident. Odio sed nam ullam facer. Beatae illum fugiat sapiente aperiam itaque odit tempore hic, nisi sequi adipisci totam, voluptates optio? Sint magni magnam modi eligendi omnis explicabo. Et esse voluptatibus est fugit libero, eaque ipsam! "
-}, 
-  
-  {
-    "modal_title":"nam id alias accusamus",
-
-    "modal_content_1":"Beatae illum fugiat sapiente aperiam itaque odit tempore hic, nisi sequi adipisci totam, voluptates optio? Sint magni magnam modi eligendi omnis explicabo. Et esse voluptatibus est fugit libero, eaque ipsam! Beatae ratione expedita earum, voluptates. Eos, modi ipsa perferendis sunt labore dolorum accusamus quod doloribus, temporibus, aliquid dolor architecto minus exercitationem ratione tenetur! Obcaecati enim laboriosam est voluptatum explicabo voluptate ea, neque facere possimus sunt!",
-    "mc_img_1":"../../img/event/modal_window/modal_content_img/pic_21.jpg",
-
-    "modal_content_2":"Eos suscipit quibusdam voluptatem odio. Velit facere dolor illo quos! Vitae obcaecati, quia nobis distinctio explicabo nisi modi ipsam reiciendis repellat illo natus, magni, quod illum. Ab libero eveniet dolores! Dicta, exercitationem numquam consequatur tenetur vel animi quia expedita cumque nesciunt hic corrupti iusto neque accusamus. Aut eveniet id ea. Exercitationem!",
-    "mc_img_2_01":"../../img/event/modal_window/modal_content_img/pic_22.jpg",
-    "mc_img_2_02":"../../img/event/modal_window/modal_content_img/pic_23.jpg",
-
-    "modal_content_3":"e quod unde amet sequi ullam fugit ex cumque tenetur consequuntur, saepe obcaecati nam, autem sint at expedita fuga doloremque. cum in consectetur molestiae vero perspiciatis totam. Neque, sit. Magni delectus natus voluptates eligendi ducimus deserunt error dolorem sed repellendus consequatur. Earum alias, aliquid animi ratione qui dignissimos, numquam ea non.",
-    "mc_img_3":"../../img/event/modal_window/modal_content_img/pic_24.jpg",
-
-    "modal_content_4":"iciendis repellat illo natus, magni, quod illum. Ab libero eveniet dolores! Dicta, exercitationem numquam consequatur tenetur vel animi quia expedita cumque nesciunt hic corrupti iusto neque accusamus. Aut eveniet id ea. Exercitationem quia incidunt sapiente nesciunt nemo hic, earum ex provident. Odio sed nam ullam facer. Beatae illum fugiat sapiente aperiam itaque odit tempore hic, nisi sequi adipisci totam, voluptates optio? Sint magni magnam modi eligendi omnis explicabo. Et esse voluptatibus est fugit libero, eaque ipsam! "
-}
-
-]
 
 
 //? 구현할 기능 -----------
@@ -266,4 +140,9 @@ bgimgArea.on('click', function(){
 });
 
 
+
 })(jQuery);
+
+
+}) // $.ajax_data2.json
+}) // $.ajax_data1.json

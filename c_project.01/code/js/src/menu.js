@@ -2,64 +2,37 @@
 
 
 
-//* Javascript ---------------------------------------------------
+
 
 //? 배열 -------------------------------
-var data = [
-  {'title':'coffee_01', 'content':'Lorem ipsum dolor sit amet consectetur adipisicing elit', 
-  'tag_01':'ICE', 'tag_02':'Flavor', 'tag_03':'Sweet', 'tag_04':'lime',
-  img:'../img/menu/menu_01.jpg',
-},
-  {'title':'coffee_02', 'content':'Lorem ipsum dolor sit amet consectetur adipisicing elit', 
-  'tag_01':'ICE', 'tag_02':'SALE', 'tag_03':"", 'tag_04' : "",
-  img:'../img/menu/menu_02.jpg',
-},
-  {'title':'coffee_03', 'content':'Lorem ipsum dolor sit amet consectetur adipisicing elit', 
-  'tag_01':'HOT', 'tag_02':'SALE', 'tag_03':"", 'tag_04' : "",
-  img:'../img/menu/menu_03.jpg',
-},
-  {'title':'coffee_04', 'content':'Lorem ipsum dolor sit amet consectetur adipisicing elit', 
-  'tag_01':'Summer', 'tag_02':'ICE', 'tag_03':"Tasty", 'tag_04' : "",
-  img:'../img/menu/menu_04.jpg',
-},
-  {'title':'coffee_05', 'content':'Lorem ipsum dolor sit amet consectetur adipisicing elit', 
-  'tag_01':'4 season', 'tag_02':'HOT', 'tag_03':"", 'tag_04' : "",
-  img:'../img/menu/menu_05.jpg',
-},
-  {'title':'coffee_06', 'content':'Lorem ipsum dolor sit amet consectetur adipisicing elit', 
-  'tag_01':'Dry', 'tag_02':'HOT', 'tag_03':"", 'tag_04' : "",
-  img:'../img/menu/menu_06.jpg',
-},
-  {'title':'coffee_07', 'content':'Lorem ipsum dolor sit amet consectetur adipisicing elit', 
-  'tag_01':'Winter', 'tag_02':'Syrup', 'tag_03':"Cream", 'tag_04' : "Milk",
-  img:'../img/menu/menu_07.jpg',
-},
-  {'title':'coffee_08', 'content':'Lorem ipsum dolor sit amet consectetur adipisicing elit', 
-  'tag_01':'Sweet', 'tag_02':'HOT', 'tag_03':"", 'tag_04' : "",
-  img:'../img/menu/menu_08.jpg',
-},
-  {'title':'coffee_09', 'content':'Lorem ipsum dolor sit amet consectetur adipisicing elit', 
-  'tag_01':'ICE', 'tag_02':'Original', 'tag_03':"", 'tag_04' : "",
-  img:'../img/menu/menu_09.jpg',
-},
-  {'title':'coffee_10', 'content':'Lorem ipsum dolor sit amet consectetur adipisicing elit', 
-  'tag_01':'4 season', 'tag_02':'art', 'tag_03':"Oriental", 'tag_04' : "",
-  img:'../img/menu/menu_10.jpg',
-},
-  {'title':'coffee_11', 'content':'Lorem ipsum dolor sit amet consectetur adipisicing elit', 
-  'tag_01':'Milk', 'tag_02':'HOT', 'tag_03':"", 'tag_04' : "",
-  img:'../img/menu/menu_11.jpg',
-},
-  {'title':'coffee_12', 'content':'Lorem ipsum dolor sit amet consectetur adipisicing elit', 
-  'tag_01':'ICE', 'tag_02':'bubble', 'tag_03':"", 'tag_04' : "",
-  img:'../img/menu/menu_12.jpg',
-},
-  
-];
+//* json 호출로 대체
 
 
+//? 구현할 기능
+/*
+1. 탭메뉴를 누르면 각 메뉴에 맞는 데이터가 나오도록 만들기
++ 2. 태그 검색이 가능하도록 만들기 (구현예정)
+*/
+
+var dataList = []
+$.ajax({url:'../json/menu/menuData_coffee.json'}).done(function(coffee_Data){
+$.ajax({url:'../json/menu/menuData_tea.json'}).done(function(tea_Data){
+$.ajax({url:'../json/menu/menuData_beverage.json'}).done(function(beverage_Data){
+$.ajax({url:'../json/menu/menuData_dessert.json'}).done(function(dessert_Data){
+$.ajax({url:'../json/menu/menuData_theme.json'}).done(function(theme_Data){
+    dataList[0] = coffee_Data;
+    dataList[1] = tea_Data;
+    dataList[2] = beverage_Data;
+    dataList[3] = dessert_Data;
+    dataList[4] = theme_Data;
+
+    // console.log(dataList[0])
+    // console.log(dataList[1])
+
+ 
 
 
+//* Javascript ---------------------------------------------------
 //? 함수식 -------------------------
 var fnMakeLi = function(tit, con, img, tag_01, tag_02, tag_03, tag_04){
 
@@ -70,7 +43,8 @@ var fnMakeLi = function(tit, con, img, tag_01, tag_02, tag_03, tag_04){
   // 생성한 li에 있던 내용은 지우고, = 우측의 내용을 삽입
 
   var SelectorImg = makeLi.querySelector('.img');
-  SelectorImg.style.backgroundImage = 'url('+ img +')'; // img라는 클래스 이름을 가진 곳에 url('+ img +') 형식으로 링크 삽입
+  var baseUrl = "../img/menu/"
+  SelectorImg.style.backgroundImage = 'url('+ baseUrl +''+ img +')'; // img라는 클래스 이름을 가진 곳에 url('+ img +') 형식으로 링크 삽입
 
   cardArea.append(makeLi); //card_area라는 클래스 이름을 가진 영역의 하위에, 자식 위치로 하여 생성되었던 li를 이동
 
@@ -81,8 +55,8 @@ var fnMakeLi = function(tit, con, img, tag_01, tag_02, tag_03, tag_04){
 
 //? 반복문으로 여러번 만들기 ---------------------------
 var i=0;
-for(; i<data.length; i+=1) {
-  fnMakeLi( data[i].title, data[i].content, data[i].img, data[i].tag_01, data[i].tag_02, data[i].tag_03, data[i].tag_04 );
+for(; i<coffee_Data.length; i+=1) {
+  fnMakeLi( coffee_Data[i].title, coffee_Data[i].content, coffee_Data[i].img, coffee_Data[i].tag_01, coffee_Data[i].tag_02, coffee_Data[i].tag_03, coffee_Data[i].tag_04 );
   // fnMakeLi 함수의 매개 변수가 7개 (tit, con, img, tag_01, tag_02, tag_03, tag_04) 이므로, 함수 작동에도 7개의 변수 대입 필요.
   // 변수는 배열에서 만들어 놓았던 데이터를 가져와서 대입
 }
@@ -93,24 +67,32 @@ for(; i<data.length; i+=1) {
 
 
 
-//* jQuery ---------------------------------------------------
 
+//* jQuery ---------------------------------------------------
 
 (function($){
 
-  var tag_03 = $('.tag_03')
-  var tag_04 = $('.tag_04')
 
-  console.log(tag_03)
-  console.log(tag_03.eq(1).text())
+//? 변수 ---------------------
+var tag_03 = $('.tag_03')
+var tag_04 = $('.tag_04')
 
-  var k = 0
+var cardArea = $('.card_area')
+var navBar = $('.navBar')
+var navBarLi = navBar.find('li')
+
+// var navBarList = [coffee, tea, beverage, dessert, theme]
 
 
 
+//? 사전 기능 실행 ---------------------
+  // console.log(tag_03)
+  // console.log(tag_03.eq(1).text())
+
+  
   // k번째의 tag_03 및 tag_04의 내부 텍스트가 ""일 경우, css를 제거
-
-  for(; k<data.length; k+=1) {
+  var k = 0 
+  for(; k<coffee_Data.length; k+=1) {
     if (tag_03.eq(k).text() === "") {
         tag_03.eq(k).removeClass('tag_css');
     }
@@ -121,27 +103,96 @@ for(; i<data.length; i+=1) {
 
 
 
-  /*
+//? 함수 --------------------------  
+var nulltagBlindFn = function(){
+  var k = 0;
+  var tag_03 = $('.tag_03')
+  var tag_04 = $('.tag_04')
+  console.log(k) 
+  for(; k<coffee_Data.length; k+=1) {
+    if (tag_03.eq(k).text() === "") {
+        tag_03.eq(k).removeClass('tag_css');
+    }
+    if (tag_04.eq(k).text() === "") {
+      tag_04.eq(k).removeClass('tag_css');
+  }
+  }
+}
 
-  if (tag_03.eq(0).text() === "") {
-    tag_03.eq(0).removeClass('tag_css');
+
+//? 이벤트 --------------------
+navBarLi.eq(0).on('click', function(e){
+  e.preventDefault();
+  cardArea.empty();
+
+  var i=0;
+  for(; i<coffee_Data.length; i+=1) {
+    fnMakeLi( coffee_Data[i].title, coffee_Data[i].content, coffee_Data[i].img, coffee_Data[i].tag_01, coffee_Data[i].tag_02, coffee_Data[i].tag_03, coffee_Data[i].tag_04 );
   }
 
-  if (tag_03.eq(1).text() === "") {
-    tag_03.eq(1).removeClass('tag_css');
+  nulltagBlindFn()  
+
+});
+
+navBarLi.eq(1).on('click', function(e){
+  e.preventDefault();
+  cardArea.empty();
+
+  var i=0;
+  for(; i<tea_Data.length; i+=1) {
+    fnMakeLi( tea_Data[i].title, tea_Data[i].content, tea_Data[i].img, tea_Data[i].tag_01, tea_Data[i].tag_02, tea_Data[i].tag_03, tea_Data[i].tag_04 );
   }
 
-  if (tag_03.eq(2).text() === "") {
-    tag_03.eq(2).removeClass('tag_css');
+  nulltagBlindFn() 
+
+});
+
+navBarLi.eq(2).on('click', function(e){
+  e.preventDefault();
+  cardArea.empty();
+
+  var i=0;
+  for(; i<beverage_Data.length; i+=1) {
+    fnMakeLi( beverage_Data[i].title, beverage_Data[i].content, beverage_Data[i].img, beverage_Data[i].tag_01, beverage_Data[i].tag_02, beverage_Data[i].tag_03, beverage_Data[i].tag_04 );
   }
 
-  ...
+  nulltagBlindFn() 
 
-  if (tag_03.eq(11).text() === "") {
-    tag_03.eq(11).removeClass('tag_css');
+});
+
+navBarLi.eq(3).on('click', function(e){
+  e.preventDefault();
+  cardArea.empty();
+
+  var i=0;
+  for(; i<dessert_Data.length; i+=1) {
+    fnMakeLi( dessert_Data[i].title, dessert_Data[i].content, dessert_Data[i].img, dessert_Data[i].tag_01, dessert_Data[i].tag_02, dessert_Data[i].tag_03, dessert_Data[i].tag_04 );
   }
 
-  */
+  nulltagBlindFn() 
+
+});
+
+navBarLi.eq(4).on('click', function(e){
+  e.preventDefault();
+  cardArea.empty();
+
+  var i=0;
+  for(; i<theme_Data.length; i+=1) {
+    fnMakeLi( theme_Data[i].title, theme_Data[i].content, theme_Data[i].img, theme_Data[i].tag_01, theme_Data[i].tag_02, theme_Data[i].tag_03, theme_Data[i].tag_04 );
+  }
+
+  nulltagBlindFn() 
+
+});
+
 
 
 })(jQuery);
+
+
+}) // $.ajax_data5.json
+}) // $.ajax_data4.json   
+}) // $.ajax_data3.json
+}) // $.ajax_data2.json 
+}) // $.ajax_data1.json 

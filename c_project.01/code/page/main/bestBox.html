@@ -1,6 +1,9 @@
 <!-- bestBox.html -->
 <h2 class="blind">bestBox</h2>
-  <article class="max_width_01 area">
+  <!-- <article class="max_width_01 area"> -->
+    <!-- max_width_01로 인한 반응형 버그 발생, 수정 위해 max_width_01 삭제 후 새로운 클래스 이름 부여 -->
+    
+  <article class="bestbox_container">
     <!-- area -->
     <ul class="bestBox_Topul">
 
@@ -22,102 +25,23 @@
 
       <li class="card_area_control">
         <ul class="card_area clearfix">
-          <li class="card_01">
-            <a href="#">
-              <span class="blind">bestBox_02</span>
-              <div class="card_image">
-                <!-- 카드 이미지  -->
-              </div>
-              <h2 tabindex="-1">god father</h2>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, eum.
-              </p>
-              <div class="card_date">
-                <span>2021. 06. 17</span>
-              </div>
-            </a>  
-          </li> <!-- / card_01 -->
 
-          <li class="card_02">
-            <a href="#">
-              <span class="blind">bestBox_03</span>
+          <!-- 
+            <li class="card_'+ id +'">
+              <span class="blind">bestBox_'+ id +'</span>
               <div class="card_image">
-                <!-- 카드 이미지  -->
+                <span class="blind">'+ image_description +'</span>
               </div>
-              <h2>esspresso</h2>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, eum. 
-              </p>
+                <h2>'+ title +'</h2>
+                <p>'+ contents +'</p>
               <div class="card_date">
-                <span>2021. 06. 17</span>
+                <span>'+ date +'</span>
               </div>
-            </a>
-          </li> <!-- / card_02 -->
+            </li>  
+          -->
+          <!-- / card_01 -->
 
-          <li class="card_03">
-            <a href="#">
-              <span class="blind">bestBox_04</span>
-              <div class="card_image">
-                <!-- 카드 이미지  -->
-              </div>
-              <h2>latte art</h2>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, eum.
-              </p>
-              <div class="card_date">
-                <span>2021. 06. 17</span> 
-              </div>
-            </a>  
-          </li> <!-- / card_03 -->
-
-          <li class="card_04">
-            <a href="#">
-              <span class="blind">bestBox_04</span>
-              <div class="card_image">
-                <!-- 카드 이미지  -->
-              </div>
-              <h2>latte art</h2>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, eum.
-              </p>
-              <div class="card_date">
-                <span>2021. 06. 17</span> 
-              </div>
-            </a>  
-          </li> <!-- / card_03 -->
-
-          <li class="card_05">
-            <a href="#">
-              <span class="blind">bestBox_04</span>
-              <div class="card_image">
-                <!-- 카드 이미지  -->
-              </div>
-              <h2>latte art</h2>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, eum.
-              </p>
-              <div class="card_date">
-                <span>2021. 06. 17</span> 
-              </div>
-            </a>  
-          </li> <!-- / card_03 -->
-
-          <li class="card_06">
-            <a href="#">
-              <span class="blind">bestBox_04</span>
-              <div class="card_image">
-                <!-- 카드 이미지  -->
-              </div>
-              <h2>latte art</h2>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, eum.
-              </p>
-              <div class="card_date">
-                <span>2021. 06. 17</span> 
-              </div>
-            </a>  
-          </li> <!-- / card_03 -->
-        </ul> 
+        </ul>  
       </li> <!-- / 카드 영역 -->   
 
     </ul>

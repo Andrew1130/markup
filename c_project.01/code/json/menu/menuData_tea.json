@@ -1,0 +1,110 @@
+[
+ {
+   "title": "tea_01",
+   "content": "saepe sequi accusantium labore beatae, iste dolorum",
+   "tag_01": "hot",
+   "tag_02": "new",
+   "tag_03": "",
+   "tag_04": "",
+   "img": "tea/tea01.jpg"
+ },
+ {
+   "title": "tea_02",
+   "content": "saepe sequi accusantium labore beatae, iste dolorum",
+   "tag_01": "milk",
+   "tag_02": "brunch",
+   "tag_03": "",
+   "tag_04": "",
+   "img": "tea/tea02.jpg"
+ },
+ {
+   "title": "tea_03",
+   "content": "saepe sequi accusantium labore beatae, iste dolorum",
+   "tag_01": "bubble",
+   "tag_02": "eastern",
+   "tag_03": "",
+   "tag_04": "",
+   "img": "tea/tea03.jpg"
+ },
+ {
+   "title": "tea_04",
+   "content": "saepe sequi accusantium labore beatae, iste dolorum",
+   "tag_01": "hot",
+   "tag_02": "best",
+   "tag_03": "sweety",
+   "tag_04": "leaf",
+   "img": "tea/tea04.jpg"
+ },
+ {
+   "title": "tea_05",
+   "content": "saepe sequi accusantium labore beatae, iste dolorum",
+   "tag_01": "aroma",
+   "tag_02": "soft",
+   "tag_03": "",
+   "tag_04": "",
+   "img": "tea/tea05.jpg"
+ },
+ {
+   "title": "tea_06",
+   "content": "saepe sequi accusantium labore beatae, iste dolorum",
+   "tag_01": "leaf",
+   "tag_02": "green",
+   "tag_03": "relax",
+   "tag_04": "",
+   "img": "tea/tea06.jpg"
+ },
+ {
+   "title": "tea_07",
+   "content": "saepe sequi accusantium labore beatae, iste dolorum",
+   "tag_01": "milk",
+   "tag_02": "new",
+   "tag_03": "",
+   "tag_04": "",
+   "img": "tea/tea07.jpg"
+ },
+ {
+   "title": "tea_08",
+   "content": "saepe sequi accusantium labore beatae, iste dolorum",
+   "tag_01": "bubble",
+   "tag_02": "milk",
+   "tag_03": "art",
+   "tag_04": "",
+   "img": "tea/tea08.jpg"
+ },
+ {
+   "title": "tea_09",
+   "content": "saepe sequi accusantium labore beatae, iste dolorum",
+   "tag_01": "hot",
+   "tag_02": "leaf",
+   "tag_03": "aroma",
+   "tag_04": "",
+   "img": "tea/tea09.jpg"
+ },
+ {
+   "title": "tea_10",
+   "content": "saepe sequi accusantium labore beatae, iste dolorum",
+   "tag_01": "leaf",
+   "tag_02": "temple",
+   "tag_03": "western",
+   "tag_04": "",
+   "img": "tea/tea10.jpg"
+ },
+ {
+   "title": "tea_11",
+   "content": "saepe sequi accusantium labore beatae, iste dolorum",
+   "tag_01": "hot",
+   "tag_02": "new",
+   "tag_03": "comfortable",
+   "tag_04": "",
+   "img": "tea/tea11.jpg"
+ },
+ {
+   "title": "tea_12",
+   "content": "saepe sequi accusantium labore beatae, iste dolorum",
+   "tag_01": "milk",
+   "tag_02": "appetizer",
+   "tag_03": "",
+   "tag_04": "",
+   "img": "tea/tea12.jpg"
+ }
+]

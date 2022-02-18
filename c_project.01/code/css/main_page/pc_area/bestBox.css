@@ -10,6 +10,13 @@
     padding-top: 10.9375rem; padding-bottom: 9.0625rem;
   }
 
+  .bestbox_container {
+    width: 95%; 
+    min-width: 940px; 
+    max-width: 1280px;
+    margin: auto;
+  }
+
   /* 제목 및 설명 --------------------- */
   #bestBox .description_area_control { margin-right: 3.75rem; }
 

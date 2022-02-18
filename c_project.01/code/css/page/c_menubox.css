@@ -64,6 +64,7 @@
   padding-right: 35px; padding-left: 35px; margin-top: 250px;
   text-transform: capitalize;
   border-right: 3px solid #aaa;
+  cursor: pointer;
 }
 
   .navBar li > a { display: block; }

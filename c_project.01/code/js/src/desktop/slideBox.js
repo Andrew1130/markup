@@ -96,6 +96,7 @@ jsonData.done(function(data){
   var indiWrapper = '<div class="slide_check_part"><ul class="slide_indicator blind_area"></ul><p><em class="now_view"></em> / <span class="total_view"></span></p></div>';
   var indiCode = '<li><a href="#" data-href="#"><span></span></a></li>';
   slideWrapperCode.before(indiWrapper)
+  var permission = true
 
 
   //* 변수 -----------------------------------
@@ -153,9 +154,17 @@ jsonData.done(function(data){
  
   //* 함수 -------------------------------
   var indiSetFn = function(n){
-    indiSelector.eq(n).addClass('action');
-    indiSelector.eq(n).siblings().removeClass('action');
-  }; // indiSetFn : 선택된 인디케이터에 action 부여하고 나머지 인디케이터에서는 action을 삭제
+    permission = false; // 출입 패스권 (승인취소)
+
+    var indiN = indiSelector.eq(n)
+
+    indiN.stop().animate({ "width": "5rem" }, 300);
+    indiN.find('a').css({ "backgroundColor": "rgba(26, 93, 84, 1)" })
+    indiN.siblings().stop().animate({ "width": "1.5rem" });
+    indiN.siblings().find('a').css({ "backgroundColor": "rgba(196, 196, 196, 1)" });
+
+    permission = true;   
+  }; // indiSetFn : 인디케이터 애니메이션 수행
 
   var actionNumSetFn = function(n){
     if(n >= dataLen){

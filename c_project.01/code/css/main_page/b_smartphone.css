@@ -99,7 +99,6 @@
 
   /*? slideBox ----------------------- */
   /** importtest css (슬라이드 기능 on) */
-  /*TODO : slideBox CSS >> base와 비교하여 정리 필요 */
   #slideBox {
     height: 70vh;
     min-height: 31.25rem; 
@@ -125,7 +124,8 @@
     }
 
     .view_content p {
-      width: 80%; height: 7.375rem;
+      width: 80%; 
+      height: auto; min-height: 5rem; max-height: 6.5rem;
       font-size: 0.875rem; color:#171717;
       display: block; margin: auto;
       text-align: center;
@@ -160,57 +160,30 @@
 
 /* 인디케이터 */
   .slide_check_part {
-    position: absolute;  z-index: 150;
     left: 50%; bottom: 1rem; 
     transform: translateX(-50%);
-    width: 220px; height: 2.5rem;
-    padding: 0.5rem; box-sizing: border-box;
-    background-color: #fff;
-    border-radius: 3rem;
-    box-shadow: 0.1rem 0.1rem 0.2rem #777;
+    width: 13.75rem; height: 2.5rem;
   }
-  .slide_indicator {
-    float: left; width: auto; height: 100%;
-    margin-left: 5px; margin-right: 20px; 
-  }
+  .slide_indicator { margin-left: 5px; margin-right: 0; }
   .slide_indicator li {
-    float: left; width: 1rem; height: 1rem;
-    margin-right: 1rem; margin-top: 3px;
-  }
-  .slide_indicator li a {
-    background-color: var(--color-light_gray_01);
-    border-radius: 2rem;
-    display: block; 
+    width: 1rem; height: 1rem;
+    margin-right: 1rem; margin-top: 0.1875rem;
   }
     .slide_indicator li.action { width: 1.5rem; }
-    .slide_indicator li.action a { 
-      background-color: rgba(26, 93, 84, 1);
-      background-color: var(--color-primary_01); 
-    }
-    .slide_indicator li a:hover {
-      box-shadow: 0.2rem 0.2rem 0.2rem rgba(80,80,80,1);
-      box-shadow: 0.2rem 0.2rem 0.2rem var(--color-deep_gray);  
-    }
-    .slide_indicator li a:focus { 
-      outline: 2px solid rgba(26, 93, 84, 1);
-      outline: 2px solid var(--color-primary_01) ;
-    }
   
-  .slide_check_part p {
-    float: left; width: 2.125rem; height: 100%; 
-    background-color: #fff;
-    border-radius: 3rem;
-    text-align: center;
+  .slide_check_part p { 
+    width: 2.125rem; background-color: #fff; 
+    margin-right: 0.3125rem;
   }
   
-  
-  .now_view { font-weight: 700; }
 
+  
   /*? newBox ----------------------- */
   #newBox {
     height: 100vh; min-height: 37.5rem;
     max-height: 37.5rem;
     padding-top: 5rem; padding-bottom: 5.625rem; 
+    position: relative;
   }
   
   .area_title {
@@ -220,10 +193,33 @@
     font-size: 1.75rem;
   }
 
-  .area_indicator { bottom: 4.375rem; }
+  .area_indicator { 
+    position: absolute; 
+    bottom: 3.375rem; left: 0; right: 0; 
+    width: 8.75rem; height: 1.875rem;
+    margin: auto; 
+  }
 
-  .newBox_area { width: 50.875rem; height: 20rem; }
-  .newBox_area li { width: 16.25rem; margin-left: 1.0625rem; }
+  .newBox_area { 
+    width: 80%; height: 20rem; 
+    position: absolute; left: 50%; transform: translateX(-50%);
+  }
+  .newBox_area ul { width: 300%; height: 320px; margin-left: 0; }
+  /* 사진을 담을 수 있도록 사진 담는 영역의 너비를 넓게 설정 */
+  .newBox_area li:first-child 
+  { margin-left: 1%; margin-right:1%; }
+  .newBox_area li { 
+    width: 31.333333%; height: 100%;
+    margin-left: 1%; margin-right:1%;
+  }
+  /* 
+    인디케이터 1개에 카드 1개 할당.
+    100/3 = 33.333333%
+    이에 카드 너비는 31.333333%로 주고 마진을 2%로 할당.
+    이때 마진을 한쪽에 몰지 않고 오른쪽, 왼쪽 둘로 나눠 1%씩 할당.
+  */
+
+  .newBox_area div { width: 100%; }
   
 
   /*? subBox ----------------------- */
@@ -299,7 +295,9 @@
   }
 
   /* 카드 -------------------- */
-  #bestBox .card_area_control { width: 15.625rem; height: 100%; }
+  #bestBox .card_area_control { 
+    width: 15.625rem; height: 100%; 
+  }
 
   #bestBox .card_area {
     display: block;
@@ -346,11 +344,16 @@
     border: 0.0625rem solid #fff; /* .sponsor_area에 마진을 줬을 때 sponserBox도 같이 딸려 내려오는 문제를 해결하기 위해 border 설정 */
   }
 
-  .sponsor_area { margin-top: 1.875rem; margin-bottom: 1.875rem; height: 15rem; }
-  .sponsor_area ul { width: 18.75rem; height: 56.25rem; margin: auto; }
+  .sponsor_area { 
+    height: 240px;
+    width: 320px; margin: auto; 
+    margin-top: 1.875rem; margin-bottom: 1.875rem; 
+  }
+
+  .sponsor_area ul { width: 640px; height: 240px; }
 
   #sponserBox li.sponserBox_li_end { margin-right: 1.25rem;}
-  #sponserBox li:nth-child(2n) { margin-right: 0;}
+  /* #sponserBox li:nth-child(2n) { margin-right: 0;} */
 
   
   /*? footBox ----------------------- */
