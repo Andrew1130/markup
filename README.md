@@ -111,9 +111,9 @@
 
 
 ## 문서 정리 & 반응형 세팅
--[html 문서 분리하기](b_step_06/html/b_01_importHtml.html)
--[반응형 웹 제작을 위한 js 처리](b_step_06/html/b_02_responsive_js.html)
--[반응형 문서를 구축](b_step_06/html/b_03_responsive_js_set.html)
+- [html 문서 분리하기](b_step_06/html/b_01_importHtml.html)
+- [반응형 웹 제작을 위한 js 처리](b_step_06/html/b_02_responsive_js.html)
+- [반응형 문서를 구축](b_step_06/html/b_03_responsive_js_set.html)
 
 
 <br />
