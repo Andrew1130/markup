@@ -1,0 +1,69 @@
+/* reset.scss */
+// scss 주석 
+
+/* 이 주석의 경우 css로 넘어간다 */
+// 이 주석은 css로 넘어가지 않는다.
+
+
+//? Prepros : scss -> css 변환 program
+
+
+//* scss만의 고유한 변수 표현 방법
+@import "./variable";
+@import "./mixin";
+
+
+:root {
+  font-size: 16px;
+  --color-base: #ddd;
+  --color-point: #f34;
+}
+
+
+#wrap {
+  width: 100%; height: auto; min-height: 500px;
+  margin: auto;
+  background-color: var(--color-base);
+  background-color: $color-base; // 이렇게 쓰면 css 변환시 #ddd가 입력된다.
+}
+
+
+h1 {
+  margin: 0;
+  width: 100px; height: 50px; 
+  background-color: var(--color-point); 
+
+  & > a { //& >> jquery의 $(this)와 유사한 기능. 여기서는 h1을 가리킨다.
+    @include test;
+    color: #000;
+  }
+}
+
+
+//* 틀은 비슷한데 속성값이 달라지는 경우
+// width, margin, box-sizing은 동일하나 h,p가 다름
+
+// 1 : 동일한 부분을 mixin으로 처리하고 다른 부분만 따로 값 쓰기
+// .box1 {
+//   @include box;
+//   height: 200px; padding: 1rem;
+// }
+
+// .box2 {
+//   @include box;
+//   height: 300px; padding: 0.2rem;
+// }
+
+
+// 2 : mixin에 @content 처리
+
+.box1 {
+  @include box_2($w:90%, $h:200px)
+}
+
+.box2 {
+  width: 100%; 
+  margin: auto; 
+  box-sizing: border-box;
+  height: 300px; padding: 0.2rem;
+}

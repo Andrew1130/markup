@@ -1,0 +1,25 @@
+/* sponserBox.css */
+
+
+@media screen and (min-width: 600px) and (max-width: 1023px) {
+  /*? 기준 디바이스 크기 : 600px */
+
+
+  /*? sponserBox ----------------------- */
+  #sponserBox {
+    height: 15rem;
+    border: 0.0625rem solid #fff; /* .sponsor_area에 마진을 줬을 때 sponserBox도 같이 딸려 내려오는 문제를 해결하기 위해 border 설정 */
+  }
+
+  .sponsor_area { 
+    /* margin-top: 1.875rem; margin-bottom: 1.875rem; height: 10.625rem;  */
+    width: 28.75rem; height: 10.625rem; margin: auto;
+    margin-top: 1.875rem; margin-bottom: 1.875rem;
+  }
+  .sponsor_area ul { width: 50rem; height: 10rem; }
+
+  #sponserBox li.sponserBox_li_end { margin-right: 1.25rem; } 
+  /* #sponserBox li:nth-child(3n) { margin-right: 0; } */
+
+
+} /* @media screen and (min-width: 600px) and (max-width: 1023px) */

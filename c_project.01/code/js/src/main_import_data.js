@@ -66,6 +66,8 @@ footBox.load(baseUrl_common + importPage_common[1])
 //* 배열.forEach(function(data, index){})
 //* $.each(배열, function(index, data){})
 
+
+//* 반응형 영역별 자바스크립트 호출 ----------------------------
 $.each(mainSelect, function(index, selector){
   selector.load(baseUrl_main + importPage_main[index], function(){
     if(index === 0) {
@@ -169,8 +171,8 @@ $.each(mainSelect, function(index, selector){
 });
 
 
-}, 500); // setTimeout()
-//* 시간이 너무 짧으면(ex. 10) 데이터를 불러오기도 전에 함수가 실행되어 버릴 수 있다. 데이터가 불러와진 것이 전제된 후에 작동하여야 하므로, 어느 정도 시간을 주는 것이 안정적이다.
+}, 300); // setTimeout()
+//* 시간이 너무 짧으면(ex. 10) jquery_rwd_set.js에서 데이터를 불러와 동작하기 이전에 함수가 실행되어 버릴 수 있다. jquery_rwd_set.js의 완전한 동작이 전제된 후에 작동하여야 하므로, 어느 정도 시간을 주는 것이 안정적이다.
 
 //? 이벤트 -----------
 

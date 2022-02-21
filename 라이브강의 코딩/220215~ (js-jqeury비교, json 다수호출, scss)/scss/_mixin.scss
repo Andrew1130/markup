@@ -1,0 +1,26 @@
+/* _mixin.scss */
+
+
+@mixin test {
+  display: block;
+  width: 100%; 
+  height: 100%;
+}
+
+@mixin box {
+  width: 100%; 
+  margin: auto; 
+  box-sizing: border-box;
+}
+
+@mixin box_2($w:100%, $h:100%) {
+  width: $w; 
+  height: $h;
+  margin: auto; 
+  box-sizing: border-box;
+  @content; 
+}
+
+
+// function box (a = 100) { console.log(a); } 
+// box();

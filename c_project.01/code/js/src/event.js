@@ -7,8 +7,8 @@
 
 
 var dataList = []
-$.ajax({url:'../json/event_modalbar.json'}).done(function(modalBardata){
-  $.ajax({url:'../json/event_modalwindow.json'}).done(function(modalWindowdata){
+$.ajax({url:'../json/event/event_modalbar.json'}).done(function(modalBardata){
+  $.ajax({url:'../json/event/event_modalwindow.json'}).done(function(modalWindowdata){
     dataList[0] = modalBardata;
     dataList[1] = modalWindowdata;
 

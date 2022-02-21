@@ -1,0 +1,11 @@
+/* b_smartphone_v2.css */
+
+
+@import url("./smartphone_area/headBox.css");
+@import url("./smartphone_area/slideBox.css");
+@import url("./smartphone_area/newBox.css");
+@import url("./smartphone_area/subBox.css");
+@import url("./smartphone_area/bestBox.css");
+@import url("./smartphone_area/galleryBox.css");
+@import url("./smartphone_area/sponserBox.css");
+@import url("./smartphone_area/footBox.css");

@@ -8,7 +8,7 @@
 
 $.ajax({
 
-  url:"../json/gift_modal.json",
+  url:"../json/gift/gift_modal.json",
   context: document.body
 
 }).done(function(data){

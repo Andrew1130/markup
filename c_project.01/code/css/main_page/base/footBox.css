@@ -1,0 +1,128 @@
+/* footBox.css */
+
+
+/*? footBox ----------------------- */
+#footBox {
+  width: 100%;
+  padding-top: 4.25rem; box-sizing: border-box;
+  background-color: #333;
+}
+
+  .area_foot { height: auto; }
+
+.info_logo {
+  width: 7.5rem; height: 4.375rem;
+  margin-bottom: 2.8125rem;
+  background-image: url("../../../img/common_page/08_footBox/osam_sub_logo.png");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: cover;
+}
+
+  .info_logo a {
+    display: block;
+    width: 7.5rem; height: 4.375rem;
+  }
+
+.info_company {
+  width: 100%; height: 12.5rem;
+  /* background-color: #aaa; */
+}
+
+
+
+/* infoBox */
+
+  #footBox li.infoBox {
+    display: block;
+    float: left;
+    width: 31.25rem; height: 12.5rem;
+    /* background-color: aquamarine; */
+  }
+
+    #footBox li.infoBox li {
+      display: block;
+      float: left;
+      font-size: 0.75rem; color: #fff;
+      margin-top: 1.75rem;
+      margin-bottom: 1.75rem;
+      margin-right: 0.875rem;
+    }
+
+    #footBox li.infoBox li:hover,
+    #footBox li.infoBox li:focus {
+      color : #FFBD55
+    }
+
+    #footBox .footBox_companyinfo {
+      font-size: 0.75rem; color: #fff;
+      margin-bottom: 1.75rem;
+      line-height: 200%;
+    }
+
+      .footBox_companyinfo dt, dd {
+        display: inline-block;
+        padding: 0.125rem; padding-right: 0.3125rem;
+      }
+
+    #footBox .footBox_rights {
+      font-size: 0.75rem; color: #fff;
+      margin-top: 1.25rem;
+    }
+
+    #footBox .copyright {
+      font-size: 0.75rem; color: #fff;
+    }
+
+
+
+/* linkBox */
+
+  #footBox li.linkBox {
+    display: block;
+    float: right;
+    width: 12.5rem; height: 10rem;
+    margin-top: 2.5rem;
+  }
+
+    #footBox li.linkBox li {
+      display: block; float: left;
+      width: 2.5rem; height: 2.5rem; 
+      margin-right: 1.25rem;
+      margin-bottom: 0.625rem;
+    }
+
+    #footBox li.linkBox ul a {
+      display: block;
+      width: 2.5rem; height: 2.5rem;
+      margin: auto;
+    }
+
+      #footBox li.linkBox li:nth-child(1) {
+        background-image: url("../../../img/common_page/08_footBox/facebook.png");
+      }
+      #footBox li.linkBox li:nth-child(2) {
+        background-image: url("../../../img/common_page/08_footBox/youtube.png");
+      }
+      #footBox li.linkBox li:last-child { 
+        background-image: url("../../../img/common_page/08_footBox/naver.png");
+        margin-right: 0; 
+      }
+
+    
+      #footBox li.linkBox .footBox_familysite {
+        width: 10rem; height: 1.875rem; background-color: #fff;
+        border-radius: 0.3125rem;
+        margin-bottom: 0.625rem;
+        font-size: 0.75rem; color: #555; text-transform: capitalize;
+      }
+
+        #footBox .footBox_familysite #site {
+          display: block; 
+          width: 10rem; height: 1.875rem; border-radius: 0.3125rem;
+        }
+
+      #footBox li.linkBox .footBox_textarea {
+        width: 10rem; height: 3.125rem; background-color: #fff;
+        border-radius: 0.3125rem;
+      }

@@ -1,0 +1,77 @@
+/* slideBox.css */
+
+
+@media screen and (min-width: 600px) and (max-width: 1023px) {
+  /*? 기준 디바이스 크기 : 600px */
+
+
+  /*? slideBox ----------------------- */
+  /** importtest css (슬라이드 기능 on) */
+  #slideBox {
+    height: 70vh;
+    min-height: 31.25rem; 
+    padding-top: 3.125rem;
+  }
+
+  .view_cover {
+    border: 0.0625rem solid white;
+    background-position: 50% 80%;
+  }
+
+  .view_con_wrapper { margin: 0; width: 100%; height: 100%; }
+
+    .view_content { width: 100%; padding-top: 0; }
+
+    .view_content h3 {
+      height: 2.1875rem;
+      font-size: 1.75rem; 
+      margin-top: 25vh; margin-bottom: 1.25rem;
+      text-align: center;
+    }
+
+    .view_content p {
+      width: 70%; max-width: 34.375rem; height: 7.375rem; 
+      font-size: 1rem; color:#171717;
+      display: block; margin: auto;
+      text-align: center;
+    }
+
+    .view_content .link {
+      height: 2.5rem; margin: auto;
+    }
+
+      .link a {
+        padding: 5px 10px;
+        font-size: 1.125rem; font-weight: 500;
+        text-align: center;
+      }
+
+        .link a i { float: right; }
+
+  
+  .view_cover .image { display: none; }
+
+  .next_btn {
+    width: 1.5625rem; height: 5rem;
+    background-position: 0;
+    background-image: url("../../../img/main_page_re/main_page_re/mobile/c_slideBox/next.svg");
+    background-image: url("../../../img/main_page_re/main_page_re/mobile/c_slideBox/next.png");
+  }     
+
+  .prev_btn {
+    width: 1.5625rem; height: 5rem;
+    background-position: 0;
+    background-image: url("../../../img/main_page_re/main_page_re/mobile/c_slideBox/prev.svg");
+    background-image: url("../../../img/main_page_re/main_page_re/mobile/c_slideBox/prev.png");
+  }
+  
+  
+  
+  /* 인디케이터 */
+  .slide_indicator { margin-right: 0; }
+  .slide_check_part { left: 50%; transform: translateX(-50%); 
+  width: 23.75rem;}
+
+  
+
+} /* @media screen and (min-width: 600px) and (max-width: 1023px) */

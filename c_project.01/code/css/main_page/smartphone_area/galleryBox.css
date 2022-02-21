@@ -1,0 +1,35 @@
+/* galleryBox.css */
+
+
+@media screen and (max-width: 599px) {
+  /*? 기준 디바이스 크기 : 320px */
+
+
+  /*? galleryBox ----------------------- */
+  #galleryBox {
+    height: 70rem; 
+    padding-top: 1.5rem; padding-bottom: 8.75rem;
+    margin: auto;
+  }
+
+  #galleryBox .area_title { margin-top: 1.25rem; margin-bottom: 1.875rem;}
+  #galleryBox .area_content {
+    width: 18.75rem; height: 56.25rem; margin: auto; 
+  }
+
+  #galleryBox li.imageArea { 
+    width: 18.75rem; height: 28.75rem; overflow: hidden; 
+  }
+  .gallery_imgs img { width: auto; height: 28.75rem; }
+
+    #galleryBox li.gallery_imgs {
+      width: 18.75rem; height: 28.75rem;
+      background-image: url("../../../img/main_page_re/main_page_re/all_device/g_galleryBox/gallery_1.png");
+      margin: auto;
+    }
+
+    #galleryBox li.listArea { width: 100%; margin-top: 4.375rem; }
+      #galleryBox li.listArea li { font-size: 1.75rem; }
+
+
+} /* @media screen and (max-width: 599px) */

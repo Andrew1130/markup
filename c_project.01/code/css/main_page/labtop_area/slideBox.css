@@ -1,0 +1,37 @@
+/* slideBox.css */
+
+
+@media screen and (min-width: 1024px) and (max-width: 1439px) {
+  /*? 기준 디바이스 크기 : 1024px */
+
+  /*? slideBox ----------------------- */
+  #slideBox {
+    min-height: 37.5rem;
+    padding-top: 7.625rem; 
+    min-height: 43.75rem; max-height: 46.875rem;
+  }
+
+  .slide_content {
+    margin: auto; max-width: 75rem;
+  }
+
+  .slide_area { border: 0.0625rem solid #fff; }
+  .slide_content_part { 
+    display: inline-block; 
+    margin-top: 11rem; margin-left: 7.625rem; }
+
+  .slide_content_part p {
+    width: 18.75rem; height: auto;
+    line-height: 150%;
+    margin-bottom: 1.875rem;
+  }
+
+  .slide_img_part { margin-top: 6.25rem; margin-right: 7.625rem;} 
+
+    .slide_01 {
+      background-image: url("../../img/main_page_re/main_page_re/desktop/c_slideBox/slideboximg_01.svg");
+      background-image: url("../../img/main_page_re/main_page_re/desktop/c_slideBox/slideboximg_01.png");
+    }
+    
+
+} /* @media screen and (min-width: 1024px) and (max-width: 1439px) */

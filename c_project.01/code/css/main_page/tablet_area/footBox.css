@@ -1,0 +1,16 @@
+/* footBox.css */
+
+
+@media screen and (min-width: 600px) and (max-width: 1023px) {
+  /*? 기준 디바이스 크기 : 600px */
+
+
+  /*? footBox ----------------------- */
+  #footBox { height: 26.5625rem; position: relative; }
+  .area_foot { width: 90%; margin: auto; }
+
+  #footBox li.linkBox { position: absolute; top: 5%; right: 2%; }
+  .footBox_textarea { display: none; }
+  
+
+} /* @media screen and (min-width: 600px) and (max-width: 1023px) */

@@ -1,0 +1,110 @@
+/* bestBox.css */
+
+
+/*? bestBox ----------------------- */
+#bestBox {
+  width: 100%; 
+  padding-top: 10.9375rem; box-sizing: border-box;
+  background-color: #fff;
+}
+
+#bestBox li {
+  display: block;
+  float: left;
+  height: 23.75rem;
+}
+
+.bestBox_01 h2 {
+  font-size: 2.5rem; font-weight: 700;
+  text-transform: capitalize;
+  margin-bottom: 0.9375rem; color: #171717;
+  line-height: 150%;
+}
+
+.bestBox_01 p {
+   width: 12.5rem; height: 5.1875rem;
+   font-size: 1rem;
+   color: #757575;
+   margin-bottom: 1.25rem;
+}
+
+.bestBox_01 button:nth-child(1){
+  width: 6.25rem; height: 1.875rem; margin-left: 0.4375rem;
+  background-image: url("../../../img/main_page/05_bestBox/bestBox_next.png");
+ }
+
+.bestBox_01 button:nth-child(2){
+float: left;
+width: 100px; height: 1.875rem;
+background-image: url("../../../img/main_page/05_bestBox/bestBox_prev.png");
+}
+
+.bestBox_buttons > a {
+  position: relative;
+  display: block;
+  margin-top: 0.625rem;
+  width: 13.0625rem; height: 3.4375rem; 
+  background-color: #1A5D54;
+  border-radius: 0.625rem;
+}
+
+ .bestBox_buttons > a span {
+   display: block;
+   position: absolute; top: 30%; left: 30%;
+   /* transform: translate(60px, 17px); */
+   font-size: 1.375rem; font-weight: 700; color: #fff;
+ }
+
+/** 카드 css */
+
+/* 카드 ul */
+#bestBox .card_area_control {
+width: 53.125rem; height: 100%;
+overflow: hidden;
+}
+#bestBox .card_area {
+display: block;
+width: 300%; height: 100%;
+}
+
+/* 카드 공통 부분 */
+#bestBox .card_area li {
+width: 15rem;
+border: 0.0625rem solid #757575;
+border-radius: 0.3125rem;
+margin-right: 2.5rem;
+}
+
+#bestBox .card_area .card_image {
+  width: auto; height: 11.3125rem;
+  margin: 0.625rem;
+  background-repeat: no-repeat; background-size: cover;
+  background-position: 50% 50%;
+  border-radius: 0.3125rem;
+}
+
+#bestBox .card_area h2 {
+  width: 100%; height: auto;
+  font-size: 1.375rem; font-weight: 700;
+  text-transform: capitalize;
+  margin: 0.625rem;
+  margin-top: 0.9375rem; color: #171717;
+}
+
+#bestBox .card_area p {
+  width: 100%; height: auto;
+  margin: 0.625rem; margin-bottom: 1.875rem;
+  font-size: 1rem; color: #777;
+}
+
+#bestBox .card_area .card_date {
+  width: 13.5rem; height: auto;
+  margin-left: 0.75rem; margin-right: 0.75rem;
+  border-top: 0.0625rem solid #757575;
+}
+
+.card_area .card_date span {
+    display: block;
+    margin: 0.3125rem; margin-left: 0.625rem;
+    font-size: 0.75rem; color: #505050;
+  }

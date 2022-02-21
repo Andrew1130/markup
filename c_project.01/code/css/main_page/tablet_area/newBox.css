@@ -1,0 +1,51 @@
+/* newBox.css */
+
+
+@media screen and (min-width: 600px) and (max-width: 1023px) {
+  /*? 기준 디바이스 크기 : 600px */
+
+
+  /*? newBox ----------------------- */
+  #newBox {
+    height: 100vh; min-height: 37.5rem;
+    max-height: 37.5rem;
+    padding-top: 3.75rem; padding-bottom: 5.625rem; 
+    position: relative;
+  }
+
+  .area_title {
+    width: 100%; height: auto; 
+    text-align: center;
+    padding-top: 0;
+    font-size: 1.75rem;
+  }
+
+  .area_indicator { bottom: 4.375rem; }
+
+  .newBox_area { 
+    position: absolute;
+    left: 50%; transform: translateX(-50%);
+    width: 80%; height: 20rem; 
+    margin: auto; margin-top: 3.25rem; 
+  }
+  .newBox_area ul { width: 300%; height: 23.125rem; margin-left: 0%; }
+  /* 사진을 담을 수 있도록 사진 담는 영역의 너비를 넓게 설정 */
+
+  
+  .newBox_area li:first-child 
+  { margin-left: 0.833333%; margin-right:0.833333%; }
+  .newBox_area li { 
+    width: 15%; height: 100%;
+    margin-left: 0.833333%; margin-right:0.833333%;
+  } 
+  /* 
+    인디케이터 1개에 카드 2개 할당.
+    100/6 = 16.666666%
+    이에 카드 너비는 15%로 주고 마진을 1.666666%으로 할당.
+    이때 마진을 한쪽에 몰지 않고 오른쪽, 왼쪽 둘로 나눠 0.833333%씩 할당.
+  */
+
+  .newBox_area div { width: 100%; height: 100%; }
+
+
+} /* @media screen and (min-width: 600px) and (max-width: 1023px) */

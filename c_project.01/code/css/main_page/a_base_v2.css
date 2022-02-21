@@ -1,0 +1,11 @@
+/* a_base_v2.css */
+
+
+@import url("./base/headBox.css");
+@import url("./base/slideBox.css");
+@import url("./base/newBox.css");
+@import url("./base/subBox.css");
+@import url("./base/bestBox.css");
+@import url("./base/galleryBox.css");
+@import url("./base/sponserBox.css");
+@import url("./base/footBox.css");

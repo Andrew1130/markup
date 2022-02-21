@@ -15,7 +15,7 @@
 
 $.ajax({
 
-  url:"../json/gift.json",
+  url:"../json/gift/gift.json",
   context: document.body
 
 }).done(function(data){

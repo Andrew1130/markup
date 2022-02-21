@@ -1,0 +1,11 @@
+/* d_laptop_v2.css */
+
+
+@import url("./labtop_area/headBox.css");
+@import url("./labtop_area/slideBox.css");
+@import url("./labtop_area/newBox.css");
+@import url("./labtop_area/subBox.css");
+@import url("./labtop_area/bestBox.css");
+@import url("./labtop_area/galleryBox.css");
+@import url("./labtop_area/sponserBox.css");
+@import url("./labtop_area/footBox.css");

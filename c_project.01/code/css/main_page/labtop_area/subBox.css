@@ -1,0 +1,12 @@
+/* subBox.css */
+
+
+@media screen and (min-width: 1024px) and (max-width: 1439px) {
+  /*? 기준 디바이스 크기 : 1024px */
+
+  /*? subBox ----------------------- */
+  #subBox { height: 21.875rem; padding-bottom: 1.25rem; }
+  #subBox li.subBox_text_btn { margin-top: 60px; }
+  .subBox_text_btn button:first-child { margin-right: 30px; }
+
+} /* @media screen and (min-width: 1024px) and (max-width: 1439px) */

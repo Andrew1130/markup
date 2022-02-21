@@ -1,0 +1,52 @@
+/* subBox.css */
+
+
+@media screen and (min-width: 600px) and (max-width: 1023px) {
+  /*? 기준 디바이스 크기 : 600px */
+
+
+  /*? subBox ----------------------- */
+  #subBox { height: 37.5rem; }
+
+  #subBox > .area {
+    width: 100%; min-width: auto; height: 100%; 
+
+    background-image: url("../../../img/main_page_re/main_page_re/mobile/e_subBox/sub_img.png");
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+  }
+
+  #subBox > .area::before {
+    content: ""; opacity: 0.5; position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0; background-color: #fff;
+  }
+
+  #subBox li.subBox_image { width: 0; height: 0; background-image: none; }
+
+
+  #subBox li.subBox_text_btn {
+    position: absolute;
+    top: 0; bottom: 0; left: 0; right: 0;
+    width: 100%; height: 100%;
+  }
+
+  .subBox_text_btn h2 { margin-top: 11.25rem;  color: #171717; text-align: center; }
+  .subBox_text_btn p { width: 26.5625rem; height: 4.0625rem; text-align: center; margin: auto; margin-bottom: 2.5rem; }
+
+
+
+  .subBox_button { margin:  auto; }
+  
+  .subBox_text_btn button:first-child {
+    display: block; width: 15.25rem; 
+    margin: auto; margin-bottom: 0.875rem;
+  }
+
+  .subBox_text_btn button:last-child {
+    display: block; width: 15.25rem; 
+    margin: auto; margin-bottom: 0.875rem;
+  }
+
+
+} /* @media screen and (min-width: 600px) and (max-width: 1023px) */

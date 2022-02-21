@@ -1,0 +1,11 @@
+/* c_tablet_v2.css */
+
+
+@import url("./tablet_area/headBox.css");
+@import url("./tablet_area/slideBox.css");
+@import url("./tablet_area/newBox.css");
+@import url("./tablet_area/subBox.css");
+@import url("./tablet_area/bestBox.css");
+@import url("./tablet_area/galleryBox.css");
+@import url("./tablet_area/sponserBox.css");
+@import url("./tablet_area/footBox.css");

@@ -4,25 +4,6 @@
 //? 배열 --------------------------------
 //* json 파일로 대체 --------------
 
-// var data = [
-
-//   {"title":"Lorem ipsum dolor sit amet consectetur?", 
-//   "content":"Lorem ipsum dolor sit amet consectetur adipisicing."}, 
-
-//   {"title":"placeat nam, iusto aliquid, a corrupti?", 
-//   "content":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime deleniti error vero tenetur molestiae aliquid corporis eveniet. Excepturi sequi magni quisquam labore sint."}, 
-
-//   {"title":"culpa tempore excepturi maxime iste?", 
-//   "content":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit expedita quia perspiciatis officia molestias. Eaque nesciunt asperiores dicta totam ea nihil consectetur impedit reiciendis tempore, quisquam ipsa placeat nam, iusto aliquid, a corrupti. Nemo praesentium officiis maiores ut deserunt, soluta distinctio ducimus, earum debitis dolorem suscipit laboriosam ex quod esse."}, 
-
-//   {"title":"quas molestiae dicta dolore minima laborum?", 
-//   "content":"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iste similique quisquam, exercitationem ullam ea perspiciatis culpa aperiam nihil, quas molestiae dicta dolore minima laborum nisi consectetur quam autem qui excepturi! Nam dolorem recusandae ullam doloribus, ipsa obcaecati porro ipsam. Necessitatibus repudiandae doloremque aut dolorem sunt delectus dolor molestias repellat velit culpa tempore excepturi maxime iste, asperiores error laudantium? Explicabo, quae."}, 
-
-//   {"title":"dolorem sunt delectus dolor molestias repellat?", 
-//   "content":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta delectus consequuntur ullam aspernatur, illo facilis odio ea. Expedita saepe vitae, suscipit maiores rem obcaecati a! Eligendi atque velit omnis delectus!"}
-
-// ];
-
 
 
 //? 구현할 기능 -----------
@@ -37,7 +18,7 @@
 
 $.ajax({
 
-  url:"../json/FAQ_list.json",
+  url:"../json/FAQ/FAQ_list.json",
   context: document.body
 
 }).done(function(data){

@@ -1,0 +1,37 @@
+/* bestBox.css */
+
+
+@media screen and (min-width: 1024px) and (max-width: 1439px) {
+  /*? 기준 디바이스 크기 : 1024px */
+
+
+  /*? bestBox ----------------------- */
+  #bestBox { 
+    width: 64rem; height: 40.75rem;
+    padding-top: 9.9375rem; padding-bottom: 8.0625rem;
+    margin: auto;
+  }
+
+  .bestbox_container {
+    width: 95%; 
+    min-width: 940px; 
+    max-width: 1280px;
+    margin: auto;
+  }
+
+
+  /* 제목 및 설명 --------------------- */
+  #bestBox .description_area_control { margin-right: 2.5rem; }
+
+
+  /** 카드 css */
+
+  /* 카드 ul */
+  #bestBox .card_area_control { width: 37.5rem; }
+  #bestBox .card_area { width: 400%; }
+
+  /* 카드 공통 부분 */
+  #bestBox .card_area li { margin-right: 1.875rem; }
+  
+
+} /* @media screen and (min-width: 1024px) and (max-width: 1439px) */
