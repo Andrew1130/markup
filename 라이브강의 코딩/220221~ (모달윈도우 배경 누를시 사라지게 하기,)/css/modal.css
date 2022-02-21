@@ -1,0 +1,81 @@
+/* modal.css */
+
+
+/* reset */
+html, body {
+  margin: 0; font-family: sans-serif;
+}
+h1,h2,h3,h4, ul { margin: 0; padding: 0; }
+ul, ol { list-style: none; }
+button { border: 0; cursor: pointer; }
+
+
+/* ---------------------- */
+#wrap {
+  width: 1200px; height: auto;
+  /* min-height: 900px; */
+  margin: auto; background-color: #ddd;
+}
+
+.card {
+  width: 100%; height: 31.25rem;
+  padding: 1rem; box-sizing: border-box;
+}
+
+.card ul {
+  display: flex;
+  width: 100%; height: auto;
+  border: 1px solid #333;
+  box-sizing: border-box;
+}
+
+.card_area ul:after {
+  content: ""; display: block;
+  clear: both;
+}
+
+.card_area li {
+  float: left;
+  width: 220px; height: 400px;
+  margin: 1rem; padding: 1rem;
+  border: 1px solid #f00;
+  background-color: #adf;
+}
+
+.card_area button {
+  display: block;
+  width: 100%; height: 100%;
+  line-height: 1;
+  background-color: #fff;
+}
+
+.card_img {
+  width: 100%; height: 200px; 
+  background-color: #777;
+}
+
+.card_modal {
+  display: none;
+  position: fixed;
+  top: 0; left: 0; z-index: 1500;
+  width: 100%; height: 100%;
+  background-color: rgba(200,100,50,0.3);
+}
+
+.card_modal.on { display: none; }
+
+.modal_window {
+  position: absolute;
+  top: 50%; left: 50%;
+  width: 50%; height: 50%;
+  background-color: #fff;
+  transform:translate(-50%, -50%);
+  box-shadow: 0.2rem 0.2rem 0.2rem #333;
+}
+
+.modal_bg {
+  position: absolute; z-index: -1;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background-color: rgba(50,100,250,0.3)
+}

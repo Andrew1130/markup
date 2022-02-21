@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="../css/modal.css">
+  
+</head>
+<body>
+  <div id="wrap">
+    <h1>modal</h1>
+
+    <div class="card_area">
+      <h2>card_area</h2>
+
+      <!-- ul>li*3>button[type="button"]>div.card_img+h3{title_$$} -->
+
+      <ul>
+        <li>
+          <button type="button">
+            <div class="card_img"></div>
+            <h3>title_01</h3>
+          </button>
+        </li>
+        <li>
+          <button type="button">
+            <div class="card_img"></div>
+            <h3>title_02</h3>
+          </button>
+        </li>
+        <li>
+          <button type="button">
+            <div class="card_img"></div>
+            <h3>title_03</h3>
+          </button>
+        </li>
+      </ul>
+
+    </div>
+      
+    <div class="card_modal">
+      <div class="modal_window">
+        <button type="button" class="close">닫기</button>
+        <p class="index"></p>
+      </div>
+      <div class="modal_bg"></div>
+    </div>
+
+  </div>
+
+  <script src="../js/common/jquery-3.6.0.min.js"></script>
+  <script src="../js/common/jquery-ui.min.js"></script>
+  <script src="../js/src/modal.js"></script>
+</body>
+</html>
