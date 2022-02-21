@@ -101,13 +101,13 @@
 - [탭메뉴 방식](b_step_04/html/b_11_tab_menu.html)
 
 #### 슬라이드 기능 처리
--[슬라이드 기본 구성에 따른 구조](b_step_05/html/b_01_slide_structure.html)
--[동일한 위치에서 이미지 변경, 인디케이터 활용](b_step_05/html/b_02_slide_position_indicator.html)
--[가로형 슬라이드, 인디케이터/버튼 활용](b_step_05/html/b_02_slide_horizontal_indicator.html)
--[가로형 슬라이드 (버튼 활용/무한 slide : 요소 강제이동 처리)](b_step_05/html/b_03_slide_horizontal_button_infinity.html)
--[가로형 슬라이드 (버튼 활용/무한 slide : 요소 복제 후 처리)](b_step_05/html/b_03_slide_horizontal_button_infinity_02.html)
--[가로형 슬라이드 (무한 slide : 버튼, 인디케이터 모두 활용)](b_step_05/html/b_03_slide_horizontal_button_infinity_03.html)
--[가로형 슬라이드 (터치기반 swipe 기능)](b_step_05/html/b_03_slide_horizontal_swipe.html)
+- [슬라이드 기본 구성에 따른 구조](b_step_05/html/b_01_slide_structure.html)
+- [동일한 위치에서 이미지 변경, 인디케이터 활용](b_step_05/html/b_02_slide_position_indicator.html)
+- [가로형 슬라이드, 인디케이터/버튼 활용](b_step_05/html/b_02_slide_horizontal_indicator.html)
+- [가로형 슬라이드 (버튼 활용/무한 slide : 요소 강제이동 처리)](b_step_05/html/b_03_slide_horizontal_button_infinity.html)
+- [가로형 슬라이드 (버튼 활용/무한 slide : 요소 복제 후 처리)](b_step_05/html/b_03_slide_horizontal_button_infinity_02.html)
+- [가로형 슬라이드 (무한 slide : 버튼, 인디케이터 모두 활용)](b_step_05/html/b_03_slide_horizontal_button_infinity_03.html)
+- [가로형 슬라이드 (터치기반 swipe 기능)](b_step_05/html/b_03_slide_horizontal_swipe.html)
 
 
 ## 문서 정리 & 반응형 세팅
