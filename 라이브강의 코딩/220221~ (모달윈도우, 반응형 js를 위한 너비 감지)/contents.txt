@@ -1,0 +1,5 @@
+1. 모달윈도우 배경 누를시 사라지게 하기, 
+2. 반응형 js를 위한 너비 감지 
+- jquery 및 javascript로 표현
+- 새로고침 없이 너비 변경 감지
+- window.matchmedia
