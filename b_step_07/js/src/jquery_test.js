@@ -67,11 +67,34 @@ naviChild.eq(2).find('a').attr('href', 'http://daum.net')
 // console.clear()
 
 
-//? 클래스 추가 및 제거 ------------------------
+//? 클래스 추가 및 제거  ------------------------
 naviChild.eq(4).attr('class', 'on');
 naviChild.eq(1).addClass('on_2')
 navi.removeClass('act')
 
+
+console.clear()
+
+
+//! 98강 ----------------------------------
+//? JQuery 이벤트 처리 및 순서할당 --------------
+/* 
+1. li 여러개중 하나를 클릭
+2. 선택한 요소가 무엇인지, 순서가 몇번째인지
+3. li의 순번째에 기능 할당 ('border','1px solid #333')
+*/
+
+/*
+
+naviChild.on('click', function(e){
+  e.preventDefault();
+  var el = $(this);
+  var elI = el.index();
+  // console.log( $(this), $(this).index() );
+  naviChild.eq(elI).css('border','1px solid #333');
+});
+
+*/
 
 })(jQuery);
 

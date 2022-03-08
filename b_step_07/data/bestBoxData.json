@@ -1,0 +1,58 @@
+[
+ {
+   "id": 1,
+   "image": "best_1.png",
+   "image_description": "coffee_best_01",
+   "title": "god father",
+   "contents": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, eum.",
+   "date": "2021. 12. 19"
+ },
+ {
+   "id": 2,
+   "image": "best_2.png",
+   "image_description": "coffee_best_02",
+   "title": "esspresso",
+   "contents": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, eum.",
+   "date": "2021. 11. 14"
+ },
+ {
+   "id": 3,
+   "image": "best_3.png",
+   "image_description": "coffee_best_03",
+   "title": "latte art",
+   "contents": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, eum.",
+   "date": "2022. 01. 19"
+ },
+ {
+   "id": 4,
+   "image": "best_4.png",
+   "image_description": "food_best_01",
+   "title": "fruit plate",
+   "contents": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, eum.",
+   "date": "2022. 02. 04"
+ },
+ {
+   "id": 5,
+   "image": "best_5.png",
+   "image_description": "desert_best_01",
+   "title": "sweet yogurt ",
+   "contents": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, eum.",
+   "date": "2021. 12. 26"
+ },
+ {
+   "id": 6,
+   "image": "best_6.png",
+   "image_description": "food_best_02",
+   "title": "fresh salad",
+   "contents": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, eum.",
+   "date": "2022. 01. 13"
+ },
+ {
+   "id": 7,
+   "image": "best_7.png",
+   "image_description": "food_best_03",
+   "title": "salad bowl",
+   "contents": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, eum.",
+   "date": "2022. 01. 18"
+ }
+]

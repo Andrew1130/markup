@@ -114,6 +114,9 @@ var na3item = na3.item(2)
 console.log(na3item)
 
 
+console.clear()
+
+
 /*
 자바스크립트에서의 클래스 추가 및 제거 >> 추가
 형식 : element.classList.method
@@ -141,3 +144,64 @@ console.log(na3item)
 6. replace( oldClass, newClass )
 : 존재하는 클래스를 새로운 클래스로 교체한다.
 */
+
+
+//! 98강 ----------------------------------
+//? ----------------------------------------------
+//? javascript 이벤트 처리 및 순서할당 
+//? ----------------------------------------------
+
+/* 
+1. li 여러개중 하나를 클릭
+2. 선택한 요소가 무엇인지, 순서가 몇번째인지
+3. li의 순번째에 기능 할당 ('border','1px solid #333')
+*/
+
+
+/*
+//? for문을 이용한 이벤트 처리
+let len = naviChild.length
+for(let i = 0; i<len; i+=1) {
+  // for문에 의해서 naviChild에 있는 모든 항목들이 검사됨
+  // 그 항목들 중에서 click이 발생한 항목에 대해서만 콘솔 출력
+  naviChild[i].addEventListener('click', function(e){
+    e.preventDefault();
+    console.log(i);
+  })
+}
+*/
+
+
+//? forEach문을 이용한 이벤트 처리
+//! 유사배열로는 작동하지 않는다. (진)배열이 필요
+
+const navLi = Array.from(naviChild)
+console.log(navLi) //! >> (진)배열
+console.log(naviChild) //! 유사배열
+
+navLi.forEach(function(element, index){
+  element.addEventListener('click', function(e){
+    e.preventDefault();
+
+    console.log(element, index)
+    // element.style.border = '1px solid #333'
+    navLi.at(index).style = 'border: 1px solid #333'
+
+    /*
+    제이쿼리와 달리 -1이 작동하지 않는다. 동일하게 하려면 navLi.length-1를 써주거나, at(-1)을 써야 한다.
+    navLi[-1].style = 'border: 1px solid #333'
+    navLi[navLi.length-1].style = 'border: 1px solid #333' 
+    navLi.at(-1).style = 'border: 1px solid #333' 
+    */
+  });
+});
+
+
+/*
+제이쿼리
+$.each(naviChild, function(index, element){
+
+
+});
+*/
+
