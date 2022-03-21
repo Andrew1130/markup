@@ -66,9 +66,9 @@
 - [애니메이션-animation](b_step_02/html/f_05_animation.html)
 
 #### step 07 : 기타 기능 파악
--[변수 설정하기](b_step_02/html/g_01_variable.html)
--[브라우저를 기준으로 크기를 설정하는 단위](b_step_02/html/g_02_new_unit_vw_vh.html)
--[반응형 웹](b_step_02/html/g_03_reponsive_web.html)
+- [변수 설정하기](b_step_02/html/g_01_variable.html)
+- [브라우저를 기준으로 크기를 설정하는 단위](b_step_02/html/g_02_new_unit_vw_vh.html)
+- [반응형 웹](b_step_02/html/g_03_reponsive_web.html)
 
 
 ## Javascript, Jquery
